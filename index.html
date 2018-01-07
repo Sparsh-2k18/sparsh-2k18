@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <script src="https://use.fontawesome.com/caaf946b4a.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Sparsh 2018</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 text-center" >
+                <h1>LINE UP</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5"><hr></div>
+            <div class="col-xs-2 text-center">
+                    <i class="fa fa-user-circle-o" style="font-size:50px;color:black"></i>
+            </div>
+            <div class="col-xs-5"><hr></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 text-center">
+                <h2 style="font-weight:bold;">Artists</h2>
+                <ul name="map" class="text-center">
+                    <li data-no="1">All</li>
+                    <li data-no="2">Day 1</li>
+                    <li data-no="3">Day 2</li>
+                    <li data-no="4">Day 3</li>
+                    <li data-no="5">Day 4</li>
+                </ul>
+            </div>
+            <div class="col-xs-10 wrapper">
+                <div class="img"><img data-no="2" src="images/img-2.gif" alt="" ><h1 class="pop">name</h1></div>
+                <div class="img"><img data-no="3" src="images/img-3.png" alt="" ></div>
+                <div class="img"><img data-no="4" src="images/img-4.png" alt="" ></div>
+                <div class="img"><img data-no="5" src="images/img-1.png" alt="name of artist" ></div>
+                <div></div>
+                
+                
+                
+                
+                <p data-no="2" class="notShow content" style="color:pink">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae quibusdam at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem quos unde doloribus repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae, velit officiis eum suscipit enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur doloremque praesentium in nam temporibus? At repellendus quasi in consectetur id eum nesciunt quis, praesentium mollitia voluptas blanditiis sit omnis dolorum modi quas repellat quod tempore, saepe fugit nulla similique, aperiam earum. Dolores eos autem dicta cum sunt voluptatum, labore magnam a, necessitatibus aperiam accusamus iure quidem.</p>
+                <p data-no="3" class="notShow content" style="color:red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae quibusdam at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem quos unde doloribus repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae, velit officiis eum suscipit enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur doloremque praesentium in nam temporibus? At repellendus quasi in consectetur id eum nesciunt quis, praesentium mollitia voluptas blanditiis sit omnis dolorum modi quas repellat quod tempore, saepe fugit nulla similique, aperiam earum. Dolores eos autem dicta cum sunt voluptatum, labore magnam a, necessitatibus aperiam accusamus iure quidem.</p>
+                <p data-no="4" class="notShow content" style="color:blanchedalmond">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro itaque culpa nesciunt eligendi voluptas nemo ad, incidunt deleniti soluta officia quaerat? Fuga ipsam consequuntur dicta quos? Distinctio ipsum doloribus, excepturi quisquam consequatur adipisci temporibus nemo odit doloremque repellat iste dolor nisi ab cumque harum voluptatum molestiae vel cupiditate necessitatibus cum atque commodi dolorem quam quod! Omnis beatae vitae blanditiis numquam optio, sint corrupti rem perspiciatis qui necessitatibus voluptate corporis vel. Provident dicta, deleniti aut commodi ducimus ipsam, voluptates vero magni, odit modi rem? Est pariatur dignissimos deserunt eligendi iste accusantium repellat similique natus consequatur! Et pariatur dignissimos officia! Cupiditate, illum!</p>
+                <p data-no="5" class="notShow content" style="color:brown">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae quibusdam at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem quos unde doloribus repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae, velit officiis eum suscipit enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur doloremque praesentium in nam temporibus? At repellendus quasi in consectetur id eum nesciunt quis, praesentium mollitia voluptas blanditiis sit omnis dolorum modi quas repellat quod tempore, saepe fugit nulla similique, aperiam earum. Dolores eos autem dicta cum sunt voluptatum, labore magnam a, necessitatibus aperiam accusamus iure quidem.</p>
+            </div> 
+            
+        </div>
+    </div>
+
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    
+    var list=document.querySelectorAll("ul li");
+    list.forEach(ele=>{
+        ele.classList.add("tabs");
+
+    });
+    
+    
+    function transition(){
+        this.classList.add("tabs-isClicked");
+        if(this.dataset.no==1)
+        {
+            console.log(this.dataset.no)
+            $(".wrapper .content").addClass("notShow");
+            $(".wrapper .img").addClass("show");
+            
+            
+            
+        }
+        if(this.dataset.no==2)
+        {
+            console.log(this.dataset.no)
+            $(".wrapper > *").removeClass("show");
+            $(".wrapper > *").addClass("notShow");
+            $(".wrapper .img[data-no='2']").addClass("show");
+            $(".wrapper p[data-no='2']").addClass("show");
+            
+        }
+        if(this.dataset.no==3)
+        {
+            $(".wrapper > *").removeClass("show");
+            $(".wrapper > *").addClass("notShow");
+            $(".wrapper .img[data-no='3']").addClass("show");
+            $(".wrapper p[data-no='3']").addClass("show");
+            
+        }
+        if(this.dataset.no==4)
+        {
+            $(".wrapper > *").removeClass("show");
+            $(".wrapper > *").addClass("notShow");
+            $(".wrapper .img[data-no='4']").addClass("show");
+            $(".wrapper p[data-no='4']").addClass("show");
+            
+        }
+        if(this.dataset.no==5)
+        {
+            $(".wrapper > *").removeClass("show");
+            $(".wrapper > *").addClass("notShow");
+            $(".wrapper .img[data-no='5']").addClass("show");
+            $(".wrapper p[data-no='5']").addClass("show");
+            
+        }
+
+
+    }
+
+    function off(e){
+        if(e.propertyName==='color')
+        this.classList.remove("tabs-isClicked")
+    }
+
+
+    list.forEach(ele=>{
+        ele.addEventListener('click',transition);
+        ele.addEventListener('transitionend',off);
+    });
+
+    function show(){
+
+    }
+
+    var images=document.querySelectorAll(".wrapper img");
+    images.forEach(img=>{
+        img.addEventListener('mouseover',show);
+    })
+     
+    
+    
+
+</script>
+</html>
