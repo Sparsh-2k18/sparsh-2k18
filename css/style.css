@@ -9,10 +9,10 @@
     color: aqua
 }
 .notShow{
-    display: none;
+    display: none !important;
 }
 .show{
-    display: none;
+    display: block;
 }
 
 .wrapper{

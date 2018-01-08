@@ -36,11 +36,11 @@
                 </ul>
             </div>
             <div class="col-xs-10 wrapper">
-                <div class="img"><img data-no="2" src="images/img-2.gif" alt="" ><h1 class="pop">name</h1></div>
-                <div class="img"><img data-no="3" src="images/img-3.png" alt="" ></div>
-                <div class="img"><img data-no="4" src="images/img-4.png" alt="" ></div>
-                <div class="img"><img data-no="5" src="images/img-1.png" alt="name of artist" ></div>
-                <div></div>
+                <img data-no="2" src="images/img-2.gif" alt="" class="img">
+                <img data-no="3" src="images/img-3.png" alt="" class="img">
+                <img data-no="4" src="images/img-4.png" alt="" class="img">
+                <img data-no="5" src="images/img-1.png" alt="name of artist" class="img">
+                
                 
                 
                 
@@ -72,6 +72,7 @@
         if(this.dataset.no==1)
         {
             console.log(this.dataset.no)
+            $(".wrapper .content").removeClass("show");
             $(".wrapper .content").addClass("notShow");
             $(".wrapper .img").addClass("show");
             
