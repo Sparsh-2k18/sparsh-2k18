@@ -42,4 +42,29 @@ ul li{
 }
 
 
+.lineup2{
+    color:rgb(94, 65, 47);
+}
 
+.mobTab{
+    font-size: 1em;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+/* mobile css */
+.wrapperMob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgMob{
+    padding: 10px;
+    width:95%;
+    height: 300px;
+}
+.mob{
+    flex:1;
+}
