@@ -18,8 +18,17 @@
 .show{
     display: block;
 }
-
-
+.stack{
+    display: flex;
+    flex-direction: column;
+}
+.btnf{
+    flex:1;
+    
+    padding: 10px;
+    
+    
+}
 /* making the wrapper flex box */
 .wrapper{
     display: flex;
@@ -34,12 +43,12 @@
     flex: 3;
     padding: 10px;
 }
-.wrapper div img:hover{
-    
-}
+
 ul li{
     font-size: 1.2rem;
 }
+
+
 
 
 .lineup2{
@@ -51,6 +60,10 @@ ul li{
     text-align: center;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.space{
+    height: 200px;
 }
 /* mobile css */
 .wrapperMob{
