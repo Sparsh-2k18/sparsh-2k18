@@ -8,9 +8,21 @@
 	background-position: center center !important;
 	box-shadow:  0 3px 6px 0 rgba(0, 0, 0, 0.3);
 	cursor : auto;
+	
+}
+.new{
 	width: 100%;
-	height: 100%;
-	padding-left: 90%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	border: 1px solid goldenrod;
+
+}
+.one{
+	flex: 1;
+	height: 16.66vh;
+	
 }
 
 .qutton.close {

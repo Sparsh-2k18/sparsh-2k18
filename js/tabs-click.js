@@ -104,14 +104,14 @@ function transition(){
     // mobile js
 
     var listMob=document.querySelectorAll(".wrapper div .mobTab");
-    console.log(listMob);
+    
     
 
 
     function transitionMob(){
-        console.log('this ran');
+        
         this.classList.add("tabs-isClicked");
-        console.log(this.dataset)
+        
         if(this.dataset.no==1)
         {
             console.log(this.dataset.no)
