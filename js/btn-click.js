@@ -6,8 +6,10 @@ var btns = document.querySelectorAll(".day .col-xs-3 div");
 function showTrans() {
     console.log(this.dataset);
     if (this.dataset.key == 1) {
+        $(".btn-btn1").removeClass('notShow');
         $(".btn-btn1 .col-xs-3").removeClass('notShow');
         $(".btn-btn1 .col-xs-3").addClass('show');
+        $(".mainText1").addClass('notShow');
         $("div .btn-btn1").addClass('overlay1');
         $("div .btn-btn1").animateCss('bounceInLeft');
 
@@ -28,8 +30,10 @@ function showTrans() {
         }, 1800)
     }
     if (this.dataset.key == 2) {
+        $(".btn-btn2").removeClass('notShow');
         $(".btn-btn2 .col-xs-3").removeClass('notShow');
         $(".btn-btn2 .col-xs-3").addClass('show');
+        $(".mainText2").addClass('notShow');
         $("div .btn-btn2").addClass('overlay2');
         $("div .btn-btn2").animateCss('bounceInRight');
 
