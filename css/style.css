@@ -2,7 +2,13 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'blowbrush', cursive;
+}
+
+@font-face{
+    font-family: 'blowbrush';
+    src: url('fonts/blowbrush.otf');
+    src: url('fonts/blowbrush.ttf');
 }
 
 
@@ -86,6 +92,9 @@
 .day .col-xs-3 {
     height: 100%;
 
+}
+.chng li{
+    font-size: 2em;
 }
 
 .day .col-xs-9 {
@@ -171,7 +180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', end
 }
 
 .mobTab {
-    font-size: 1em;
+    font-size: 1.7em;
     text-align: center;
     transition: all 0.5s;
     cursor: pointer;
