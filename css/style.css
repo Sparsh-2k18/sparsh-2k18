@@ -185,3 +185,17 @@ body {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 12s linear 0s infinite;
 }
+/**/
+.anim{
+  margin-left: 25%;overflow-y: hidden;overflow-x: hidden;max-height:100%;max-width: 75%;
+  margin-top: 5%;
+}
+
+svg{
+  width: 65%;
+}
+
+@media screen and (max-width: 1050px){
+  svg{width: 100%;}
+  .anim{margin-left: 5%;max-width:95%;}
+}
