@@ -1,10 +1,10 @@
-from flask import Flask, flash, redirect, render_template, request, session, abort
+from flask import Flask, flash, redirect, render_template, request, session, abort, url_for
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Flask App!"
+    return render_template("main.html")
 
 @app.route("/hello")
 def hello(name):
