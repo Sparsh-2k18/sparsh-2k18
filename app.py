@@ -7,12 +7,12 @@ def index():
     return render_template("main.html")
 
 @app.route("/events")
-def hello():
+def event_page():
     return render_template("events.html")
 
-@app.route("/sponser")
-def sponser_page():
-    return render_template("sponser.html")
+@app.route("/sponsor")
+def sponsor_page():
+    return render_template("sponsor.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
