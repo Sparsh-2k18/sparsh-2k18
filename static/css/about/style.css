@@ -1,0 +1,231 @@
+.flexed{
+	text-align: center;
+	width: 100%;
+}
+
+.card-wrapper{
+	display:inline-block;
+}
+
+.card{
+	width: 200px;
+	text-align: center;
+	border: 5px solid white;
+	padding: 20px;
+	position: relative;
+	margin: 20px;
+	-webkit-box-shadow: 4px 9px 20px 2px rgba(176,169,176,0.98);
+	-moz-box-shadow: 4px 9px 20px 2px rgba(176,169,176,0.98);
+	box-shadow: 4px 9px 20px 2px rgba(176,169,176,0.98);
+}
+
+.scard{
+	width: 170px;
+	text-align: center;
+	border: 5px solid white;
+	padding: 20px;
+	position: relative;
+	margin: 20px;
+	-webkit-box-shadow: 4px 9px 20px 2px rgba(176,169,176,0.98);
+	-moz-box-shadow: 4px 9px 20px 2px rgba(176,169,176,0.98);
+	box-shadow: 4px 9px 20px 2px rgba(176,169,176,0.98);
+}
+
+.photo-container,.sphoto-container{
+	margin: 5px;
+	
+}
+.photo-container::before{
+	background-color: #2b9bdf;
+    /*background-image: linear-gradient(to bottom,#2b9bdf,#0bbdd7,#a8dbe9);*/
+    background-image: linear-gradient(to bottom,#FFA500,#FFD700,#66CDAA);
+    content: '';
+    display: block;
+    top: 10%;
+    left: 10%;
+    opacity: 0;
+    position: absolute;
+    height: 160px;
+    width: 190px;
+}
+.photo-container::after{
+	transform: scale(1.0);
+    border: 1.2px solid;
+    border-color: rgba(212,175,55,0);
+    border-radius: 50%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 16%;
+    left: 23%;
+    height: 46%;
+    width: 55%;
+    z-index: 20;
+    /*transform: scale(2);
+    border: 1px solid;
+    border-color: rgba(255,255,255,0);
+    border-radius: 50%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 254px;
+    width: 290px;
+    z-index: 20;*/
+}
+
+.photo-container:hover::after{
+	animation: focus .5s forwards;
+}
+.photo-container:hover::before{
+	opacity: 0.15;
+}
+
+.sphoto-container::before{
+	background-color: #2b9bdf;
+    /*background-image: linear-gradient(to bottom,#2b9bdf,#0bbdd7,#a8dbe9);*/
+    background-image: linear-gradient(to bottom,#FFA500,#FFD700,#66CDAA);
+    content: '';
+    display: block;
+    top: 10%;
+    left: 13%;
+    opacity: 0;
+    position: absolute;
+    height: 140px;
+    width: 159px;
+}
+.sphoto-container::after{
+	transform: scale(1.0);
+    border: 1.2px solid;
+    border-color: rgba(255,255,255,0);
+    border-radius: 50%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 16%;
+    left: 23%;
+    height: 43%;
+    width: 55%;
+    z-index: 20;
+}
+
+.sphoto-container:hover::after{
+	animation: focus .5s forwards;
+}
+.sphoto-container:hover::before{
+	opacity: 0.15;
+}
+
+@keyframes focus{
+	from{border-color: rgba(255,255,255,0);transform: scale(2);}
+	to{
+		transform: scale(1.2);
+		border-color: rgba(255,255,255,10);
+	}
+}
+
+.limg{
+	width: 190px;
+	height: 160px;
+}
+.simg{
+	width: 160px;
+	height: 140px;
+}
+
+.first{
+	background-color: white;
+	border-radius: 50%;
+	overflow: hidden;
+	display: block;
+	width: 0px;
+	height: 0px;
+	z-index: 25;
+}
+.card .fpos{
+	position: absolute;
+	top: 140px;
+	left: 50px;
+}
+.scard .fpos{
+	position: absolute;
+	top: 120px;
+	left: 40px;
+}
+.second{
+	background-color: white;
+	border-radius: 50%;
+	overflow: hidden;
+	display: block;
+	width: 0px;
+	height: 0px;
+	z-index: 25;
+	
+}
+.card .spos{
+	position: absolute;
+	top: 140px;
+	right: 40px;
+}
+.scard .spos{
+	position: absolute;
+	top: 120px;
+	right: 35px;
+}
+.photo-container:hover .second,.photo-container:hover .first{
+	animation: zoo .5s forwards;
+}
+.sphoto-container:hover .second,.sphoto-container:hover .first{
+	animation: szoo .5s forwards;
+}
+@keyframes zoo{
+	from{
+		
+	}
+	to{
+		width: 30px;
+		height: 30px;
+	}
+}
+@keyframes szoo{
+	from{
+		
+	}
+	to{
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.des{
+	/*position:absolute;
+	width: 300px;
+	text-align: center;
+	bottom: 25px;
+	left: 25px;
+	color: white;*/
+}
+i{
+	padding: 7px;
+}
+
+.mail{
+	color: #ea4335;
+}
+.twitter{
+	color: #1da1f2;
+}
+
+.r2{
+	transform: rotate(6deg);
+}
+.r4{
+	transform: rotate(4deg);
+}
+.r-2{
+	transform: rotate(-2deg);
+}
+.r3{
+	transform: rotate(3deg);
+}
