@@ -13,29 +13,13 @@
   -webkit-transition: all .4s ease-in-out;
   box-shadow: 0 0 5px goldenrod;
   height: 110px !important;
-  max-width: 100%;
-  height: auto;
-}
-img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.01);
 }
 .content div{
-  /*width: 16.66%;*/
-  padding: 20px;
+        width: 16.66%;
+        padding: 20px;
 }
-.img-thumbnail {
-  height: 50px;
-  width: 100%;
-  max-width: 100px;
-  border: 1px solid yellow;
-}
-
-/*Starting Responsive*/
-@media screen and (max-width: 500px) {
-  img{
-    filter: none;
-    -webkit-filter: grayscale(0);
-  }
+img:hover {
+filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
 }
