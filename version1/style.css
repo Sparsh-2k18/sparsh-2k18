@@ -1,5 +1,5 @@
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-html, body {
+html {
   height: 100%;
   margin: 0;
   position: relative;
@@ -50,7 +50,7 @@ html, body {
 */
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 body {
-  background: -webkit-radial-gradient(center, ellipse cover, #cf7777 0%, #f2efd9 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #f2efd9 100%);
 }
 
 @-webkit-keyframes rotate-right {
@@ -184,18 +184,4 @@ body {
   -webkit-transform-origin: 200px 200px;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: rotate-right 12s linear 0s infinite;
-}
-/**/
-.anim{
-  margin-left: 25%;overflow-y: hidden;overflow-x: hidden;max-height:100%;max-width: 75%;
-  margin-top: 0%;
-}
-
-svg{
-  width: 65%;
-}
-
-@media screen and (max-width: 1050px){
-  svg{width: 100%;}
-  .anim{margin-left: 5%;max-width:95%;}
 }
