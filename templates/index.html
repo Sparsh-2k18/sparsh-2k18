@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anim</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Baumans|Monoton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index/main.css') }}">
+    <script src="{{ url_for('static', filename='js/index/main.js') }}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo:700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Macondo|Sedgwick+Ave+Display" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/events/Quttons.css') }}" />
+    <script src="https://use.fontawesome.com/caaf946b4a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/events/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/events/tabs-click.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/events/btn-click.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/about/style.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(".mob").addClass('visible-xs');
+        $(".color .col-xs-2").addClass('space');
+    </script>
+</head>
+<body>
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/index/agency.css') }}" rel="stylesheet">
+
+
+
+    <!--- JQuery -->
+    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main-animation">
+
+                <!-- Navigation -->
+                <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand page-scroll" href="#page-top">Sparsh2k18</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="hidden">
+                                    <a href="#page-top"></a>
+                                </li>
+                                <!-- <li>
+                                <a class="page-scroll" href="#services">Services</a>
+                            </li> -->
+                            <li>
+                                <a class="page-scroll" href="{{url_for('event_page')}}">Events</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="{{ url_for('sponsor_page') }}">Sponsors</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#team">Team</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <!--div style="background-image: url();background-repeat: no-repeat;background-size: cover;background-position: center center;height:100%;margin: 0px;"-->
+
+            <!-- svg file | Main animation -->
+            <object type="image/svg+xml" data="{{url_for('static',filename = 'images/index/main.svg')}}" class="anim">
+
+            </object>
+
+        </div>
+    </div>
+    <div class="row">
+        <section id="timer">
+            <div class="countdown">
+                <center>
+                    <div class="timer">
+                        <script type="text/javascript" src="{{ url_for('static', filename='js/index/timer.js') }}"></script>
+                        <!-- jQuery -->
+                        <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+                        <!-- Bootstrap Core JavaScript -->
+                        <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+                        <!-- Theme JavaScript -->
+                        <script src="{{ url_for('static', filename='js/index/agency.min.js') }}"></script>
+                    </div>
+                </center>
+            </div>
+        </section>
+    </div>
+    <div class="row">
+        <section id="events">
+            <div class="container-fluid" style="height:100vh;">
+                <div class="container visible-xs" style="width:90%">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h1 class="lineup2">LINE UP</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <hr>
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            <i class="fa fa-user-circle-o" style="font-size:50px;color:black"></i>
+                        </div>
+                        <div class="col-xs-5">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h1 style="font-family: 'Macondo', cursive;font-weight:bolder;" class="daysT">DAYS
+                                <br>
+                                <i class="fa fa-sun-o" style="font-size:50px;color:orange;text-shadow: 0 0 20px gold;"></i>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top:3vh;">
+                        <div class="row day" style="margin-top:3vh;">
+                            <div class="col-xs-3">
+                                <div class="btnf btn-active btn-success" data-key='1'>INFORMAL</div>
+                            </div>
+                            <div class="col-xs-9 btn-btn1 text-center notShow">
+                                <div class="col-xs-3 notShow cont1" data-toggle='modal' data-target='#myModal1'>yes</div>
+
+                                <div class="col-xs-3 notShow cont2" data-toggle='modal' data-target='#myModal2'>yes</div>
+                                <div class="col-xs-3 notShow cont3" data-toggle='modal' data-target='#myModal3'>yes</div>
+                                <div class="col-xs-3 notShow cont4" data-toggle='modal' data-target='#myModal4'>yes</div>
+                            </div>
+                            <div class="col-xs-9 text-center mainText1">
+                                <h1 style="font-size:50px;font-stretch:extra-expanded;font-family: 'Arvo', serif;">INFORMAL</h1>
+                            </div>
+
+                        </div>
+                        <div class="row day">
+                            <div class="col-xs-9 btn-btn2 text-center notShow">
+
+                                <div class="col-xs-3 notShow cont1">yes</div>
+                                <div class="col-xs-3 notShow cont2">yes</div>
+                                <div class="col-xs-3 notShow cont3">yes</div>
+                                <div class="col-xs-3 notShow cont4">yes</div>
+
+                            </div>
+                            <div class="col-xs-9 text-center mainText2">
+                                <h1 style="font-size:40px;font-stretch:extra-expanded;font-family: 'Arvo', serif;">MANAGERIAL</h1>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="btnf btn-active btn-warning" data-key='2'>INFORMAL</div>
+                            </div>
+                        </div>
+                        <div class="row day">
+                            <div class="col-xs-3">
+                                <div class="btnf btn-active btn-primary" data-key='3'>INFORMAL</div>
+                            </div>
+                            <div class="col-xs-9 btn-btn3 text-center notShow">
+
+                                <div class="col-xs-3 notShow cont1">yes</div>
+                                <div class="col-xs-3 notShow cont2">yes</div>
+                                <div class="col-xs-3 notShow cont3">yes</div>
+                                <div class="col-xs-3 notShow cont4">yes</div>
+
+                            </div>
+                            <div class="col-xs-9 text-center mainText3">
+                                <h1 style="font-size:50px;font-stretch:extra-expanded;font-family: 'blowbrush', serif;">SOCIAL CAUSE</h1>
+                            </div>
+                        </div>
+                        <div class="row day">
+                            <div class="col-xs-9 btn-btn4 text-center notShow">
+                                <div class="col-xs-3 notShow cont1">yes</div>
+                                <div class="col-xs-3 notShow cont2">yes</div>
+                                <div class="col-xs-3 notShow cont3">yes</div>
+                                <div class="col-xs-3 notShow cont4">yes</div>
+                            </div>
+                            <div class="col-xs-9 text-center mainText4">
+                                <h1 style="font-size:50px;font-stretch:extra-expanded;font-family: 'Arvo', serif;">TECHNICAL</h1>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="btnf btn-active btn-danger" data-key='4'>INFORMAL</div>
+                            </div>
+                        </div>
+                        <div class="row day">
+                            <div class="col-xs-3">
+                                <div class="btnf btn-active btn-warning" data-key='5'>INFORMAL</div>
+                            </div>
+                            <div class="col-xs-9 btn-btn5 text-center notShow">
+
+                                <div class="col-xs-3 notShow cont1">yes</div>
+                                <div class="col-xs-3 notShow cont2">yes</div>
+                                <div class="col-xs-3 notShow cont3">yes</div>
+                                <div class="col-xs-3 notShow cont4">yes</div>
+
+                            </div>
+                            <div class="col-xs-9 text-center mainText5">
+                                <h1 style="font-size:30px;font-stretch:extra-expanded;font-family: 'Arvo', serif;">MEGA ATTRACTION</h1>
+                            </div>
+                        </div>
+                        <div class="row day">
+                            <div class="col-xs-9 btn-btn6 notShow">
+
+                                <div class="col-xs-3 notShow cont1">yes</div>
+                                <div class="col-xs-3 notShow cont2">yes</div>
+                                <div class="col-xs-3 notShow cont3">yes</div>
+                                <div class="col-xs-3 notShow cont4">yes</div>
+
+                            </div>
+                            <div class="col-xs-9 text-center mainText6">
+                                <h1 style="font-size:50px;font-stretch:extra-expanded;font-family: 'Arvo', serif;">INFORMAL</h1>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="btnf btn-active btn-primary" data-key='6'>INFORMAL</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end mobile version of day line up -->
+
+                <!-- desktop version of day line up -->
+
+                    <div class="container hidden-xs" style="">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <h1 class="lineup2">LINE UP</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <hr>
+                            </div>
+                            <div class="col-xs-2 text-center">
+                                <i class="fa fa-user-circle-o" style="font-size:50px;color:black"></i>
+                            </div>
+                            <div class="col-xs-5">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <h1 style="font-family: 'Macondo', cursive;font-weight:bolder;" class="daysT">DAYS
+                                    <br>
+                                    <i class="fa fa-sun-o" style="font-size:50px;color:orange;text-shadow: 0 0 20px gold;"></i>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="container" style="margin-top:3vh;">
+                            <div class="row day" style="margin-top:3vh;">
+                                <div class="col-xs-3">
+                                    <div class="btnf btn-active btn-success" data-key='1'><img src="{{ url_for('static', filename='images/events/headphones.svg') }}" alt="" width="100px" height="100px" class="img-responsive img-circle"></div>
+                                </div>
+                                <div class="col-xs-9 btn-btn1 text-center notShow">
+                                    <div class="col-xs-3 notShow cont1" data-toggle='modal' data-target='#myModal1'>yes</div>
+
+                                    <div class="col-xs-3 notShow cont2" data-toggle='modal' data-target='#myModal2'>yes</div>
+                                    <div class="col-xs-3 notShow cont3" data-toggle='modal' data-target='#myModal3'>yes</div>
+                                    <div class="col-xs-3 notShow cont4" data-toggle='modal' data-target='#myModal4'>yes</div>
+                                </div>
+                                <div class="col-xs-9 text-center mainText1">
+                                    <h1 style="font-size:6em;font-stretch:extra-expanded;">INFORMAL</h1>
+                                </div>
+
+                            </div>
+                            <div class="row day">
+                                <div class="col-xs-9 btn-btn2 text-center notShow">
+
+                                    <div class="col-xs-3 notShow cont1">yes</div>
+                                    <div class="col-xs-3 notShow cont2">yes</div>
+                                    <div class="col-xs-3 notShow cont3">yes</div>
+                                    <div class="col-xs-3 notShow cont4">yes</div>
+
+                                </div>
+                                <div class="col-xs-9 text-center mainText2">
+                                    <h1 style="font-size:6em;font-stretch:extra-expanded;">MANAGERIAL</h1>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="btnf btn-active btn-warning" data-key='2'><img src="{{ url_for('static', filename='images/events/boss.svg') }}" alt="" width="100px" height="100px" class="img-responsive img-circle"></div>
+                                </div>
+                            </div>
+                            <div class="row day">
+                                <div class="col-xs-3">
+                                    <div class="btnf btn-active btn-primary" data-key='3'><img src="{{ url_for('static', filename='images/events/user.svg') }}" alt="" width="100px" height="100px" class="img-responsive img-circle"></div>
+                                </div>
+                                <div class="col-xs-9 btn-btn3 text-center notShow">
+
+                                    <div class="col-xs-3 notShow cont1">yes</div>
+                                    <div class="col-xs-3 notShow cont2">yes</div>
+                                    <div class="col-xs-3 notShow cont3">yes</div>
+                                    <div class="col-xs-3 notShow cont4">yes</div>
+
+                                </div>
+                                <div class="col-xs-9 text-center mainText3">
+                                    <h1 style="font-size:6em;font-stretch:extra-expanded;font-family: 'blowbrush', serif;">SOCIAL CAUSE</h1>
+                                </div>
+                            </div>
+                            <div class="row day">
+                                <div class="col-xs-9 btn-btn4 text-center notShow">
+                                    <div class="col-xs-3 notShow cont1">yes</div>
+                                    <div class="col-xs-3 notShow cont2">yes</div>
+                                    <div class="col-xs-3 notShow cont3">yes</div>
+                                    <div class="col-xs-3 notShow cont4">yes</div>
+                                </div>
+                                <div class="col-xs-9 text-center mainText4">
+                                    <h1 style="font-size:6em;font-stretch:extra-expanded;">TECHNICAL</h1>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="btnf btn-active btn-danger" data-key='4'><img src="{{ url_for('static', filename='images/events/technics.svg') }}" alt="" width="100px" height="100px" class="img-responsive img-circle"></div>
+                                </div>
+                            </div>
+                            <div class="row day">
+                                <div class="col-xs-3">
+                                    <div class="btnf btn-active btn-warning" data-key='5'><img src="{{ url_for('static', filename='images/events/eye.svg') }}" alt="" width="100px" height="100px" class="img-responsive img-circle"></div>
+                                </div>
+                                <div class="col-xs-9 btn-btn5 text-center notShow">
+
+                                    <div class="col-xs-3 notShow cont1">yes</div>
+                                    <div class="col-xs-3 notShow cont2">yes</div>
+                                    <div class="col-xs-3 notShow cont3">yes</div>
+                                    <div class="col-xs-3 notShow cont4">yes</div>
+
+                                </div>
+                                <div class="col-xs-9 text-center mainText5">
+                                    <h1 style="font-size:5em;font-stretch:extra-expanded;">MEGA ATTRACTION</h1>
+                                </div>
+                            </div>
+                            <div class="row day">
+                                <div class="col-xs-9 btn-btn6 notShow">
+
+                                    <div class="col-xs-3 notShow cont1">yes</div>
+                                    <div class="col-xs-3 notShow cont2">yes</div>
+                                    <div class="col-xs-3 notShow cont3">yes</div>
+                                    <div class="col-xs-3 notShow cont4">yes</div>
+
+                                </div>
+                                <div class="col-xs-9 text-center mainText6">
+                                    <h1 style="font-size:6em;font-stretch:extra-expanded;">INFORMAL</h1>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="btnf btn-active btn-primary" data-key='6'>INFORMAL</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- END desktop version of LINE UP -->
+
+                    <!-- desktop version of line UP -->
+                    <div class="">
+                        <div class="row " style="margin-top:5vw;">
+                            <div class="col-xs-12 text-center">
+
+                                <h1 style="font-family: 'Macondo', cursive;font-weight:bolder" class="nightT">NIGHTS
+                                    <br>
+                                    <i class="fa fa-moon-o" style="font-size:50px;color:black;text-shadow: 2px 2px 10px grey;"></i>
+                                </h1>
+
+                            </div>
+                        </div>
+                        <div class="row hidden-xs" style="margin-top:3vh;height:100vh;">
+                            <div class="col-xs-2 text-center">
+                                <h2 style="font-weight:bold;font-size:1.9em;">Artists</h2>
+                                <ul name="map" class="text-center chng">
+                                    <li data-no="1">All</li>
+                                    <li data-no="2">Night 1</li>
+                                    <li data-no="3">Night 2</li>
+                                    <li data-no="4">Night 3</li>
+                                    <li data-no="5">Night 4</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-10 wrapper">
+                                <img data-no="2" src="{{ url_for('static', filename='images/events/img-2.gif') }}" alt="" class="img">
+                                <img data-no="3" src="{{ url_for('static', filename='images/events/img-3.png') }}" alt="" class="img">
+                                <img data-no="4" src="{{ url_for('static', filename='images/events/img-4.png') }}" alt="" class="img">
+                                <img data-no="5" src="{{ url_for('static', filename='images/events/img-1.png') }}" alt="name of artist" class="img">
+
+
+
+
+
+                                <p data-no="2" class="notShow content" style="color:pink">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae
+                                    quibusdam at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem
+                                    quos unde doloribus repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae,
+                                    velit officiis eum suscipit enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur
+                                    doloremque praesentium in nam temporibus? At repellendus quasi in consectetur id eum nesciunt
+                                    quis, praesentium mollitia voluptas blanditiis sit omnis dolorum modi quas repellat quod tempore,
+                                    saepe fugit nulla similique, aperiam earum. Dolores eos autem dicta cum sunt voluptatum, labore
+                                    magnam a, necessitatibus aperiam accusamus iure quidem.</p>
+                                <p data-no="3" class="notShow content" style="color:red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae
+                                    quibusdam at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem
+                                    quos unde doloribus repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae,
+                                    velit officiis eum suscipit enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur
+                                    doloremque praesentium in nam temporibus? At repellendus quasi in consectetur id eum nesciunt
+                                    quis, praesentium mollitia voluptas blanditiis sit omnis dolorum modi quas repellat quod tempore,
+                                    saepe fugit nulla similique, aperiam earum. Dolores eos autem dicta cum sunt voluptatum, labore
+                                    magnam a, necessitatibus aperiam accusamus iure quidem.</p>
+                                <p data-no="4" class="notShow content" style="color:blanchedalmond">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro itaque culpa nesciunt eligendi voluptas
+                                    nemo ad, incidunt deleniti soluta officia quaerat? Fuga ipsam consequuntur dicta quos? Distinctio
+                                    ipsum doloribus, excepturi quisquam consequatur adipisci temporibus nemo odit doloremque repellat
+                                    iste dolor nisi ab cumque harum voluptatum molestiae vel cupiditate necessitatibus cum atque
+                                    commodi dolorem quam quod! Omnis beatae vitae blanditiis numquam optio, sint corrupti rem perspiciatis
+                                    qui necessitatibus voluptate corporis vel. Provident dicta, deleniti aut commodi ducimus ipsam,
+                                    voluptates vero magni, odit modi rem? Est pariatur dignissimos deserunt eligendi iste accusantium
+                                    repellat similique natus consequatur! Et pariatur dignissimos officia! Cupiditate, illum!</p>
+                                <p data-no="5" class="notShow content" style="color:brown">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae
+                                    quibusdam at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem
+                                    quos unde doloribus repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae,
+                                    velit officiis eum suscipit enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur
+                                    doloremque praesentium in nam temporibus? At repellendus quasi in consectetur id eum nesciunt
+                                    quis, praesentium mollitia voluptas blanditiis sit omnis dolorum modi quas repellat quod tempore,
+                                    saepe fugit nulla similique, aperiam earum. Dolores eos autem dicta cum sunt voluptatum, labore
+                                    magnam a, necessitatibus aperiam accusamus iure quidem.</p>
+                            </div>
+                            <div class="row hidden-xs" style="margin-top:2%;cursor:pointer;">
+                                <div class="col-xs-12 text-center">
+                                    <h1>AFRO JACK</h1>
+                                </div>
+                                <div class="col-xs-12 text-center hidden-xs">
+                                    <h2>DIMITRI VEGAS & LIKE MIKE </h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- end desktop version -->
+                    <!-- mobile version of night line up -->
+                    <div class="container">
+                        <div class="row visible-xs">
+                            <div class="col-md-12 text-center">
+                                <h1>Artists</h1>
+                            </div>
+                        </div>
+                        <div class="row wrapper">
+                            <div class=" mob">
+                                <h3 class="mobTab" data-no="1">All</h3>
+                            </div>
+                            <div class=" mob">
+                                <h3 class="mobTab" data-no="2">Night 1</h3>
+                            </div>
+                            <div class=" mob">
+                                <h3 class="mobTab" data-no="3">Night 2</h3>
+                            </div>
+                            <div class=" mob">
+                                <h3 class="mobTab" data-no="4">Night 3</h3>
+                            </div>
+                            <div class=" mob">
+                                <h3 class="mobTab" data-no="5">Night 4</h3>
+                            </div>
+                            <div class=" mob">
+                                <h1 class="mobTab" style="font-size:1em" data-no="6">View All Artists</h1>
+                            </div>
+                        </div>
+                        <div class="wrapperMob visible-xs">
+                            <img data-no="2" src="images/img-2.gif" alt="" class="imgMob">
+                            <img data-no="3" src="images/img-3.png" alt="" class="imgMob">
+                            <img data-no="4" src="images/img-4.png" alt="" class="imgMob">
+                            <img data-no="5" src="images/img-1.png" alt="" class="imgMob">
+                            <p data-no="2" class="notShow content" style="color:pink">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae quibusdam
+                                at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem quos unde doloribus
+                                repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae, velit officiis eum suscipit
+                                enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur doloremque praesentium in
+                                nam temporibus? At repellendus quasi in consectetur id eum nesciunt quis, praesentium mollitia voluptas
+                                blanditiis sit omnis dolorum modi quas repellat quod tempore, saepe fugit nulla similique, aperiam
+                                earum. Dolores eos autem dicta cum sunt voluptatum, labore magnam a, necessitatibus aperiam accusamus
+                                iure quidem.</p>
+                            <p data-no="3" class="notShow content" style="color:red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae quibusdam
+                                at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem quos unde doloribus
+                                repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae, velit officiis eum suscipit
+                                enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur doloremque praesentium in
+                                nam temporibus? At repellendus quasi in consectetur id eum nesciunt quis, praesentium mollitia voluptas
+                                blanditiis sit omnis dolorum modi quas repellat quod tempore, saepe fugit nulla similique, aperiam
+                                earum. Dolores eos autem dicta cum sunt voluptatum, labore magnam a, necessitatibus aperiam accusamus
+                                iure quidem.</p>
+                            <p data-no="4" class="notShow content" style="color:blanchedalmond">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro itaque culpa nesciunt eligendi voluptas
+                                nemo ad, incidunt deleniti soluta officia quaerat? Fuga ipsam consequuntur dicta quos? Distinctio
+                                ipsum doloribus, excepturi quisquam consequatur adipisci temporibus nemo odit doloremque repellat
+                                iste dolor nisi ab cumque harum voluptatum molestiae vel cupiditate necessitatibus cum atque commodi
+                                dolorem quam quod! Omnis beatae vitae blanditiis numquam optio, sint corrupti rem perspiciatis qui
+                                necessitatibus voluptate corporis vel. Provident dicta, deleniti aut commodi ducimus ipsam, voluptates
+                                vero magni, odit modi rem? Est pariatur dignissimos deserunt eligendi iste accusantium repellat similique
+                                natus consequatur! Et pariatur dignissimos officia! Cupiditate, illum!</p>
+                            <p data-no="5" class="notShow content" style="color:brown">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae quibusdam
+                                at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem quos unde doloribus
+                                repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae, velit officiis eum suscipit
+                                enim quisquam soluta odio! Assumenda perspiciatis facilis, consectetur doloremque praesentium in
+                                nam temporibus? At repellendus quasi in consectetur id eum nesciunt quis, praesentium mollitia voluptas
+                                blanditiis sit omnis dolorum modi quas repellat quod tempore, saepe fugit nulla similique, aperiam
+                                earum. Dolores eos autem dicta cum sunt voluptatum, labore magnam a, necessitatibus aperiam accusamus
+                                iure quidem.</p>
+
+                        </div>
+                        <div class="row visible-xs" style="margin-top:2%;cursor:pointer;">
+                            <div class="col-xs-12 text-center">
+                                <h1>AFRO JACK</h1>
+                            </div>
+                            <div class="col-xs-12 text-center visible-xs">
+                                <h2>DIMITRI VEGAS & LIKE MIKE </h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- end mobile version night line up -->
+                <!-- modals.Referenced by ids -->
+                <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body&hellip;</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body&hellip;</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body&hellip;</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>One fine body&hellip;</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <div class="row" style="margin:10px;"></div>
+    <div class="row">
+        <section id="sponsors">
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2 class="section-heading">Our Past Sponsers</h2>
+                      <h3 class="section-subheading text-muted">A look at our previous year sponsers</h3>
+                  </div>
+              </div>
+              <div class="row content">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/sbi.jpg') }}" class="img-responsive img-centered" alt="">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/nbcc.jpeg') }}" class="img-responsive img-centered" alt="">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/divya_bhaskar.jpg') }}" class="img-responsive img-centered" alt="">
+                  </div>
+                   <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/aakash.jpg') }}" class="img-responsive img-centered" alt="">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+                          <img src="{{ url_for('static', filename='images/logos/aditya_birla_group.jpg') }}" class="img-responsive img-centered" alt="">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+                          <img src="{{ url_for('static', filename='images/logos/cococola.jpg') }}" class="img-responsive img-centered" alt="">
+                  </div>
+              </div>
+              <div class="row content">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/ahir.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/AtosOrigin.svg.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/radio_city.jpg') }}" class="img-responsive img-centered" alt="" style="width:200px;">
+
+                  </div>
+                   <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/aircel.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img style="margin-top:" src="{{ url_for('static', filename='images/logos/faadooengineers.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/LnT.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+              </div>
+              <div class="row content">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/rupa.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/dlf.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/ims.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                   <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/vlcc.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/vrmall.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/bigfm.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+              </div>
+              <div class="row content">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/aagam_group.gif') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/aolf.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/jalaram.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                   <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/cboi.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/essar.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/nishal.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+              </div>
+              <div class="row content">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/honda.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/nh7.png') }}" style="width:200px;" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/ongc.jpg') }}" style="width:200px;" class="img-responsive img-centered" alt="">
+
+                  </div>
+                   <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/bob.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/fast_ticket.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/cinepolis.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+              </div>
+              <div class="row content">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/kaibhco.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/pantaloons.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img style="margin-top:" src="{{ url_for('static', filename='images/logos/Vasari.png') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                   <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/airtel.jpg') }}" class="img-responsive img-centered" alt="">
+
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+
+                          <img src="{{ url_for('static', filename='images/logos/GG.png') }}" class="img-responsive img-centered" alt="">
+                  </div>
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+                          <img src="{{ url_for('static', filename='images/logos/Radiomirchi.jpg') }}" class="img-responsive img-centered" alt="">
+                  </div>
+              </div>
+            </div>
+        </section>
+    </div>
+    <div class="row">
+        <section id="team">
+            <div class="flexed">
+        		<div class="card-wrapper">
+        			<div class="card r4">
+        				<div class="photo-container">
+        				    <img class="limg" srcset="{{ url_for('static',filename = 'images/a.jpg') }}" alt=""/>
+        				    <div class="first fpos">
+        				    	<i class="fa fa-envelope mail" aria-hidden="true"></i>
+        				    </div>
+        				    <div class="second spos">
+        				    	<i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        				    </div>
+        				</div>
+        				<div class="des">
+        					Your Name Here<br>
+        					Your Post Here<br>
+        					Your Number Here<br>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="card-wrapper">
+        			<div class="card r-2">
+        				<div class="photo-container">
+        				    <img class="limg" srcset="{{ url_for('static',filename = 'images/a.jpg') }}" alt=""/>
+        				    <div class="first fpos">
+        				    	<i class="fa fa-envelope mail" aria-hidden="true"></i>
+        				    </div>
+        				    <div class="second spos">
+        				    	<i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        				    </div>
+        				</div>
+
+        				<div class="des">
+        					Your Name Here<br>
+        					Your Post Here<br>
+        					Your Number Here<br>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="flexed">
+        		<div class="card-wrapper r2">
+        			<div class="scard">
+        				<div class="sphoto-container">
+        				    <img class="simg" srcset="{{ url_for('static',filename = 'images/a.jpg') }}" alt=""/>
+        				    <div class="first fpos">
+        				    	<i class="fa fa-envelope mail" aria-hidden="true"></i>
+        				    </div>
+        				    <div class="second spos">
+        				    	<i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        				    </div>
+        				</div>
+
+        				<div class="des">
+        					Your Name Here<br>
+        					Your Post Here<br>
+        					Your Number Here<br>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="card-wrapper r-2">
+        			<div class="scard">
+        				<div class="sphoto-container">
+        				    <img class="simg" srcset="{{ url_for('static',filename = 'images/a.jpg') }}" alt=""/>
+        				    <div class="first fpos">
+        				    	<i class="fa fa-envelope mail" aria-hidden="true"></i>
+        				    </div>
+        				    <div class="second spos">
+        				    	<i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        				    </div>
+        				</div>
+
+        				<div class="des">
+        					Your Name Here<br>
+        					Your Post Here<br>
+        					Your Number Here<br>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="card-wrapper r3">
+        			<div class="scard">
+        				<div class="sphoto-container">
+        				    <img class="simg" srcset="{{ url_for('static',filename = 'images/a.jpg') }}" alt=""/>
+        				    <div class="first fpos">
+        				    	<i class="fa fa-envelope mail" aria-hidden="true"></i>
+        				    </div>
+        				    <div class="second spos">
+        				    	<i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        				    </div>
+        				</div>
+
+        				<div class="des">
+        					Your Name Here<br>
+        					Your Post Here<br>
+        					Your Number Here<br>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="card-wrapper">
+        			<div class="scard">
+        				<div class="sphoto-container">
+        				    <img class="simg" srcset="{{ url_for('static',filename = 'images/a.jpg') }}" alt=""/>
+        				    <div class="first fpos">
+        				    	<i class="fa fa-envelope mail" aria-hidden="true"></i>
+        				    </div>
+        				    <div class="second spos">
+        				    	<i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        				    </div>
+        				</div>
+
+        				<div class="des">
+        					Your Name Here<br>
+        					Your Post Here<br>
+        					Your Number Here<br>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="card-wrapper r2">
+        			<div class="scard">
+        				<div class="sphoto-container">
+        				    <img class="simg" srcset="{{ url_for('static',filename = 'images/a.jpg') }}" alt=""/>
+        				    <div class="first fpos">
+        				    	<i class="fa fa-envelope mail" aria-hidden="true"></i>
+        				    </div>
+        				    <div class="second spos">
+        				    	<i class="fa fa-twitter twitter" aria-hidden="true"></i>
+        				    </div>
+        				</div>
+
+        				<div class="des">
+        					Your Name Here<br>
+        					Your Post Here<br>
+        					Your Number Here<br>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
