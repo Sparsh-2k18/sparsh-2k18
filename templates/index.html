@@ -2,34 +2,31 @@
 <html>
 <head>
     <title>Anim</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index/style.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Baumans|Monoton" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index/main.css') }}">
-    <script src="{{ url_for('static', filename='js/index/main.js') }}"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Baumans|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo:700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Macondo|Sedgwick+Ave+Display" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/events/Quttons.css') }}" />
-    <script src="https://use.fontawesome.com/caaf946b4a.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/events/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="{{ url_for('static', filename='js/events/tabs-click.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/events/btn-click.js') }}"></script>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/caaf946b4a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/events/Quttons.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/events/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/about/style.css') }}">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script>
-        $(".mob").addClass('visible-xs');
-        $(".color .col-xs-2").addClass('space');
-    </script>
+    <script src="{{ url_for('static', filename='js/index/main.js') }}"></script>
+
 </head>
-<body>
 
+
+<body id="page-top">
 
     <?xml version="1.0" encoding="utf-8"?>
     <!-- Generator: Adobe Illustrator 16.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -43,6 +40,8 @@
     <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 
     <div class="container-fluid">
+
+        <!-- Index -->
         <div class="row">
             <div class="main-animation">
 
@@ -67,10 +66,10 @@
                                 <a class="page-scroll" href="#services">Services</a>
                             </li> -->
                             <li>
-                                <a class="page-scroll" href="{{url_for('event_page')}}">Events</a>
+                                <a class="page-scroll" href="#events">Events</a>
                             </li>
                             <li>
-                                <a class="page-scroll" href="{{ url_for('sponsor_page') }}">Sponsors</a>
+                                <a class="page-scroll" href="#sponsors">Sponsors</a>
                             </li>
                             <li>
                                 <a class="page-scroll" href="#team">Team</a>
@@ -84,7 +83,6 @@
                 </div>
                 <!-- /.container-fluid -->
             </nav>
-            <!--div style="background-image: url();background-repeat: no-repeat;background-size: cover;background-position: center center;height:100%;margin: 0px;"-->
 
             <!-- svg file | Main animation -->
             <object type="image/svg+xml" data="{{url_for('static',filename = 'images/index/main.svg')}}" class="anim">
@@ -110,9 +108,11 @@
             </div>
         </section>
     </div>
+
+    <!--Events-->
     <div class="row">
         <section id="events">
-            <div class="container-fluid" style="height:100vh;">
+            <div class >
                 <div class="container visible-xs" style="width:90%">
                     <div class="row">
                         <div class="col-xs-12 text-center">
@@ -476,10 +476,10 @@
                             </div>
                         </div>
                         <div class="wrapperMob visible-xs">
-                            <img data-no="2" src="images/img-2.gif" alt="" class="imgMob">
-                            <img data-no="3" src="images/img-3.png" alt="" class="imgMob">
-                            <img data-no="4" src="images/img-4.png" alt="" class="imgMob">
-                            <img data-no="5" src="images/img-1.png" alt="" class="imgMob">
+                            <img data-no="2" src="{{ url_for('static',filename = 'images/events/img-2.gif') }}" alt="" class="imgMob">
+                            <img data-no="3" src="{{ url_for('static',filename = 'images/events/img-3.png') }}" alt="" class="imgMob">
+                            <img data-no="4" src="{{ url_for('static',filename = 'images/events/img-4.png') }}" alt="" class="imgMob">
+                            <img data-no="5" src="{{ url_for('static',filename = 'images/events/img-1.png') }}" alt="" class="imgMob">
                             <p data-no="2" class="notShow content" style="color:pink">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis eos odio incidunt quod molestiae quibusdam
                                 at quae itaque a nulla, consectetur sed corrupti est iure enim maiores exercitationem quos unde doloribus
                                 repudiandae dolor! Ducimus aliquid ab, vel distinctio nulla quo repudiandae, velit officiis eum suscipit
@@ -607,8 +607,17 @@
                     </div>
                 </div>
         </section>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='js/events/tabs-click.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/events/btn-click.js') }}"></script>
+        <script>
+            $(".mob").addClass('visible-xs');
+            $(".color .col-xs-2").addClass('space');
+        </script>
     </div>
-    <div class="row" style="margin:10px;"></div>
+
+    <!-- Sponsors -->
     <div class="row">
         <section id="sponsors">
             <div class="container">
@@ -802,6 +811,8 @@
             </div>
         </section>
     </div>
+
+    <!-- Team -->
     <div class="row">
         <section id="team">
             <div class="flexed">
