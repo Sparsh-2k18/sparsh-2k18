@@ -22,5 +22,9 @@ def sponsor_page():
 def about_page():
     return render_template("about.html")
 
+@app.route("/contact")
+def contact_page():
+    return render_template("contact.html")
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
