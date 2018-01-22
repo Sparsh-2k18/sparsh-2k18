@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Form Style 8</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Neucha|Merriweather+Sans|Special+Elite|Merienda" rel="stylesheet">
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/contact/style.css') }}">
+<script type="text/javascript">
+//auto expand textarea
+function adjust_textarea(h) {
+    h.style.height = "45px";
+    h.style.height = (h.scrollHeight)+"px";
+}
+</script>
+</head>
+
+<body>
+<h1 class="heading">Contact Us</h1>
+<div class="box">
+  <h2>Your Precious Feedback..</h2>
+  <form>
+    <input type="text" name="field1" placeholder="Full Name" />
+    <input type="email" name="field2" placeholder="Email" />
+    <input type="text" maxlength="10" name="field3" placeholder="Mobile" />
+    <textarea placeholder="Feedback Message" onkeyup="adjust_textarea(this)"></textarea>
+    <input type="button" value="Send Message" />
+   </form>
+</div>
+
+</body>
+</html>
+	

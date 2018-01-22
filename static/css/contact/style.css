@@ -1,0 +1,86 @@
+body{
+	background: url("{{ url_for('static',filename = 'images/back.jpg') }}") no-repeat center center fixed;
+	height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover 
+}
+.box{
+	font-family: 'Open Sans Condensed', arial, sans;
+	width: 550px;
+	padding: 30px;
+	background: white;
+	margin: 120px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.box h2{
+	background: black;
+	text-transform: uppercase;
+	font-family: 'Merienda', sans-serif;
+	color: white;
+	font-size: 24px;
+	font-weight: 800;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+.box input[type="text"],
+.box input[type="date"],
+.box input[type="datetime"],
+.box input[type="email"],
+.box input[type="number"],
+.box input[type="search"],
+.box input[type="time"],
+.box input[type="url"],
+.box input[type="password"],
+.box textarea,
+.box select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 20px Arial, Helvetica, sans-serif;
+	font-family: 'Neucha', cursive;
+	height: 45px;
+}
+.box textarea{
+	resize:none;
+	overflow: hidden;
+}
+.box input[type="button"], 
+.box input[type="submit"]{
+	-moz-box-shadow: inset 0px 1px 0px 0px grey;
+	-webkit-box-shadow: inset 0px 1px 0px 0px grey;
+	box-shadow: inset 0px 1px 0px 0px grey;
+	background-color: black;
+	border: 1px solid grey;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;font-family: 'Neucha', cursive;
+	font-size: 18px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.box input[type="button"]:hover, 
+.box input[type="submit"]:hover {
+	background:linear-gradient(to bottom, grey 5%, grey 100%);
+	background-color:grey;
+}
+.heading {
+	text-align: center; 
+	margin-top: 150px; 
+	color: #ff0000; 
+	font-size: 120px;
+	font-family: 'Berkshire Swash', cursive;
+}
