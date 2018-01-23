@@ -1,0 +1,1184 @@
+/** ***************************************
+
+	TABLE OF CONTENTS
+	---------------------------
+	 1. Typography
+	 	- font-family: ;
+	 	- font-size: ;
+	 	- font-weight: ;
+	 	- letter-spacing: ;
+	 	- line-height: ;
+	 	- text-align: ;
+	 	- text-transform: ;
+	 	- text-decoration: ;
+	 2. Colors
+	 	- color: ;
+	 	- background-color: ;
+	 	- background: ;
+	 	- border: ;
+	 	- border-color: ;
+	 3. Loading
+	 4. Overlay & Background Layer
+	 5. Content
+		- Hide On Desktop
+	 	- Vertical Align
+	 	- Event Buttons
+	 	- You Tube
+	 	- Main Section
+	 		- Logo
+	 		- Slider
+	 		- Separator
+	 		- Paragraph & Social Icons
+	 	- Subscribe Section
+	 		- Counter
+	 		- Subscribe Form
+	 	- Contact Section
+	 6. Mobile Navigation
+	 7. Media Queries
+	 	- Tablets
+	 	- Mobiles
+	 		- Hide On Mobile
+	 		- Navigation
+	 		- Main
+	 		- Subscribe
+	 		- Contact
+
+ **  ***************************************/
+
+/******************************************************************
+*******************************		1. TYPOGRAPHY
+******************************************************************/
+
+	/**************************************
+		font-family: ;
+	*************************************/
+
+		body, 
+		html
+		{	
+			font-family: 'Open Sans', sans-serif;
+		}
+
+	/**************************************
+		font-size: ;
+	*************************************/
+
+		body, 
+		html, 
+		.counter-days-left,
+		.contact-details-text
+		{
+			font-size: 13px;
+		}
+
+		.subscribe-paragraphs,
+		.contact-paragraphs
+		{
+			font-size: 14px;
+		}
+		
+		.main-paragraph,
+		.social i,
+		.subscribe-form,
+		.subscribe-email-label
+		{
+			font-size: 17px;
+		}
+
+	
+
+		.contact-details-icon
+		{
+			font-size: 30px;
+		}		
+		
+		#slider h2,
+		.open-close-icon
+		{
+			font-size: 35px;
+		}
+
+		.countdown
+		{	
+			font-size: 60px;
+		}
+
+		/**************************************
+			TABLET
+		*************************************/
+
+			@media only screen and (max-width : 991px) {
+
+				#slider h2
+				{
+					font-size: 30px;
+				}
+
+				.main-paragraph
+				{
+					font-size: 14px;
+				}
+
+			}
+
+		/**************************************
+			MOBILE
+		*************************************/
+
+			@media only screen and (max-width : 767px) {
+
+				.main-paragraph
+				{
+					font-size: 10px;
+				}
+				
+				#slider h2
+				{
+					font-size: 22px;
+				}
+			}
+
+	/**************************************
+		font-weight: ;
+	*************************************/
+
+		.subscribe-email-field,
+		.subscribe-email-label,
+		.contact-details-text,
+		.submit-mobile,
+		.subscribe-response,
+		.main-paragraph,
+		#contact h1
+		{
+			font-weight: 100;
+		}
+
+	/**************************************
+		letter-spacing: ;
+	*************************************/
+
+		body, 
+		html, 
+		.subscribe-email-field 
+		{
+			letter-spacing: 1.2px;
+		}
+
+		#slider h2,
+		.submit-mobile
+		{
+			letter-spacing: 5px;
+		}
+	
+	/**************************************
+		line-height: ;
+	*************************************/
+	
+		.submit-form-icon 
+		{	
+			line-height: 45px;
+		}
+
+		body, 
+		html
+		{
+			line-height: 20px;
+		} 
+
+		#slider h2
+		{
+			line-height: 1.3;
+		}
+	
+	/**************************************
+		text-align: ;
+	*************************************/
+		
+		body, 
+		html, 
+		#loader
+		#counter,
+		.open-close-icon,
+		.bs-nav-style
+		{
+			text-align: center;
+		}
+
+		.subscribe-response,
+		.subscribe-email-label,
+		.contact-details-text
+		{
+		    text-align: left;
+		}
+	
+	/**************************************
+		text-transform: ;
+	*************************************/
+
+		#counter p,
+		#slider h2,
+		.open-icon-title,
+		.main-paragraph,
+		.submit-mobile
+		{
+			text-transform: uppercase;
+		}
+	
+	/**************************************
+		text-decoration: ;
+	*************************************/
+
+		a.contact-details-text:hover
+		{
+			text-decoration: none;
+		}
+
+/******************************************************************
+*******************************		2. COLORS
+******************************************************************/
+
+	/**************************************
+		color: ;
+	*************************************/
+
+		body,
+		html,
+		.countdown, 
+		#counter p,
+		.submit-mobile,
+		.bs-nav-style ul li a,
+		#slider,
+		a.contact-details-text
+		{	
+			color: #FFF;
+		}
+
+		.bs-nav-style ul li a:hover
+		{
+			color: #000;
+		}
+
+		.subscribe-paragraphs, 
+		.contact-paragraphs,
+		.subscribe-email-label,
+		.counter-days-left
+		{
+			color: #ffffff;
+		}
+
+		.subscribe-email-field,
+		.open-icon-title,
+		.open-close-icon,
+		.social i:hover,
+		#loader h4
+		{
+			color: #d5c08b;
+		}
+
+		.social i,
+		.submit-form-icon,
+		.contact-details-icon
+		{
+			color: #ffd391;
+		}
+
+	/**************************************
+		background-color: ;
+	*************************************/
+
+		.subscribe-email-field
+		{
+			background-color: transparent;
+		}
+
+		.subscribe-email-label::before,
+		.subscribe-email-label::after 
+		{
+			background: rgba(246, 194, 117, 0.5);
+		}
+
+		.bs-nav-style
+		{
+			background-color: rgba(54, 54, 54, 0.7);
+		}
+
+		.bs-nav-drop-bar-style, 
+		.bs-nav-style ul li:hover,
+		.bs-nav-style ul li a:hover,
+		.submit-mobile
+		{
+			background-color: rgba(131, 100, 54, 0.33);
+		}
+
+		.counter-line
+		{
+			background-color: #a24030;
+		}	
+
+		#loader-wrap
+		{
+			background-color: #1b1b1b;
+		}
+
+	/**************************************
+		background: ;
+	*************************************/
+
+		#counter,
+		.submit-form-icon,
+		.navbar-inverse .navbar-toggle:hover,
+		.navbar-inverse .navbar-toggle:focus
+		{
+			background: transparent;
+		}
+
+		#subscribe,
+		#contact
+		{
+	    	background: rgba(4, 4, 4, 0.34);
+		}
+
+		.separator-line-gradient
+		{
+			background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(246, 194, 117, 0.5), rgba(0, 0, 0, 0));
+		}
+
+		.separator-line-solid
+		{
+			background: rgba(246, 194, 117, 0.5);
+		}
+
+		.load-progress
+		{
+			background: linear-gradient(to right,#1b1b1b,gray,#1b1b1b);
+		}
+
+		.load-progress:after
+		{
+			background: linear-gradient(to right,#1b1b1b,#d5c08b,#1b1b1b);
+		}			
+
+		/**************************************
+			MOBILE
+		*************************************/
+
+			@media only screen and (max-width : 767px) {
+				#main {
+				    background: rgba(4, 4, 4, 0.34);
+				}
+			}
+
+	/**************************************
+		border: ;
+	*************************************/
+		 
+		.submit-mobile
+		{
+			border: none;
+		}
+
+	/**************************************
+		border-color: ;
+	*************************************/
+
+		#open-contact 
+		{
+		    border-color: transparent transparent rgba(4, 4, 4, 0.34) transparent;
+		}
+		
+		#close-contact
+		{
+		    border-color: rgba(4, 4, 4, 0.34) transparent transparent transparent;
+		}
+
+		#open-subscribe
+		{
+		    border-color: transparent transparent rgba(0, 0, 0, 0.34) transparent;
+		}
+		
+		#close-subscribe
+		{
+		    border-color: transparent transparent transparent rgba(4, 4, 4, 0.34);
+		}
+
+/******************************************************************
+*******************************		3. LOADING
+******************************************************************/
+
+	#loader-wrap
+	{
+		display: table;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		z-index: 4;
+		transition: 1s;
+	}
+
+	#loader img
+	{
+		position: relative;
+		width: 100px;
+		height: auto;
+	}
+
+	.load-progress
+	{
+		height: 3px;
+		width: 100px;
+		position: relative;
+		display: inline-block;
+		top: -10px;
+	}
+
+	.load-progress:after
+	{
+		width: 0%;
+		content: '';
+		position: absolute;
+		left: 0%;
+		top: 0;
+		bottom: 0;
+		animation: progress 2s 1 linear forwards;
+	}
+
+	@keyframes progress
+	{
+		0% { width: 0%; }
+		100% { width: 100%; }
+	}
+
+/******************************************************************
+*******************************		4. OVERLAY & BACKGROUND LAYER
+******************************************************************/
+
+	.overlay{
+            position: fixed;
+			width: 100%;
+			height: 100%;
+		    top: 0;
+		    left: 0;
+			opacity: 0.8;
+			background: url(../img/pattern.png);
+			z-index: -1;
+	}
+
+	#background-effect
+	{
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  z-index: -3;
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	}
+
+	canvas{
+	  display:block;
+	  vertical-align:bottom;
+	}
+
+
+	/* ---- particles.js container ---- */
+
+	#particles-js{
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
+	  z-index: 0;
+	}
+
+/******************************************************************
+*******************************		5. CONTENT
+******************************************************************/
+
+	/**************************************
+		HIDE ON DESKTOP	
+	**************************************/
+	
+		.bs-nav,
+		.submit-mobile
+		{ 
+			display: none !important;
+		}
+
+	/**************************************
+		VERTICAL ALIGN	
+	**************************************/
+
+		section
+		{
+			height: 100vh;
+		}
+
+		#main, #contact, #subscribe
+		{
+			display: table;
+			z-index: 1;
+		}
+
+		.vcenter 
+		{
+			vertical-align: middle;
+			display: table-cell;
+		}
+
+	/**************************************
+		EVENT BUTTONS	
+	**************************************/
+	
+		#open-subscribe
+		{
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 0 200px 200px 0px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transition: 0.5s;
+			z-index: 2;
+		}
+		
+		#open-contact 
+		{
+			display: block;
+			position: absolute;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 0px 0px 200px 200px;
+			right: 0px;
+			bottom: 0px;
+			transition: 0.5s;
+			z-index: 2;
+		}
+		
+		#close-subscribe
+		{
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 0px 0px 200px 200px;
+			position: absolute;
+			top: 0px;
+			right: -200px;
+			transition: 0.5s;
+		}
+		
+		#close-contact
+		{
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 200px 0px 0px 200px;
+			position: absolute;
+			top: 0;
+			left: -200px;	
+			transition: 0.5s;
+		}
+
+		.icon-container
+		{
+			width: 100px;
+			height: 100px;
+			display: table;
+			cursor: pointer;
+		}
+
+		.open-close-icon
+		{
+			-webkit-transition: 0.5s;
+					transition: 0.5s;
+		}
+
+		.icon-container-open-subscribe img,
+		.icon-container-open-contact img
+		{
+			margin: 0 auto;
+			height: 40px;
+		}
+		
+		.icon-container-close-subscribe img,
+		.icon-container-close-contact img
+		{
+			margin: 0 auto;
+			height: 25px;
+		}
+		
+		.icon-container-open-subscribe
+		{
+	        margin-top: 100px;
+		}
+
+		.open-icon-title
+		{			
+			text-align: center;
+			height: 0px;
+			opacity: 0;
+			width: 100px;
+    		-webkit-transition: 1s;
+    				transition: 1s;
+		}
+
+		.open-subscribe-title
+		{
+			position: absolute;
+			top: 140px;
+			left: 0px;
+		}
+
+		.open-contact-title
+		{
+			position: absolute;
+			top: 140px;
+			right: 0px;
+		}
+
+		.icon-container-close-subscribe
+		{
+			margin-left: -200px;
+		}
+
+		.icon-container-open-contact
+		{        
+			margin-top: 100px;
+    		margin-left: -100px;
+		}
+
+		.icon-container-close-contact
+		{        
+			margin-top: -200px;
+    		margin-left: -101px;
+		}
+
+	
+	/**************************************
+		MAIN SECTION
+	**************************************/
+
+		body, html
+		{
+			overflow: hidden;
+		}
+
+		/**	LOGO			
+		**************************************/
+
+			.logo
+			{
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			.logo img 
+			{
+				width: 220px;
+			}
+
+		/**	SLIDER			
+		**************************************/
+
+			#slider, .carousel-inner
+			{
+				height: 180px;
+				max-width: 450px;
+				margin: 0 auto;
+			}
+			
+			#slider h2
+			{
+				margin: 20px 0 0 0;
+			}
+
+		/**	SEPARATOR LINE			
+		**************************************/
+
+			.separator-line-gradient
+			{
+				width: 200px;
+				margin: 0 auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				border: 0;
+			}
+
+			.separator-line-solid
+			{
+				height: 1px;
+				width: 150px;
+				margin: 0 auto;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				border: 0;
+			}
+
+		/**	PARAGRAPH & SOCIAL ICONS			
+		**************************************/
+			
+			.separator-line-gradient
+			{
+				height: 3px;
+			}
+
+			.main-paragraph 
+			{				
+				margin: 25px 0 20px 0;
+			}
+
+			.social i 
+			{
+				padding: 3px;
+				-webkit-transition: 1s;
+						transition: 1s;				
+			}
+
+	/**************************************
+		SUBSCRIBE SECTION 
+	**************************************/
+
+		#subscribe 
+		{
+			position: relative;
+			-webkit-transform: translateX(-170%);
+			   -moz-transform: translateX(-170%);
+			    -ms-transform: translateX(-170%);
+					transform: translateX(-170%);
+		}
+			
+		/**	COUNTER			
+		**************************************/
+
+			#counter 
+			{
+				position: relative;
+				margin: 0 auto;
+				margin-bottom: 30px;
+				height: 150px;
+				width: 250px;
+				border-radius: 0px;
+			}
+
+			.countdown
+			{	
+				width: 100%;
+				margin: 0 auto;
+			}
+
+			.counter-line
+			{
+				margin: 0px auto;
+				width: 100%;
+				height: 3px;
+				position: absolute;
+				animation: tick 3s linear infinite;
+			}
+
+			.counter-days-left
+			{
+				position: relative;
+				font-weight: 100;
+				margin-top: 4px;
+			}
+
+			.counter-align
+			{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			
+			.subscribe-paragraphs
+			{
+				margin: 0;
+				padding: 0;
+			}
+
+			@keyframes tick 
+			{
+				from { width: 0px; }
+				to   { width: 80px; opacity:0; }
+			}
+
+		/** SUBSCRIBE FORM		
+		**************************************/
+
+			.subscribe-form 
+			{
+				position: relative;
+				z-index: 2;
+				display: inline-block;
+				margin: 0em;
+				max-width: 280px;
+				width: calc(100% - 2em);
+				vertical-align: top;
+				margin: 0 auto;
+				margin-top: 50px;
+				padding: 0.4em 0.25em;
+			}
+
+			.subscribe-email-field 
+			{
+				z-index: 2;
+				position: relative;
+				display: block;
+				float: right;
+				padding: 0.8em;
+				padding-left: 10px;
+				width: 100%;
+				border: none;
+				border-radius: 0;
+				-webkit-appearance: none; /* for box shadows to show on iOS */
+			}
+
+			.subscribe-email-field:focus 
+			{
+				outline: none;
+			}
+
+			.subscribe-email-field::-ms-clear
+			{
+			    display: none;
+			}
+
+			.subscribe-email-label 
+			{
+				position: absolute;
+				width: 100%;
+				display: inline-block;
+				float: right;
+				padding: 0 10px;
+				-webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+			}
+
+			.subscribe-email-label span 
+			{
+				position: relative;
+				display: block;
+				padding: 15px 0px;
+				width: 100%;
+				-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
+			}
+
+			.subscribe-email-label::before,
+			.subscribe-email-label::after 
+			{
+				content: '';
+				position: absolute;
+				left: 0;
+				z-index: -1;
+				width: 100%;
+				height: 1px;
+				-webkit-transition: -webkit-transform 0.3s;
+				transition: transform 0.3s;
+			}
+
+			.subscribe-email-label::before 
+			{
+				top: 5px;
+			}
+
+			.subscribe-email-label::after 
+			{
+				bottom: 5px;
+			}
+
+			.subscribe-email-field:focus + .subscribe-email-label span,
+			.subscribe-email-field-on-focus .subscribe-email-span 
+			{
+				-webkit-transform: translate3d(0, -90%, 0);
+				transform: translate3d(0, -90%, 0);
+			}
+
+			.subscribe-email-field:focus + .subscribe-email-label::before,
+			.input--filled .subscribe-email-label::before 
+			{
+				-webkit-transform: translate3d(0, -0.5em, 0);
+				transform: translate3d(0, -0.5em, 0);
+			}
+
+			.subscribe-email-field:focus + .subscribe-email-label::after,
+			.input--filled .subscribe-email-label::after 
+			{
+				-webkit-transform: translate3d(0, 0.5em, 0);
+				transform: translate3d(0, 0.5em, 0);
+			}
+
+			.subscribe-response 
+			{
+				position: relative;
+				height: 20px;
+			    display: block;
+			    top: 15px;
+			    left: 0px;
+			    z-index: -1;
+			}
+			
+			.submit-form-icon 
+			{
+				display: block;
+				border: none;
+				position: absolute;
+				right: 5px;
+				top: 13px;
+				cursor: pointer;
+				z-index: 2;
+			}
+
+	/**************************************
+		CONTACT SECTION 
+	**************************************/
+
+			#contact 
+			{
+				position: relative;
+				-webkit-transform: translateX(170%);
+				   -moz-transform: translateX(170%);
+				    -ms-transform: translateX(170%);
+						transform: translateX(170%);
+			}
+			
+			#contact h1
+			{
+				margin-bottom: 30px;
+			}
+			.contact-paragraphs
+			{
+				margin: 0;
+				padding: 0;
+			}
+
+			.contact-details
+			{
+				display: table;
+				padding: 3px 0px;
+				margin: 0 auto;
+				position: relative;
+				float: none;
+				width: 230px;
+			}
+
+			.contact-details-icon-container
+			{
+				width: 60px;
+				height: 40px;
+				text-align: center;
+				display: table;
+			}
+
+			.contact-details-icon
+			{
+				width: 30px;
+				margin:0 auto;
+			}
+
+			.contact-details-icon-mobile
+			{
+				width: 20px;
+			}
+
+			.contact-details-text
+			{
+				width: 300px;
+			}
+		
+/******************************************************************
+*******************************		5. MEDIA QUERIES
+******************************************************************/
+
+	/**************************************
+		TABLETS
+	*************************************/
+
+		@media only screen and (max-width : 991px) {
+
+			.logo img
+			{
+				width: 180px;
+			}
+			
+			.social i
+			{
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+
+			#subscribe 
+			{
+				position: absolute;
+				-webkit-transform: translateX(-170%);
+				   -moz-transform: translateX(-170%);
+				    -ms-transform: translateX(-170%);
+						transform: translateX(-170%);
+			}
+
+			#contact
+			{
+				position: absolute;
+				-webkit-transform: translateX(-170%);
+				   -moz-transform: translateX(-170%);
+				    -ms-transform: translateX(-170%);
+						transform: translateX(-170%);
+			}
+			
+			#close-subscribe
+			{
+				border-width: 0px 200px 200px 0px;
+				top: 0;
+				right: 0;
+				border-color: transparent rgba(4, 4, 4, 0.34) transparent transparent;
+			}
+
+			#close-contact
+			{
+				border-width: 0px 0px 200px 200px;
+				top: 0;
+				left: 0;	
+				border-color: transparent transparent transparent  rgba(4, 4, 4, 0.34);
+			}
+				
+			.icon-container-close-contact
+			{        
+				margin-top: 0px;
+				margin-left: -200px;
+			}
+
+			.icon-container-close-subscribe
+			{
+				margin-left: 75px;
+			}			
+			
+		}	
+
+
+	/**************************************
+		MOBILES
+	*************************************/
+
+		@media only screen and (max-width : 767px) {
+
+			html,
+			body
+			{
+				overflow: auto;
+			}
+
+			/**************************************
+				HIDE ON MOBYLE
+			*************************************/
+
+				#open-subscribe, 
+				#open-contact, 
+				#close-subscribe, 
+				#close-contact, 
+				.submit 
+				{
+					display: none;
+				}
+
+
+
+			/**************************************
+				NAVIGATION
+			*************************************/
+			
+				.bs-nav
+				{
+					display: inline-block !important;
+					z-index: 2;
+				}
+				.navbar-header button
+				{
+					background-color: transparent;
+					border: 0;
+				}
+
+			/**************************************
+				MAIN
+			*************************************/
+			
+				#main
+				{
+					padding-top: 70px;
+				}
+				
+				.logo img
+				{
+					width: 140px;
+				}
+				
+				#slider,
+				.carousel-inner
+				{
+					height: 130px;
+					max-width: 320px;
+				}
+				
+				.social i
+				{
+					margin-left: 5px;
+					margin-right: 5px;
+				}
+
+				.main-paragraph
+				{
+					margin-top: 15px;
+				}
+
+			/**************************************
+				SUBSCRIBE
+			*************************************/
+			
+				#subscribe 
+				{
+					position: relative;
+					padding-top: 20px;
+					-webkit-transform: translateX(0%);
+				   	   -moz-transform: translateX(0%);
+				    	-ms-transform: translateX(0%);
+							transform: translateX(0%);
+				}
+			
+			/**************************************
+				CONTACT
+			*************************************/
+			
+				#contact
+				{
+					position: relative;
+					padding-top: 20px;
+					-webkit-transform: translateX(0%);
+				   	   -moz-transform: translateX(0%);
+				    	-ms-transform: translateX(0%);
+							transform: translateX(0%);
+				}
+				
+				#counter
+				{
+					height: 130px;
+					margin-bottom: 5px;
+				}
+				
+				.submit-mobile
+				{
+					display: block !important;
+					margin: 0 auto;
+					margin-top: 45px;
+					height: 40px;
+					width: 150px;					
+				}
+	
+		}
