@@ -8,7 +8,6 @@
 }
 
 .card{
-	width: 200px;
 	text-align: center;
 	border: 5px solid white;
 	padding: 20px;
@@ -20,7 +19,6 @@
 }
 
 .scard{
-	width: 170px;
 	text-align: center;
 	border: 5px solid white;
 	padding: 20px;
@@ -212,6 +210,9 @@ i{
 
 .mail{
 	color: #ea4335;
+}
+.facebook{
+	color: #3b5998;
 }
 .twitter{
 	color: #1da1f2;
