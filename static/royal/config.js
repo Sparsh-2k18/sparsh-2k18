@@ -11,7 +11,7 @@
 
 
 
-		// LOOP SLIDES 
+		// LOOP SLIDES
 		// -----------
 		// LOOP : BOOLEAN[ true | false ]
 		loop:true,
@@ -41,7 +41,7 @@
 		// OPTIONS:
 		// fade = FADE TRANSITION
 		// fade2 = FADE 2 TRANSITION
-		
+
 		// slideLeft = SLIDE LEFT TRANSITION
 		// slideLeft2 = SLIDE LEFT 2 TRANSITION
 		// slideRight = SLIDE RIGHT TRANSITION
@@ -50,17 +50,17 @@
 		// slideUp2 = SLIDE UP 2 TRANSITION
 		// slideDown = SLIDE DOWN TRANSITION
 		// slideDown2 = SLIDE DOWN 2 TRANSITION
-		
+
 		// zoomIn = ZOOM IN TRANSITION
 		// zoomIn2 = ZOOM IN 2 TRANSITION
 		// zoomOut = ZOOM OUT TRANSITION
 		// zoomOut2 = ZOOM OUT 2 TRANSITION
-		
+
 		// swirlLeft = SWIRL LEFT TRANSITION
 		// swirlLeft2 = SWIRL LEFT 2 TRANSITION
 		// swirlRight = SWIRL RIGHT TRANSITION
 		// swirlRight2 = SWIRL RIGHT 2 TRANSITION
-		
+
 		// burn = BURN TRANSITION
 		// burn2 = BURN 2 TRANSITION
 		// blur = BLUR TRANSITION
@@ -87,7 +87,7 @@
 		// OPTIONS:
 		// fade = FADE TRANSITION
 		// fade2 = FADE 2 TRANSITION
-		
+
 		// slideLeft = SLIDE LEFT TRANSITION
 		// slideLeft2 = SLIDE LEFT 2 TRANSITION
 		// slideRight = SLIDE RIGHT TRANSITION
@@ -96,17 +96,17 @@
 		// slideUp2 = SLIDE UP 2 TRANSITION
 		// slideDown = SLIDE DOWN TRANSITION
 		// slideDown2 = SLIDE DOWN 2 TRANSITION
-		
+
 		// zoomIn = ZOOM IN TRANSITION
 		// zoomIn2 = ZOOM IN 2 TRANSITION
 		// zoomOut = ZOOM OUT TRANSITION
 		// zoomOut2 = ZOOM OUT 2 TRANSITION
-		
+
 		// swirlLeft = SWIRL LEFT TRANSITION
 		// swirlLeft2 = SWIRL LEFT 2 TRANSITION
 		// swirlRight = SWIRL RIGHT TRANSITION
 		// swirlRight2 = SWIRL RIGHT 2 TRANSITION
-		
+
 		// burn = BURN TRANSITION
 		// burn2 = BURN 2 TRANSITION
 		// blur = BLUR TRANSITION
@@ -131,9 +131,9 @@
 		// SRC : STRING
 
 		slides: [
-			{ src: 'http://www.yallowina.com/themes/images/winter/1.jpg' },
-			{ src: 'http://www.yallowina.com/themes/images/winter/2.jpg' },
-			{ src: 'http://www.yallowina.com/themes/images/winter/3.jpg' },
+			{ src: '{{ url_for('static', filename='royal/1.jpg') }}' },
+			{ src: '{{ url_for('static', filename='royal/2.jpg') }}' },
+			{ src: '{{ url_for('static', filename='royal/3.jpg') }}' },
 		],
 
 
@@ -155,7 +155,7 @@
 		// random = RANDOM KENBURNS EFFECT
 
 		animation: 'kenburns'
-		
+
 	}
 
 
@@ -257,7 +257,7 @@
 		// WRAP : BOOLEAN [ true | false ]
 
 		wrap: true
-		
+
 	}
 
 
@@ -291,7 +291,7 @@
 
 
 
-		// RESPONSE MESSAGE IF EMAIL IS NOT VALID 
+		// RESPONSE MESSAGE IF EMAIL IS NOT VALID
 		// --------------------------------------
 		// MESSAGE : STRING
 
