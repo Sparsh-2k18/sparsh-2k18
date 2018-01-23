@@ -8,7 +8,7 @@ def index():
 
 @app.route("/index")
 def single_page():
-    return render_template("new_index.html")
+    return render_template("index.html")
 
 @app.route("/events")
 def event_page():
