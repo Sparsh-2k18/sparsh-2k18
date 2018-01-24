@@ -53,9 +53,9 @@
 		font-family: ;
 	*************************************/
 
-		body, 
+		body,
 		html
-		{	
+		{
 			font-family: 'Open Sans', sans-serif;
 			overflow-x: hidden;
 		}
@@ -64,8 +64,8 @@
 		font-size: ;
 	*************************************/
 
-		body, 
-		html, 
+		body,
+		html,
 		.counter-days-left,
 		.contact-details-text
 		{
@@ -77,7 +77,7 @@
 		{
 			font-size: 14px;
 		}
-		
+
 		.main-paragraph,
 		.social i,
 		.subscribe-form,
@@ -86,13 +86,13 @@
 			font-size: 17px;
 		}
 
-	
+
 
 		.contact-details-icon
 		{
 			font-size: 30px;
-		}		
-		
+		}
+
 		#slider h2,
 		.open-close-icon
 		{
@@ -100,7 +100,7 @@
 		}
 
 		.countdown
-		{	
+		{
 			font-size: 60px;
 		}
 
@@ -132,7 +132,7 @@
 				{
 					font-size: 10px;
 				}
-				
+
 				#slider h2
 				{
 					font-size: 22px;
@@ -158,9 +158,9 @@
 		letter-spacing: ;
 	*************************************/
 
-		body, 
-		html, 
-		.subscribe-email-field 
+		body,
+		html,
+		.subscribe-email-field
 		{
 			letter-spacing: 1.2px;
 		}
@@ -170,33 +170,33 @@
 		{
 			letter-spacing: 5px;
 		}
-	
+
 	/**************************************
 		line-height: ;
 	*************************************/
-	
-		.submit-form-icon 
-		{	
+
+		.submit-form-icon
+		{
 			line-height: 45px;
 		}
 
-		body, 
+		body,
 		html
 		{
 			line-height: 20px;
-		} 
+		}
 
 		#slider h2
 		{
 			line-height: 1.3;
 		}
-	
+
 	/**************************************
 		text-align: ;
 	*************************************/
-		
-		body, 
-		html, 
+
+		body,
+		html,
 		#loader
 		#counter,
 		.open-close-icon,
@@ -211,7 +211,7 @@
 		{
 		    text-align: left;
 		}
-	
+
 	/**************************************
 		text-transform: ;
 	*************************************/
@@ -224,7 +224,7 @@
 		{
 			text-transform: uppercase;
 		}
-	
+
 	/**************************************
 		text-decoration: ;
 	*************************************/
@@ -244,13 +244,13 @@
 
 		body,
 		html,
-		.countdown, 
+		.countdown,
 		#counter p,
 		.submit-mobile,
 		.bs-nav-style ul li a,
 		#slider,
 		a.contact-details-text
-		{	
+		{
 			color: #FFF;
 		}
 
@@ -259,7 +259,7 @@
 			color: #000;
 		}
 
-		.subscribe-paragraphs, 
+		.subscribe-paragraphs,
 		.contact-paragraphs,
 		.subscribe-email-label,
 		.counter-days-left
@@ -274,6 +274,12 @@
 		#loader h4
 		{
 			color: #d5c08b;
+		}
+
+		.close-subscribe-icon {
+			width: 25px;
+			height: 25px;
+			margin: 50px 0 0 50px;
 		}
 
 		.social i,
@@ -293,7 +299,7 @@
 		}
 
 		.subscribe-email-label::before,
-		.subscribe-email-label::after 
+		.subscribe-email-label::after
 		{
 			background: rgba(246, 194, 117, 0.5);
 		}
@@ -303,7 +309,7 @@
 			background-color: rgba(54, 54, 54, 0.7);
 		}
 
-		.bs-nav-drop-bar-style, 
+		.bs-nav-drop-bar-style,
 		.bs-nav-style ul li:hover,
 		.bs-nav-style ul li a:hover,
 		.submit-mobile
@@ -314,7 +320,7 @@
 		.counter-line
 		{
 			background-color: #a24030;
-		}	
+		}
 
 		#loader-wrap
 		{
@@ -357,7 +363,7 @@
 		.load-progress:after
 		{
 			background: linear-gradient(to right,#1b1b1b,#d5c08b,#1b1b1b);
-		}			
+		}
 
 		/**************************************
 			MOBILE
@@ -372,7 +378,7 @@
 	/**************************************
 		border: ;
 	*************************************/
-		 
+
 		.submit-mobile
 		{
 			border: none;
@@ -382,11 +388,11 @@
 		border-color: ;
 	*************************************/
 
-		#open-contact 
+		#open-contact
 		{
 		    border-color: transparent transparent rgba(4, 4, 4, 0.34) transparent;
 		}
-		
+
 		#close-contact
 		{
 		    border-color: rgba(4, 4, 4, 0.34) transparent transparent transparent;
@@ -396,7 +402,7 @@
 		{
 		    border-color: transparent transparent rgba(0, 0, 0, 0.34) transparent;
 		}
-		
+
 		#close-subscribe
 		{
 		    border-color: transparent transparent transparent rgba(4, 4, 4, 0.34);
@@ -497,17 +503,17 @@
 ******************************************************************/
 
 	/**************************************
-		HIDE ON DESKTOP	
+		HIDE ON DESKTOP
 	**************************************/
-	
+
 		.bs-nav,
 		.submit-mobile
-		{ 
+		{
 			display: none !important;
 		}
 
 	/**************************************
-		VERTICAL ALIGN	
+		VERTICAL ALIGN
 	**************************************/
 
 		section
@@ -521,7 +527,7 @@
 			z-index: 1;
 		}
 
-		.vcenter 
+		.vcenter
 		{
 			margin-top: 100px;
 		}
@@ -529,31 +535,32 @@
 		{
 			margin-top: 20px;
 		}
-		.vcenter-subscribe 
+		.vcenter-subscribe
 		{
 			margin-top: -300px;
+			margin:
 		}
 
 
 	/**************************************
-		EVENT BUTTONS	
+		EVENT BUTTONS
 	**************************************/
-	
+
 		#open-subscribe
 		{
 			display: block;
 			width: 0px;
 			height: 0px;
 			border-style: solid;
-			border-width: 0 80px 80px 0px;
+			border-width: 0 150px 150px 0px;
 			position: fixed;
 			bottom: 0;
 			left: 0;
 			transition: 0.5s;
 			z-index: 2;
 		}
-		
-		#open-contact 
+
+		#open-contact
 		{
 			display: block;
 			position: absolute;
@@ -566,20 +573,20 @@
 			transition: 0.5s;
 			z-index: 2;
 		}
-		
+
 		#close-subscribe
 		{
 			display: block;
 			width: 0px;
 			height: 0px;
 			border-style: solid;
-			border-width: 0px 0px 80px 80px;
+			border-width: 0px 0px 150px 150px;
 			position: fixed;
 			top: 0px;
-			right: -80px;
+			right: -150px;
 			transition: 0.5s;
 		}
-		
+
 		#close-contact
 		{
 			display: block;
@@ -589,7 +596,7 @@
 			border-width: 200px 0px 0px 200px;
 			position: absolute;
 			top: 0;
-			left: -200px;	
+			left: -200px;
 			transition: 0.5s;
 		}
 
@@ -603,6 +610,9 @@
 
 		.open-close-icon
 		{
+			width: 25px;
+			height: 25px;
+			margin: 90px 0 0 30px;
 			-webkit-transition: 0.5s;
 					transition: 0.5s;
 		}
@@ -610,17 +620,17 @@
 		.icon-container-open-subscribe img,
 		.icon-container-open-contact img
 		{
-			margin: 0 auto;
-			height: 20px;
+			margin: 80px 0 0 40px;
+			height: 30px;
 		}
-		
+
 		.icon-container-close-subscribe img,
 		.icon-container-close-contact img
 		{
 			margin: 0 auto;
 			height: 16px;
 		}
-		
+
 		.icon-container-open-subscribe
 		{
 			margin-left: -30px;
@@ -628,7 +638,7 @@
 		}
 
 		.open-icon-title
-		{			
+		{
 			text-align: center;
 			height: 0px;
 			opacity: 0;
@@ -640,8 +650,9 @@
 		.open-subscribe-title
 		{
 			position: absolute;
-			top: 54px;
-			left: -20px;
+			top: 94px;
+			left: -10px;
+			font-size: 1.5em;
 		}
 
 		.open-contact-title
@@ -658,18 +669,18 @@
 		}
 
 		.icon-container-open-contact
-		{        
+		{
 			margin-top: 100px;
     		margin-left: -100px;
 		}
 
 		.icon-container-close-contact
-		{        
+		{
 			margin-top: -200px;
     		margin-left: -101px;
 		}
 
-	
+
 	/**************************************
 		MAIN SECTION
 	**************************************/
@@ -678,9 +689,9 @@
 		{
 			overflow: visible;
 		}
-	
 
-		/**	LOGO			
+
+		/**	LOGO
 		**************************************/
 
 			.logo
@@ -688,12 +699,12 @@
 				margin: 0 auto;
 				margin-bottom: 20px;
 			}
-			.logo img 
+			.logo img
 			{
 				width: 220px;
 			}
 
-		/**	SLIDER			
+		/**	SLIDER
 		**************************************/
 
 			#slider, .carousel-inner
@@ -702,13 +713,13 @@
 				max-width: 450px;
 				margin: 0 auto;
 			}
-			
+
 			#slider h2
 			{
 				margin: 20px 0 0 0;
 			}
 
-		/**	SEPARATOR LINE			
+		/**	SEPARATOR LINE
 		**************************************/
 
 			.separator-line-gradient
@@ -730,43 +741,45 @@
 				border: 0;
 			}
 
-		/**	PARAGRAPH & SOCIAL ICONS			
+		/**	PARAGRAPH & SOCIAL ICONS
 		**************************************/
-			
+
 			.separator-line-gradient
 			{
 				height: 3px;
 			}
 
-			.main-paragraph 
-			{				
+			.main-paragraph
+			{
 				margin: 25px 0 20px 0;
 			}
 
-			.social i 
+			.social i
 			{
 				padding: 3px;
 				-webkit-transition: 1s;
-						transition: 1s;				
+						transition: 1s;
 			}
 
 	/**************************************
-		SUBSCRIBE SECTION 
+		SUBSCRIBE SECTION
 	**************************************/
 
-		#subscribe 
+		#subscribe
 		{
-			position: relative;
+			position: fixed;
+			bottom: 0;
+			left: 0;
 			-webkit-transform: translateX(-170%);
 			   -moz-transform: translateX(-170%);
 			    -ms-transform: translateX(-170%);
 					transform: translateX(-170%);
 		}
-			
-		/**	COUNTER			
+
+		/**	COUNTER
 		**************************************/
 
-			#counter 
+			#counter
 			{
 				position: relative;
 				margin: 0 auto;
@@ -777,7 +790,7 @@
 			}
 
 			.countdown
-			{	
+			{
 				width: 100%;
 				margin: 0 auto;
 			}
@@ -805,23 +818,23 @@
 				left: 50%;
 				transform: translate(-50%, -50%);
 			}
-			
+
 			.subscribe-paragraphs
 			{
 				margin: 0;
 				padding: 0;
 			}
 
-			@keyframes tick 
+			@keyframes tick
 			{
 				from { width: 0px; }
 				to   { width: 80px; opacity:0; }
 			}
 
-		/** SUBSCRIBE FORM		
+		/** SUBSCRIBE FORM
 		**************************************/
 
-			.subscribe-form 
+			.subscribe-form
 			{
 				position: relative;
 				z-index: 2;
@@ -835,7 +848,7 @@
 				padding: 0.4em 0.25em;
 			}
 
-			.subscribe-email-field 
+			.subscribe-email-field
 			{
 				z-index: 2;
 				position: relative;
@@ -849,7 +862,7 @@
 				-webkit-appearance: none; /* for box shadows to show on iOS */
 			}
 
-			.subscribe-email-field:focus 
+			.subscribe-email-field:focus
 			{
 				outline: none;
 			}
@@ -859,7 +872,7 @@
 			    display: none;
 			}
 
-			.subscribe-email-label 
+			.subscribe-email-label
 			{
 				position: absolute;
 				width: 100%;
@@ -875,7 +888,7 @@
 				-ms-user-select: none;
 			}
 
-			.subscribe-email-label span 
+			.subscribe-email-label span
 			{
 				position: relative;
 				display: block;
@@ -886,7 +899,7 @@
 			}
 
 			.subscribe-email-label::before,
-			.subscribe-email-label::after 
+			.subscribe-email-label::after
 			{
 				content: '';
 				position: absolute;
@@ -898,38 +911,38 @@
 				transition: transform 0.3s;
 			}
 
-			.subscribe-email-label::before 
+			.subscribe-email-label::before
 			{
 				top: 5px;
 			}
 
-			.subscribe-email-label::after 
+			.subscribe-email-label::after
 			{
 				bottom: 5px;
 			}
 
 			.subscribe-email-field:focus + .subscribe-email-label span,
-			.subscribe-email-field-on-focus .subscribe-email-span 
+			.subscribe-email-field-on-focus .subscribe-email-span
 			{
 				-webkit-transform: translate3d(0, -90%, 0);
 				transform: translate3d(0, -90%, 0);
 			}
 
 			.subscribe-email-field:focus + .subscribe-email-label::before,
-			.input--filled .subscribe-email-label::before 
+			.input--filled .subscribe-email-label::before
 			{
 				-webkit-transform: translate3d(0, -0.5em, 0);
 				transform: translate3d(0, -0.5em, 0);
 			}
 
 			.subscribe-email-field:focus + .subscribe-email-label::after,
-			.input--filled .subscribe-email-label::after 
+			.input--filled .subscribe-email-label::after
 			{
 				-webkit-transform: translate3d(0, 0.5em, 0);
 				transform: translate3d(0, 0.5em, 0);
 			}
 
-			.subscribe-response 
+			.subscribe-response
 			{
 				position: relative;
 				height: 20px;
@@ -938,8 +951,8 @@
 			    left: 0px;
 			    z-index: -1;
 			}
-			
-			.submit-form-icon 
+
+			.submit-form-icon
 			{
 				display: block;
 				border: none;
@@ -951,10 +964,10 @@
 			}
 
 	/**************************************
-		CONTACT SECTION 
+		CONTACT SECTION
 	**************************************/
 
-			#contact 
+			#contact
 			{
 				position: relative;
 				-webkit-transform: translateX(170%);
@@ -962,7 +975,7 @@
 				    -ms-transform: translateX(170%);
 						transform: translateX(170%);
 			}
-			
+
 			#contact h1
 			{
 				margin-bottom: 30px;
@@ -1006,7 +1019,7 @@
 			{
 				width: 300px;
 			}
-		
+
 /******************************************************************
 *******************************		5. MEDIA QUERIES
 ******************************************************************/
@@ -1021,14 +1034,14 @@
 			{
 				width: 180px;
 			}
-			
+
 			.social i
 			{
 				margin-left: 5px;
 				margin-right: 5px;
 			}
 
-			#subscribe 
+			#subscribe
 			{
 				position: fixed;
 				-webkit-transform: translateX(-170%);
@@ -1045,7 +1058,7 @@
 				    -ms-transform: translateX(-170%);
 						transform: translateX(-170%);
 			}
-			
+
 			#close-subscribe
 			{
 				border-width: 0px 200px 200px 0px;
@@ -1058,12 +1071,12 @@
 			{
 				border-width: 0px 0px 200px 200px;
 				top: 0;
-				left: 0;	
+				left: 0;
 				border-color: transparent transparent transparent  rgba(4, 4, 4, 0.34);
 			}
-				
+
 			.icon-container-close-contact
-			{        
+			{
 				margin-top: 0px;
 				margin-left: -200px;
 			}
@@ -1071,9 +1084,9 @@
 			.icon-container-close-subscribe
 			{
 				margin-left: 75px;
-			}			
-			
-		}	
+			}
+
+		}
 
 
 	/**************************************
@@ -1092,11 +1105,11 @@
 				HIDE ON MOBYLE
 			*************************************/
 
-				#open-subscribe, 
-				#open-contact, 
-				#close-subscribe, 
-				#close-contact, 
-				.submit 
+				#open-subscribe,
+				#open-contact,
+				#close-subscribe,
+				#close-contact,
+				.submit
 				{
 					display: none;
 				}
@@ -1106,7 +1119,7 @@
 			/**************************************
 				NAVIGATION
 			*************************************/
-			
+
 				.bs-nav
 				{
 					display: inline-block !important;
@@ -1121,24 +1134,24 @@
 			/**************************************
 				MAIN
 			*************************************/
-			
+
 				#main
 				{
 					padding-top: 70px;
 				}
-				
+
 				.logo img
 				{
 					width: 140px;
 				}
-				
+
 				#slider,
 				.carousel-inner
 				{
 					height: 130px;
 					max-width: 320px;
 				}
-				
+
 				.social i
 				{
 					margin-left: 5px;
@@ -1153,8 +1166,8 @@
 			/**************************************
 				SUBSCRIBE
 			*************************************/
-			
-				#subscribe 
+
+				#subscribe
 				{
 					position: relative;
 					padding-top: 20px;
@@ -1163,11 +1176,11 @@
 				    	-ms-transform: translateX(0%);
 							transform: translateX(0%);
 				}
-			
+
 			/**************************************
 				CONTACT
 			*************************************/
-			
+
 				#contact
 				{
 					position: relative;
@@ -1177,20 +1190,20 @@
 				    	-ms-transform: translateX(0%);
 							transform: translateX(0%);
 				}
-				
+
 				#counter
 				{
 					height: 130px;
 					margin-bottom: 5px;
 				}
-				
+
 				.submit-mobile
 				{
 					display: block !important;
 					margin: 0 auto;
 					margin-top: 45px;
 					height: 40px;
-					width: 150px;					
+					width: 150px;
 				}
-	
+
 		}
