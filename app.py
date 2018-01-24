@@ -14,6 +14,10 @@ def single_page():
 def event_page():
     return render_template("events.html")
 
+@app.route("/detail")
+def detail_page():
+    return render_template("detail.html")
+
 @app.route("/sponsor")
 def sponsor_page():
     return render_template("sponsor.html")
