@@ -457,9 +457,9 @@
 					</section>
 					<!-- /MAIN SECTION -->
 
-					<!-- SUBSCRIBE SECTION -->
-					<section class="col-xs-12 col-md-4 col-md-pull-4 animation-close-subscribe-lg animation-mode" id="subscribe">
-						<div class="vcenter" style="overflow:hidden;">
+				<!-- SUBSCRIBE SECTION -->
+				<section class="col-xs-12 col-md-4 col-md-pull-4 animation-close-subscribe-lg animation-mode" id="subscribe">
+					<div class="vcenter">
 
 							<!-- COUNTER -->
 							<div id="counter">
@@ -478,25 +478,63 @@
 
 							<div class="clearfix"></div>
 
-							<!-- FORM -->
-							<span class="subscribe-form">
+						<!-- FORM -->
+						<form>
+						<span class="subscribe-form">
 
-								<input class="subscribe-email-field" type="text">
+							<input class="subscribe-email-field" name="email" style="padding: 0px" type="text">
+
+
 
 								<label class="subscribe-email-label">
 									<span class="subscribe-email-span">Email:</span>
 								</label>
 
-								<span class="submit-form-icon hidden-xs">
-									<i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
-								</span>
+							<span class="subscribe-response"></span>
+
+						</span>
+						<br>
+						<span class="subscribe-form">
+
+							<input class="subscribe-email-field" name="name" style="padding: 0px" type="text">
+
+							<label class="subscribe-email-label">
+								<span class="subscribe-email-span">Name:</span>
+							</label>
 
 								<span class="subscribe-response"></span>
 
-							</span>
+						</span>
+						<br>
+						<span class="subscribe-form">
 
-							<input type="submit" value="Submit" name="submit" class="submit-mobile">
-							<!-- /FORM -->
+							<input class="subscribe-email-field" name="mobile" maxlength="10" style="padding: 0px" type="text">
+
+							<label class="subscribe-email-label">
+								<span class="subscribe-email-span">Mobile:</span>
+							</label>
+
+							<span class="subscribe-response"></span>
+
+						</span>
+						<br>
+						<span class="subscribe-form">
+
+							<textarea class="subscribe-email-field" name="query" style="padding: 0px" type="text"></textarea>
+
+							<label class="subscribe-email-label">
+								<span class="subscribe-email-span">Query:</span>
+							</label>
+
+							<span class="subscribe-response"></span>
+
+						</span>
+						<br>
+
+						 <button type="button" class="btn-primary btn" style="background: rgb(212,175,55)">Submit!</button>
+						</form>
+
+	
 
 						</div>
 

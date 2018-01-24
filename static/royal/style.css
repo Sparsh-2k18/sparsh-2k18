@@ -279,7 +279,7 @@
 		.close-subscribe-icon {
 			width: 25px;
 			height: 25px;
-			margin: 50px 0 0 50px;
+			margin: 0px 0 0 0px;
 		}
 
 		.social i,
@@ -535,11 +535,6 @@
 		{
 			margin-top: 20px;
 		}
-		.vcenter-subscribe
-		{
-			margin-top: -300px;
-			margin:
-		}
 
 
 	/**************************************
@@ -620,14 +615,14 @@
 		.icon-container-open-subscribe img,
 		.icon-container-open-contact img
 		{
-			margin: 80px 0 0 40px;
+			margin: 35px 0 0 60px;
 			height: 30px;
 		}
 
 		.icon-container-close-subscribe img,
 		.icon-container-close-contact img
 		{
-			margin: 0 auto;
+			margin: 10px 99px -19px -13px;
 			height: 16px;
 		}
 
@@ -854,7 +849,6 @@
 				position: relative;
 				display: block;
 				float: right;
-				padding: 0.8em;
 				padding-left: 10px;
 				width: 100%;
 				border: none;
