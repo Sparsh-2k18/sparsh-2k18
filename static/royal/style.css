@@ -57,6 +57,7 @@
 		html
 		{	
 			font-family: 'Open Sans', sans-serif;
+			overflow-x: hidden;
 		}
 
 	/**************************************
@@ -522,9 +523,17 @@
 
 		.vcenter 
 		{
-			vertical-align: middle;
-			display: table-cell;
+			margin-top: 100px;
 		}
+		.vcenter-main
+		{
+			margin-top: 20px;
+		}
+		.vcenter-subscribe 
+		{
+			margin-top: -300px;
+		}
+
 
 	/**************************************
 		EVENT BUTTONS	
@@ -536,8 +545,8 @@
 			width: 0px;
 			height: 0px;
 			border-style: solid;
-			border-width: 0 200px 200px 0px;
-			position: absolute;
+			border-width: 0 80px 80px 0px;
+			position: fixed;
 			bottom: 0;
 			left: 0;
 			transition: 0.5s;
@@ -564,10 +573,10 @@
 			width: 0px;
 			height: 0px;
 			border-style: solid;
-			border-width: 0px 0px 200px 200px;
-			position: absolute;
+			border-width: 0px 0px 80px 80px;
+			position: fixed;
 			top: 0px;
-			right: -200px;
+			right: -80px;
 			transition: 0.5s;
 		}
 		
@@ -602,19 +611,20 @@
 		.icon-container-open-contact img
 		{
 			margin: 0 auto;
-			height: 40px;
+			height: 20px;
 		}
 		
 		.icon-container-close-subscribe img,
 		.icon-container-close-contact img
 		{
 			margin: 0 auto;
-			height: 25px;
+			height: 16px;
 		}
 		
 		.icon-container-open-subscribe
 		{
-	        margin-top: 100px;
+			margin-left: -30px;
+	        margin-top: 60px;
 		}
 
 		.open-icon-title
@@ -630,8 +640,8 @@
 		.open-subscribe-title
 		{
 			position: absolute;
-			top: 140px;
-			left: 0px;
+			top: 54px;
+			left: -20px;
 		}
 
 		.open-contact-title
@@ -643,7 +653,8 @@
 
 		.icon-container-close-subscribe
 		{
-			margin-left: -200px;
+			margin-left: -100px;
+			margin-top: 20px;
 		}
 
 		.icon-container-open-contact
@@ -663,10 +674,11 @@
 		MAIN SECTION
 	**************************************/
 
-		body, html
+		html
 		{
-			overflow: hidden;
+			overflow: visible;
 		}
+	
 
 		/**	LOGO			
 		**************************************/
@@ -1018,7 +1030,7 @@
 
 			#subscribe 
 			{
-				position: absolute;
+				position: fixed;
 				-webkit-transform: translateX(-170%);
 				   -moz-transform: translateX(-170%);
 				    -ms-transform: translateX(-170%);

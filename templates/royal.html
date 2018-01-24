@@ -25,7 +25,7 @@
 
 	</head>
 
-	<body style="overflow: visible;">
+	<body>
 
 		<!-- LOADING -->
 		<div class="container-fluid">
@@ -46,22 +46,24 @@
 		<!-- BACKGROUND PLUGIN -->
 		<div id="background-effect" style="height: 100vh;" class="vegas-container">
 			<div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 2000ms;">
-				<div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;http://www.yallowina.com/themes/images/winter/2.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;"></div>
+				<div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;{{ url_for('static', filename='royal/15.jpg') }}&quot;); opacity:0.5; background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;"></div>
 			</div>
 			<div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: all 2000ms;">
-				<div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;http://www.yallowina.com/themes/images/winter/3.jpg&quot;); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;"></div>
+				<div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;{{ url_for('static', filename='royal/15.jpg') }}&quot;); opacity:0.5; background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;"></div>
 			</div>
 			<div class="vegas-wrapper" style="overflow: visible; padding: 0px;"></div>
 		</div>
 		<!-- PARTICLES -->
-		<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1440" height="759"></canvas></div>
+		<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="100%" height="100%"></canvas></div>
 
 
 		<!-- BOOTSTRAP MOBILE NAVIGATION -->
 		<nav class="navbar navbar-inverse navbar-fixed-top bs-nav">
 
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle bs-nav-drop-style collapsed" data-toggle="collapse" data-target="#myNavbar">
+				<img src="{{ url_for('static', filename='royal/sparsh.png') }}" style="position:fixed; margin-left:-37%; margin-top:1%" height="8%" width="10%" /> <p style="position:fixed; margin-left:25%; margin-top:4%;">SPARSH 2K18</P>
+ 
+				<button type="button"  class="navbar-toggle bs-nav-drop-style collapsed" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar nav-drop-bar-style"></span>
 					<span class="icon-bar nav-drop-bar-style"></span>
 					<span class="icon-bar nav-drop-bar-style"></span>
@@ -70,9 +72,9 @@
 
 			<div class="navbar-collapse bs-nav-style collapse" id="myNavbar" style="height: 1px;">
 				<ul class="nav navbar-nav">
-					<li><a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#main" class="smoothScroll">Home</a></li>
-					<li><a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#subscribe" class="smoothScroll">Subscribe</a></li>
-					<li><a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#contact" class="smoothScroll">Contact</a></li>
+					<li><a href="#" class="smoothScroll">Home</a></li>
+					<li><a href="#" class="smoothScroll">Subscribe</a></li>
+					<li><a href="#" class="smoothScroll">Contact</a></li>
 				</ul>
 			</div>
 
@@ -87,25 +89,18 @@
 
 				<!-- MAIN SECTION -->
 				<section class="col-xs-12 col-md-4 col-md-push-4 main animation-main-left-center-lg animation-mode" id="main">
-					<div class="vcenter">
+					<div class="vcenter-main"  style="overflow-x:hidden">
 
 						<!-- LOGO AREA -->
-						<div class="logo">
-							<img src="{{ url_for('static', filename='royal/logo.png') }}" class="" alt="Logo">
-						</div>
-						<!-- /LOGO AREA -->
+						 <div class="row">
 
-						<!-- SLIDER AREA -->
-						<div id="slider" class="carousel slide" data-ride="">
-							<div class="carousel-inner" role="listbox">
-								<!-- SLIDE 1 -->
-								<div class="item active"> <h2>Clean &amp; <br>Responsive<br>Design</h2> </div>
-								<!-- SLIDE 2 -->
-								<div class="item"> <h2> Style &amp; <br>Good Coding<br>Guarantee</h2> </div>
-								<!-- SLIDE 3 -->
-								<div class="item"> <h2>New &amp; <br>Experimental<br>Look</h2> </div>
-							</div>
-						</div>
+            <div class="main-animation">
+            <!-- svg file | Main animation -->
+            <object type="image/svg+xml" data="{{url_for('static',filename = 'images/index/main.svg')}}" class="anim">
+
+            </object>
+
+        </div>
 						<!-- /SLIDER-->
 
 						<hr class="separator-line separator-line-gradient">
@@ -113,13 +108,7 @@
 						<p class="main-paragraph">Brand new website will be here soon!</p>
 
 						<!-- SOCIAL LINKS -->
-						<div class="col-sm-12 social">
-							<a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#"><i class="fa fa-facebook"></i></a>
-							<a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#"><i class="fa fa-twitter"></i></a>
-							<a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#"><i class="fa fa-pinterest"></i></a>
-							<a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#"><i class="fa fa-linkedin"></i></a>
-							<a href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/index.html#"><i class="fa fa-instagram"></i></a>
-						</div>
+							
 						<!-- /SOCIAL LINKS -->
 						<div class="row">
 							<li>kldjfasljdlkjklfj</li>
@@ -178,18 +167,49 @@
 						<div class="row">
 							<li>kldjfasljdlkjklfj</li>
 						</div>
+									<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
+						<div class="row">
+							<li>kldjfasljdlkjklfj</li>
+						</div>
 
 
 
 
 					</div>
 
+
 				</section>
 				<!-- /MAIN SECTION -->
 
 				<!-- SUBSCRIBE SECTION -->
 				<section class="col-xs-12 col-md-4 col-md-pull-4 animation-close-subscribe-lg animation-mode" id="subscribe">
-					<div class="vcenter">
+					<div class="vcenter" style="overflow:hidden;">
 
 						<!-- COUNTER -->
 						<div id="counter">
@@ -233,7 +253,7 @@
 					<!-- CLOSE SUBSCRIBE -->
 					<div id="close-subscribe">
 						<div class="icon-container icon-container-close-subscribe">
-							<div class="vcenter">
+							<div class="vcenter-subscribe">
 								<img src="{{ url_for('static', filename='royal/x.png') }}" alt="Royal Subscribe Icon" class="open-close-icon close-subscribe-icon">
 								<!-- <i class="fa fa-close open-close-icon"></i> -->
 							</div>
@@ -245,113 +265,24 @@
 				<!-- /SUBSCRIBE SECTION -->
 
 				<!-- CONTACT SECTION -->
-				<section class="col-xs-12 col-md-4 animation-close-contact-lg animation-mode" id="contact">
-
-					<div class="vcenter">
-						<div>
-						<h1>Stay in touch</h1>
-						<p class="contact-paragraphs">We are always open for communication.</p>
-						<p class="contact-paragraphs">Call us, write a message or visit our office.</p>
-
-						<hr class="separator-line separator-line-solid">
-
-						<!-- FORM -->
-						<span class="subscribe-form">
-
-							<input class="subscribe-email-field" type="text">
-
-							<label class="subscribe-email-label">
-								<span class="subscribe-email-span">Email:</span>
-							</label>
-
-							<span class="submit-form-icon hidden-xs">
-								<i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i>
-							</span>
-
-							<span class="subscribe-response"></span>
-
-						</span>
-
-						<input type="submit" value="Submit" name="submit" class="submit-mobile">
-						<!-- /FORM -->
-
-						<!-- CONTACT DETAILS -->
-						<div class="contact-details-wrap">
-
-							<div class="contact-details">
-								<div class="contact-details-icon-container">
-									<div class="vcenter">
-										<img src="{{ url_for('static', filename='royal/mob_light.png') }}" class="contact-details-icon contact-details-icon-mobile vcenter" alt="Royal Phone Icon">
-										<!-- <i class="fa fa-phone-square fa-fw contact-details-icon"></i> -->
-									</div>
-								</div>
-								<span class="contact-details-text vcenter">+1 (866) 496-3250<br>+1 (866) 496-3250</span>
-							</div>
-
-							<div class="contact-details">
-								<div class="contact-details-icon-container">
-									<div class="vcenter">
-										<img src="{{ url_for('static', filename='royal/contact_light.png') }}" class="contact-details-icon vcenter" alt="Royal Mail Icon">
-										<!-- <i class="fa fa-envelope-o fa-fw contact-details-icon"></i> -->
-									</div>
-								</div>
-								<a class="contact-details-text vcenter" href="mailto:email@sitename.com">email@sitename.com</a>
-							</div>
-
-							<div class="contact-details">
-								<div class="contact-details-icon-container">
-									<div class="vcenter">
-										<img src="{{ url_for('static', filename='royal/compass_light.png') }}" class="contact-details-icon vcenter" alt="Royal Compass Icon">
-										<!-- <i class="fa fa-map-marker fa-fw contact-details-icon"></i> -->
-									</div>
-								</div>
-								<span class="contact-details-text vcenter">200 Aquarium Way, CA<br> 90803, United States</span>
-
-							</div>
-
-						</div>
-					</div>
-						<!-- /CONTACT DETAILS -->
-
-					</div>
-
-					<!-- CLOSE CONTACT -->
-					<div id="close-contact">
-						<div class="icon-container icon-container-close-contact">
-							<div class="vcenter">
-								<img src="{{ url_for('static', filename='royal/x.png') }}" alt="Royal Subscribe Icon" class="open-close-icon close-contact-icon">
-								<!-- <i class="fa fa-close open-close-icon"></i> -->
-							</div>
-						</div>
-					</div>
-					<!-- /CLOSE CONTACT -->
-
-				</section>
+				
 				<!-- /CONTACT SECTION -->
 
 
 				<!-- OPEN SUBSCRIBE -->
 				<div id="open-subscribe" class="animation-subscribe-icon-show-lg animation-mode">
 					<div class="icon-container icon-container-open-subscribe">
-						<div class="vcenter">
+						<div class="vcenter-subscribe">
 							<img src="{{ url_for('static', filename='royal/subscribe.png') }}" alt="Royal Subscribe Icon" class="open-close-icon open-subscribe-icon" style="opacity: 1;">
 						 	<!-- <i class="fa fa-send fa-fw open-close-icon open-subscribe-icon"></i> -->
-							<span class="open-subscribe-title open-icon-title" style="opacity: 0;">subscribe</span>
+							<span class="open-subscribe-title open-icon-title" style="opacity: 0; font-size:8px;">subscribe</span>
 						</div>
 					</div>
 				</div>
 				<!-- /OPEN SUBSCRIBE -->
 
 				<!-- OPEN CONTACT -->
-				<div id="open-contact" class="animation-contact-icon-show-lg animation-mode fixed-bottom">
-					<div class="icon-container icon-container-open-contact">
-						<div class="vcenter">
-							<img src="{{ url_for('static', filename='royal/contact.png') }}" alt="Royal Contact Icon" class="open-close-icon open-contact-icon" style="opacity: 1;">
-							<!-- <i class="fa fa-id-card-o fa-3x open-close-icon open-contact-icon"></i> -->
-							<span class="open-contact-title open-icon-title" style="opacity: 0;">contact</span>
-						</div>
-					</div>
-				</div>
+				
 				<!-- /OPEN CONTACT -->
 
 			</div>
