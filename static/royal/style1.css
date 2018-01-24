@@ -1,0 +1,75 @@
+.photo{
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	margin: 10px 10px;
+}
+
+
+body{
+	background-color: black;
+}
+
+.border{
+	width: 260px;
+	height: 170px;
+	border-radius: 50%;
+}
+
+.sout .border{
+	width: 200px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+.image{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	position: absolute;
+	top: 18px;
+	left: 60px;
+}
+
+.sout .image{
+	width: 108px;
+	height: 118px;
+	border-radius: 50%;
+	position: absolute;
+	top: 12px;
+	left: 45px;
+}
+
+.out,.sout{
+	text-align: center;
+}
+
+.des{
+	color: white;
+	padding: 5px 0px;
+	margin: 10px 0px;
+	width: 180px;
+	border-top: 2px solid #4c3b1c;
+	border-bottom: 2px solid #4c3b1c; 
+}
+
+
+.out .des{
+	margin-left: 40px;
+}
+/*
+.border{
+	width: 295px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.image{
+	width: 160px;
+	height: 170px;
+	border-radius: 50%;
+	position: absolute;
+	top: 18px;
+	left: 67px;
+}
+*/
