@@ -6,14 +6,14 @@
     text-decoration: underline;
   }
 
-  img {
+#about  img {
 /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
   /*filter: gray; /* IE5+ */
   /*-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
   /*-webkit-transition: all .4s ease-in-out;*/
   box-shadow: 0 0 5px goldenrod;
-  height: 110px !important;
-  width: 100px;
+  height: 120px !important;
+  width: 160px !important;
   height: auto;
 }
 /*img:hover {*/
