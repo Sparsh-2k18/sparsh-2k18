@@ -8,7 +8,7 @@ def index():
 
 @app.route("/index")
 def single_page():
-    return render_template("new_index.html")
+    return render_template("index.html")
 
 @app.route("/events")
 def event_page():
@@ -34,6 +34,9 @@ def contact_page():
 def winter_page():
     return render_template("royal.html")
 
+@app.route("/event_demo")
+def event__page():
+    return render_template("event_demo.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

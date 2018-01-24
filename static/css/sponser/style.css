@@ -8,18 +8,34 @@
 
   img {
 /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-  filter: gray; /* IE5+ */
-  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-  -webkit-transition: all .4s ease-in-out;
+  /*filter: gray; /* IE5+ */
+  /*-webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  /*-webkit-transition: all .4s ease-in-out;*/
   box-shadow: 0 0 5px goldenrod;
   height: 110px !important;
+  width: 100px;
+  height: auto;
 }
+/*img:hover {*/
+  /*filter: none;*/
+  /*-webkit-transform: scale(1.01);*/
+  /*-webkit-filter: grayscale(0);*/
+/*}*/
 .content div{
-        width: 16.66%;
-        padding: 20px;
+  /*width: 16.66%;*/
+  padding: 20px;
 }
-img:hover {
-filter: none;
-  -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.01);
+.img-thumbnail {
+  height: 50px;
+  width: 100%;
+  max-width: 100px;
+  border: 1px solid yellow;
+}
+
+/*Starting Responsive*/
+@media screen and (max-width: 500px) {
+  img{
+    filter: none;
+    -webkit-filter: grayscale(0);
+  }
 }
