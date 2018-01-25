@@ -1,0 +1,69 @@
+
+div.eventLetters{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.letterHeader{
+    width: 300px;
+    height: 50px;
+}
+
+.letterFooter{
+    width: 300px;
+    height: 80px;
+}
+
+img.letterMain{
+    height: 0;
+    width: 300px;
+    margin-top: -6px;
+    transition: height 0.5s;
+}
+
+.letterFooter{
+    margin-top: -26px;
+}
+
+.eventName{
+    position: absolute;
+    top: 18px;
+    left: 42%;
+    color: #5f453c;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.containerDup{
+    width: 100%;
+}
+
+.rowDup{
+    /*height: 300px;*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coldup-lg-4{
+    width: 33.333%;
+}
+
+.coldup-lg-6{
+    width: 50%;
+}
+
+.coldup-lg-12{
+    width: 100%;
+}
+
+#events img {
+    width: 70%;
+}
+
+@media(min-width: 870px){
+
+}

@@ -26,6 +26,96 @@
 	<link href="{{ url_for('static', filename='royal/style.css') }}" rel="stylesheet" type="text/css">
 	<link href="{{ url_for('static', filename='royal/animation.css') }}" rel="stylesheet" type="text/css">
 	<link href="{{ url_for('static', filename='royal/style1.css') }}" rel="stylesheet" type="text/css">
+	<style>
+
+	/* SVG settings */
+
+	.svg-animated3{
+		width: 250px;
+		text-align: center;
+		margin: auto;
+	}
+
+	.st0 {
+		fill: none;
+		stroke: #E5CC7F;
+		stroke-miterlimit: 10;
+	}
+
+	.st0 {
+		stroke-dasharray: 1900;
+		stroke-dashoffset: 0;
+		-webkit-animation: dash 15s linear forwards;
+		-moz-animation: dash 20s linear forwards;
+		-o-animation: dash 20s linear forwards;
+		animation: dash 15s linear forwards;
+	}
+
+	@-webkit-keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+	}
+
+	@-moz-keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+	}
+
+	@-o-keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+	}
+
+	@keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+	}
+
+	/* PAGE Setings */
+
+	footer{
+		position :absolute;
+		text-align: center;
+		padding: 30px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		a{
+			color: #e5cc7f;
+			font-weight: light;
+
+			&:hover{
+				color: green;
+			}
+		}
+	}
+
+	</style>
 </head>
 
 <body>
@@ -98,447 +188,482 @@
 						<div class="row">
 
 							<div class="main-animation" style="height:100vh;">
-
-
+								<div class="svg-animated3">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 98.8 127.8" style="enable-background:new 0 0 98.8 127.8;" xml:space="preserve">
+									<path stroke-width="1" class="st0" d="M83.2,65.1h-6.6c2.6-6.5-1.3-9.7-1.3-9.7h0c0,0-3.9,3.2-1.3,9.7h-6.5c0,3.7,2.6,6.8,6,7.7h-0.5c-0.4,0-0.8,0.3-0.8,0.8
+									c0,0.4,0.3,0.8,0.8,0.8h1.4c0,4.2-2.6,7.6-5.7,7.6c-2.9,0-5.3-3.3-5.7-7.8c-0.2-2.4-1.4-10.2-8.5-10.2c-1.1-1.4-2.6-2.4-4.3-2.7
+									c0.1-4.3,0.4-7.9,1.1-10.6c0.6-2.7,0.9-4.8,1-6.5c0.9-1.4,2.7-2.5,4.7-2.8c1.7-0.3,3.2,0,4.2,0.9c0.9,0.7,1.4,1.7,1.5,2.9
+									c0.1,1.1-0.3,2.2-1,3.1c-1.2,1.4-3.2,1.5-4.6,0.4c-1-0.9-1.2-2.5-0.3-3.5c0.7-0.8,1.9-0.9,2.7-0.2c0.3,0.2,0.5,0.6,0.5,1
+									c0,0.4-0.1,0.7-0.3,1c-0.2,0.2-0.4,0.3-0.7,0.4s-0.5-0.1-0.7-0.2c-0.3-0.3-0.3-0.7-0.1-1c0.1-0.1,0.2-0.1,0.3-0.1
+									c0.1,0,0.2,0.1,0.2,0.1c0.1,0.2,0.5,0.3,0.7,0.2s0.3-0.5,0.2-0.7c-0.2-0.4-0.6-0.6-1-0.6c-0.5,0-0.9,0.1-1.2,0.5
+									c-0.6,0.7-0.5,1.9,0.2,2.5c0.4,0.4,1,0.5,1.5,0.5c0.5,0,1-0.3,1.4-0.7c0.4-0.5,0.6-1.1,0.6-1.8c-0.1-0.7-0.4-1.2-0.9-1.7
+									C58.9,42.8,57,43,56,44.2c-1.3,1.5-1.1,3.7,0.4,5c0.7,0.6,1.6,1,2.6,1c-0.3,0.2-0.6,0.7-0.6,1.4c0,0.6,0.2,1.2,0.5,1.4
+									c-0.6,0.3-1,1.4-1.1,2c-0.2,0.7,0.5,1.5,1.4,1.6c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4
+									c0-0.7-0.2-1.3-0.6-1.4c0.1,0,0.1,0,0.2,0c1.1-0.1,2.2-0.6,2.9-1.5c0.9-1.1,1.3-2.4,1.2-3.8c-0.1-1.4-0.8-2.7-1.8-3.6
+									c-1.2-1-3-1.4-5-1.1c-1.8,0.3-3.4,1.1-4.5,2.1c-0.1-3.6-1.2-4.5-1.2-4.5h0v-3.4c1.7-0.8,3-2.6,3-4.6s-1.2-3.8-3-4.6v-3.9h0l5.7-4.8
+									c1.8-1.7-0.1-2.3-0.7-2.4c-3.5-0.5-10.7-0.5-14.2,0c-0.6,0.1-2.5,0.7-0.7,2.4l5.7,4.8h0v3.9c-1.7,0.8-3,2.6-3,4.6c0,2,1.2,3.8,3,4.6
+									v3.4l0,0c0,0-1.1,1-1.2,4.5c-1.1-1.1-2.7-1.9-4.5-2.1c-2-0.3-3.8,0.1-5,1.1c-1.1,0.9-1.7,2.2-1.8,3.6s0.3,2.8,1.2,3.8
+									c0.7,0.9,1.8,1.4,2.9,1.5c0,0,0.1,0,0.1,0c-0.3,0.2-0.6,0.7-0.6,1.4c0,0.6,0.2,1.2,0.5,1.4c-0.6,0.3-1,1.4-1.1,2
+									c-0.2,0.7,0.5,1.5,1.4,1.6c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4c0-0.7-0.2-1.3-0.6-1.4
+									c1,0,1.9-0.4,2.6-1c1.5-1.3,1.7-3.5,0.4-5c-1-1.2-2.9-1.4-4.1-0.3c-0.5,0.4-0.8,1-0.9,1.7c-0.1,0.7,0.2,1.3,0.6,1.8
+									c0.4,0.4,0.9,0.7,1.4,0.7c0.5,0,1.1-0.1,1.5-0.5c0.7-0.6,0.8-1.7,0.2-2.5c-0.3-0.3-0.7-0.5-1.2-0.5c-0.4,0-0.8,0.3-1,0.6
+									c-0.1,0.2-0.1,0.6,0.2,0.7s0.6,0.1,0.7-0.2c0-0.1,0.1-0.1,0.2-0.1c0.1,0,0.3,0,0.3,0.1c0.3,0.3,0.2,0.8-0.1,1
+									c-0.2,0.2-0.5,0.3-0.7,0.2s-0.5-0.1-0.7-0.4c-0.2-0.3-0.4-0.7-0.3-1c0-0.4,0.2-0.7,0.5-1c0.8-0.7,2-0.6,2.7,0.2
+									c0.9,1,0.8,2.6-0.3,3.5c-1.4,1.2-3.4,1-4.6-0.4c-0.7-0.9-1.1-1.9-1-3.1c0.1-1.1,0.6-2.1,1.5-2.9c1-0.8,2.5-1.1,4.2-0.9
+									c2,0.3,3.8,1.4,4.7,2.7c0.1,1.7,0.4,3.8,1,6.5c0.6,2.7,1,6.3,1.1,10.6c-1.7,0.3-3.1,1.3-4.3,2.7c-7.1,0-8.3,7.9-8.5,10.2
+									c-0.4,4.5-2.8,7.8-5.7,7.8c-3.1,0-5.6-3.4-5.7-7.6h1.4c0.4,0,0.8-0.3,0.8-0.8c0-0.4-0.3-0.8-0.8-0.8h-0.5c3.4-0.9,6-4,6-7.7h-6.5
+									c2.6-6.5-1.3-9.7-1.3-9.7h0c0,0-3.9,3.2-1.3,9.7h-6.6c0,3.7,2.6,6.8,6,7.7h-0.5c-0.4,0-0.8,0.3-0.8,0.8c0,0.4,0.3,0.8,0.8,0.8h1.4
+									c0,5.1,3.2,9.3,7.2,9.7c-0.2,0.3-0.3,0.7-0.3,1.2c0,0.6,0.2,1.2,0.5,1.4c-0.6,0.3-1,1.4-1.1,2c-0.2,0.7,0.5,1.5,1.4,1.6
+									c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4c0-0.5-0.1-1-0.3-1.2c3.9-0.2,7-4.1,7.4-9.7
+									c0.2-2.3,1.1-7.2,5.1-8.2c-0.5,1.3-0.9,2.7-0.9,4.3c0,1.4,0.3,2.8,0.7,4H38c1.4,7.1,4.7,16,10.4,16.6c-2.4,0.4-4,2.7-3.5,4.7
+									c0.4,1.9,1.8,5.4,3.6,6.1v2.3c-0.4,0.4-0.6,1.2-0.6,2c0,1,0.3,1.9,0.8,2.2c-0.9,0.4-1.6,2.2-1.8,3.2c-0.3,1.1,0.7,2.4,2.2,2.5
+									c1.5-0.1,2.5-1.4,2.2-2.5c-0.2-1-0.9-2.7-1.8-3.2c0.5-0.3,0.8-1.2,0.8-2.2c0-0.9-0.2-1.6-0.6-2v-2.3c1.8-0.7,3.2-4.1,3.6-6.1
+									c0.4-2-1.1-4.2-3.5-4.7c5.7-0.7,8.9-9.5,10.4-16.6h-4.2c0.5-1.2,0.7-2.6,0.7-4c0-1.5-0.3-3-0.9-4.3c4,0.9,4.9,5.9,5.1,8.2
+									c0.5,5.7,3.6,9.6,7.6,9.7c-0.2,0.3-0.3,0.7-0.3,1.2c0,0.6,0.2,1.2,0.5,1.4c-0.6,0.3-1,1.4-1.1,2c-0.2,0.7,0.5,1.5,1.4,1.6
+									c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4c0-0.5-0.1-1-0.4-1.3c3.9-0.4,7-4.6,7.1-9.7h1.4
+									c0.4,0,0.8-0.3,0.8-0.8c0-0.4-0.3-0.8-0.8-0.8h-0.5C80.7,71.9,83.2,68.8,83.2,65.1z"/>
+								</svg>
 							</div>
 
-							<!-- /SLIDER-->
-
-							<hr class="separator-line separator-line-gradient">
-
-
-
-
-						</div>
-						<div class="row">
-							<section id="events">
-								<div class="container">
-									<div class="raw">
-										<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
-											<div class="eventName">Technical</div>
-											<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
-											<img src="{{ url_for('static', filename='images/index_events/main.png') }}" class="letterMain"><br>
-											<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="row">
-
-							<section id="team">
-								<div class="container">
-									<div class="row">
-										<h3> Team</h3>
-										<div class="out">
-											<div class="photo">
-												<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-												<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-												<div class="des">
-													Your name here<br>
-													Post
-												</div>
-											</div>
-											<div class="photo">
-												<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-												<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-												<div class="des">
-													Your name here<br>
-													Post
-												</div>
-											</div>
-										</div>
-										<div class="sout">
-											<div class="photo">
-												<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-												<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-												<div class="des">
-													Your name here<br>
-													Post
-												</div>
-											</div>
-											<div class="photo">
-												<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-												<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-												<div class="des">
-													Your name here<br>
-													Post
-												</div>
-											</div>
-											<div class="photo">
-												<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-												<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-												<div class="des">
-													Your name here<br>
-													Post
-												</div>
-											</div>
-											<div class="photo">
-												<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-												<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-												<div class="des">
-													Your name here<br>
-													Post
-												</div>
-											</div>
-											<div class="photo">
-												<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-												<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-												<div class="des">
-													Your name here<br>
-													Post
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<hr class="separator-line separator-line-gradient">
 						</div>
 
 
-						<div class="row">
-							<section id="sponsor">
-								<div class="container">
-									<div class="row">
-										<div class="col-lg-12 text-center">
-											<h2 class="section-heading">Our Past Sponsers</h2>
-											<h3 class="section-subheading text-muted">A look at our previous year sponsers</h3>
-										</div>
+						<hr class="separator-line separator-line-gradient">
+
+
+
+
+					</div>
+					<div class="row">
+						<section id="events">
+							<div class="container">
+								<div class="raw">
+									<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
+										<div class="eventName">Technical</div>
+										<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
+										<img src="{{ url_for('static', filename='images/index_events/main.png') }}" class="letterMain"><br>
+										<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
 									</div>
-									<div class="row content">
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/sbi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/nbcc.jpeg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/divya_bhaskar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/aakash.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-											<img src="{{ url_for('static', filename='images/logos/aditya_birla_group.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-											<img src="{{ url_for('static', filename='images/logos/cococola.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-									</div>
-									<div class="row content">
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/ahir.png') }}" class="img-thumbnail img-responsive img-centered" alt="" >
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/AtosOrigin.svg.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/radio_city.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/aircel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img style="margin-top:" src="{{ url_for('static', filename='images/logos/faadooengineers.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/LnT.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-									</div>
-									<div class="row content">
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/rupa.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/dlf.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/ims.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/vlcc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/vrmall.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/bigfm.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-									</div>
-									<div class="row content">
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/aagam_group.gif') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/aolf.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/jalaram.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/cboi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/essar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/nishal.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-									</div>
-									<div class="row content">
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/honda.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/nh7.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/ongc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/bob.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/fast_ticket.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/cinepolis.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-									</div>
-									<div class="row content">
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/kaibhco.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/pantaloons.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img style="margin-top:" src="{{ url_for('static', filename='images/logos/Vasari.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/airtel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-
-											<img src="{{ url_for('static', filename='images/logos/GG.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-											<img src="{{ url_for('static', filename='images/logos/Radiomirchi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-										</div>
-									</div>
-								</div>
-							</section>
-
-						</div>
-					</section>
-					<!-- /MAIN SECTION -->
-
-					<!-- SUBSCRIBE SECTION -->
-					<section class="col-xs-12 col-md-4 col-md-pull-4 animation-close-subscribe-lg animation-mode" id="subscribe">
-						<div class="vcenter">
-
-							<!-- COUNTER -->
-							<div id="counter">
-								<div class="counter-align">
-									<h2 class="countdown">98</h2>
-									<div class="counter-line"></div>
-									<p class="counter-days-left">days left</p>
 								</div>
 							</div>
-							<!-- /COUNTER -->
+						</section>
+					</div>
+					<div class="row">
 
-							<!-- PARAGRAPH -->
-							<p class="subscribe-paragraphs">Subscribe to be updated on our release.</p>
-							<p class="subscribe-paragraphs">Make sure You don't miss anything!</p>
-							<!-- /PARAGRAPH -->
-
-							<div class="clearfix"></div>
-
-							<!-- FORM -->
-							<form>
-								<span class="subscribe-form">
-
-									<input class="subscribe-email-field" name="email" style="padding: 0px" type="text">
-
-
-
-									<label class="subscribe-email-label">
-										<span class="subscribe-email-span">Email:</span>
-									</label>
-
-									<span class="subscribe-response"></span>
-
-								</span>
-								<br>
-								<span class="subscribe-form">
-
-									<input class="subscribe-email-field" name="name" style="padding: 0px" type="text">
-
-									<label class="subscribe-email-label">
-										<span class="subscribe-email-span">Name:</span>
-									</label>
-
-									<span class="subscribe-response"></span>
-
-								</span>
-								<br>
-								<span class="subscribe-form">
-
-									<input class="subscribe-email-field" name="mobile" maxlength="10" style="padding: 0px" type="text">
-
-									<label class="subscribe-email-label">
-										<span class="subscribe-email-span">Mobile:</span>
-									</label>
-
-									<span class="subscribe-response"></span>
-
-								</span>
-								<br>
-								<span class="subscribe-form">
-
-									<textarea class="subscribe-email-field" name="query" style="padding: 0px" type="text"></textarea>
-
-									<label class="subscribe-email-label">
-										<span class="subscribe-email-span">Query:</span>
-									</label>
-
-									<span class="subscribe-response"></span>
-
-								</span>
-								<br>
-
-								<button type="button" class="btn-primary btn" style="background: rgb(212,175,55)">Submit!</button>
-							</form>
-
-
-
-						</div>
-
-						<!-- CLOSE SUBSCRIBE -->
-						<div id="close-subscribe">
-							<div class="icon-container icon-container-close-subscribe">
-								<div class="vcenter-subscribe">
-									<img src="{{ url_for('static', filename='royal/x.png') }}" alt="Royal Subscribe Icon" class="open-close-icon close-subscribe-icon">
-									<!-- <i class="fa fa-close open-close-icon"></i> -->
+						<section id="team">
+							<div class="container">
+								<div class="row">
+									<h3> Team</h3>
+									<div class="out">
+										<div class="photo">
+											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+											<div class="des">
+												Your name here<br>
+												Post
+											</div>
+										</div>
+										<div class="photo">
+											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+											<div class="des">
+												Your name here<br>
+												Post
+											</div>
+										</div>
+									</div>
+									<div class="sout">
+										<div class="photo">
+											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+											<div class="des">
+												Your name here<br>
+												Post
+											</div>
+										</div>
+										<div class="photo">
+											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+											<div class="des">
+												Your name here<br>
+												Post
+											</div>
+										</div>
+										<div class="photo">
+											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+											<div class="des">
+												Your name here<br>
+												Post
+											</div>
+										</div>
+										<div class="photo">
+											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+											<div class="des">
+												Your name here<br>
+												Post
+											</div>
+										</div>
+										<div class="photo">
+											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+											<div class="des">
+												Your name here<br>
+												Post
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
+						</section>
+						<hr class="separator-line separator-line-gradient">
+					</div>
+
+
+					<div class="row">
+						<section id="sponsor">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12 text-center">
+										<h2 class="section-heading">Our Past Sponsers</h2>
+										<h3 class="section-subheading text-muted">A look at our previous year sponsers</h3>
+									</div>
+								</div>
+								<div class="row content">
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/sbi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/nbcc.jpeg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/divya_bhaskar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/aakash.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+										<img src="{{ url_for('static', filename='images/logos/aditya_birla_group.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+										<img src="{{ url_for('static', filename='images/logos/cococola.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+								</div>
+								<div class="row content">
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/ahir.png') }}" class="img-thumbnail img-responsive img-centered" alt="" >
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/AtosOrigin.svg.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/radio_city.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/aircel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img style="margin-top:" src="{{ url_for('static', filename='images/logos/faadooengineers.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/LnT.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+								</div>
+								<div class="row content">
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/rupa.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/dlf.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/ims.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/vlcc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/vrmall.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/bigfm.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+								</div>
+								<div class="row content">
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/aagam_group.gif') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/aolf.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/jalaram.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/cboi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/essar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/nishal.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+								</div>
+								<div class="row content">
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/honda.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/nh7.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/ongc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/bob.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/fast_ticket.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/cinepolis.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+								</div>
+								<div class="row content">
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/kaibhco.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/pantaloons.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img style="margin-top:" src="{{ url_for('static', filename='images/logos/Vasari.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/airtel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+
+										<img src="{{ url_for('static', filename='images/logos/GG.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-6">
+										<img src="{{ url_for('static', filename='images/logos/Radiomirchi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</div>
+				</section>
+				<!-- /MAIN SECTION -->
+
+				<!-- SUBSCRIBE SECTION -->
+				<section class="col-xs-12 col-md-4 col-md-pull-4 animation-close-subscribe-lg animation-mode" id="subscribe">
+					<div class="vcenter">
+
+						<!-- COUNTER -->
+						<div id="counter">
+							<div class="counter-align">
+								<h2 class="countdown">98</h2>
+								<div class="counter-line"></div>
+								<p class="counter-days-left">days left</p>
+							</div>
 						</div>
-						<!-- /CLOSE SUBSCRIBE -->
+						<!-- /COUNTER -->
 
-					</section>
-					<!-- /SUBSCRIBE SECTION -->
+						<!-- PARAGRAPH -->
+						<p class="subscribe-paragraphs">Subscribe to be updated on our release.</p>
+						<p class="subscribe-paragraphs">Make sure You don't miss anything!</p>
+						<!-- /PARAGRAPH -->
 
-					<!-- CONTACT SECTION -->
+						<div class="clearfix"></div>
 
-					<!-- /CONTACT SECTION -->
+						<!-- FORM -->
+						<form>
+							<span class="subscribe-form">
+
+								<input class="subscribe-email-field" name="email" style="padding: 0px" type="text">
 
 
-					<!-- OPEN SUBSCRIBE -->
-					<div id="open-subscribe" class="animation-subscribe-icon-show-lg animation-mode">
-						<div class="icon-container icon-container-open-subscribe">
+
+								<label class="subscribe-email-label">
+									<span class="subscribe-email-span">Email:</span>
+								</label>
+
+								<span class="subscribe-response"></span>
+
+							</span>
+							<br>
+							<span class="subscribe-form">
+
+								<input class="subscribe-email-field" name="name" style="padding: 0px" type="text">
+
+								<label class="subscribe-email-label">
+									<span class="subscribe-email-span">Name:</span>
+								</label>
+
+								<span class="subscribe-response"></span>
+
+							</span>
+							<br>
+							<span class="subscribe-form">
+
+								<input class="subscribe-email-field" name="mobile" maxlength="10" style="padding: 0px" type="text">
+
+								<label class="subscribe-email-label">
+									<span class="subscribe-email-span">Mobile:</span>
+								</label>
+
+								<span class="subscribe-response"></span>
+
+							</span>
+							<br>
+							<span class="subscribe-form">
+
+								<textarea class="subscribe-email-field" name="query" style="padding: 0px" type="text"></textarea>
+
+								<label class="subscribe-email-label">
+									<span class="subscribe-email-span">Query:</span>
+								</label>
+
+								<span class="subscribe-response"></span>
+
+							</span>
+							<br>
+
+							<button type="button" class="btn-primary btn" style="background: rgb(212,175,55)">Submit!</button>
+						</form>
+
+
+
+					</div>
+
+					<!-- CLOSE SUBSCRIBE -->
+					<div id="close-subscribe">
+						<div class="icon-container icon-container-close-subscribe">
 							<div class="vcenter-subscribe">
-								<img src="{{ url_for('static', filename='royal/subscribe.png') }}" alt="Royal Subscribe Icon" class="open-close-icon open-subscribe-icon" style="opacity: 1;">
-								<!-- <i class="fa fa-send fa-fw open-close-icon open-subscribe-icon"></i> -->
-								<span class="open-subscribe-title open-icon-title" style="opacity: 0; font-size:10px;">subscribe</span>
+								<img src="{{ url_for('static', filename='royal/x.png') }}" alt="Royal Subscribe Icon" class="open-close-icon close-subscribe-icon">
+								<!-- <i class="fa fa-close open-close-icon"></i> -->
 							</div>
 						</div>
 					</div>
-					<!-- /OPEN SUBSCRIBE -->
+					<!-- /CLOSE SUBSCRIBE -->
 
-					<!-- OPEN CONTACT -->
+				</section>
+				<!-- /SUBSCRIBE SECTION -->
 
-					<!-- /OPEN CONTACT -->
+				<!-- CONTACT SECTION -->
 
+				<!-- /CONTACT SECTION -->
+
+
+				<!-- OPEN SUBSCRIBE -->
+				<div id="open-subscribe" class="animation-subscribe-icon-show-lg animation-mode">
+					<div class="icon-container icon-container-open-subscribe">
+						<div class="vcenter-subscribe">
+							<img src="{{ url_for('static', filename='royal/subscribe.png') }}" alt="Royal Subscribe Icon" class="open-close-icon open-subscribe-icon" style="opacity: 1;">
+							<!-- <i class="fa fa-send fa-fw open-close-icon open-subscribe-icon"></i> -->
+							<span class="open-subscribe-title open-icon-title" style="opacity: 0; font-size:10px;">subscribe</span>
+						</div>
+					</div>
 				</div>
+				<!-- /OPEN SUBSCRIBE -->
 
-				<!-- ./ROW -->
+				<!-- OPEN CONTACT -->
+
+				<!-- /OPEN CONTACT -->
+
 			</div>
-			<!-- ./CONTAINER -->
 
-			<!-- JAVASCRIPTS -->
-			<script type="text/javascript">
-			function showMainImg(n) {
-				var mainImg = document.getElementsByClassName('letterMain')[n];
-				mainImg.style.height = "200px";
-			}
+			<!-- ./ROW -->
+		</div>
+		<!-- ./CONTAINER -->
 
-			function hideMainImg(n) {
-				var mainImg = document.getElementsByClassName('letterMain')[n];
-				mainImg.style.height = "0px";
-			}
-			</script>
-			<script src="{{ url_for('static', filename='royal/jquery-1.11.3.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/vegas.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/smoothscroll.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/loader.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/config.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/main.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
-			<script src="{{ url_for('static', filename='royal/app.js') }}"></script>
+		<!-- JAVASCRIPTS -->
+		<script type="text/javascript">
+		function showMainImg(n) {
+			var mainImg = document.getElementsByClassName('letterMain')[n];
+			mainImg.style.height = "200px";
+		}
+
+		function hideMainImg(n) {
+			var mainImg = document.getElementsByClassName('letterMain')[n];
+			mainImg.style.height = "0px";
+		}
+		</script>
+		<script src="{{ url_for('static', filename='royal/jquery-1.11.3.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/vegas.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/smoothscroll.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/loader.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/config.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/main.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
+		<script src="{{ url_for('static', filename='royal/app.js') }}"></script>
 
 
 
 
-		</body></html>
+	</body></html>
