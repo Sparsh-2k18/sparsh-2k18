@@ -31,7 +31,7 @@
 	/* SVG settings */
 
 	.svg-animated3{
-		width: 250px;
+		/* width: 250px; */
 		text-align: center;
 		margin: auto;
 	}
@@ -44,15 +44,23 @@
 
 	.st0 {
 		stroke-dasharray: 1900;
-		stroke-dashoffset: 0;
-		-webkit-animation: dash 15s linear forwards;
-		-moz-animation: dash 20s linear forwards;
-		-o-animation: dash 20s linear forwards;
-		animation: dash 15s linear forwards;
+		stroke-dashoffset: 2050;
+		-webkit-animation: dash 40s linear forwards;
+		-moz-animation: dash 40s linear forwards;
+		-o-animation: dash 40s linear forwards;
+		animation: dash 40s linear forwards;
 	}
 
 	@-webkit-keyframes dash {
 		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		25% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		50% {
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
@@ -67,6 +75,14 @@
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
+		25% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		50% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
 		100% {
 			stroke-dashoffset: 0;
 			fill: none;
@@ -78,6 +94,14 @@
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
+		25% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		50% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
 		100% {
 			stroke-dashoffset: 0;
 			fill: none;
@@ -86,6 +110,14 @@
 
 	@keyframes dash {
 		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		25% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		50% {
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
@@ -189,481 +221,565 @@
 
 							<div class="main-animation" style="height:100vh;">
 								<div class="svg-animated3">
-									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									viewBox="0 0 98.8 127.8" style="enable-background:new 0 0 98.8 127.8;" xml:space="preserve">
-									<path stroke-width="1" class="st0" d="M83.2,65.1h-6.6c2.6-6.5-1.3-9.7-1.3-9.7h0c0,0-3.9,3.2-1.3,9.7h-6.5c0,3.7,2.6,6.8,6,7.7h-0.5c-0.4,0-0.8,0.3-0.8,0.8
-									c0,0.4,0.3,0.8,0.8,0.8h1.4c0,4.2-2.6,7.6-5.7,7.6c-2.9,0-5.3-3.3-5.7-7.8c-0.2-2.4-1.4-10.2-8.5-10.2c-1.1-1.4-2.6-2.4-4.3-2.7
-									c0.1-4.3,0.4-7.9,1.1-10.6c0.6-2.7,0.9-4.8,1-6.5c0.9-1.4,2.7-2.5,4.7-2.8c1.7-0.3,3.2,0,4.2,0.9c0.9,0.7,1.4,1.7,1.5,2.9
-									c0.1,1.1-0.3,2.2-1,3.1c-1.2,1.4-3.2,1.5-4.6,0.4c-1-0.9-1.2-2.5-0.3-3.5c0.7-0.8,1.9-0.9,2.7-0.2c0.3,0.2,0.5,0.6,0.5,1
-									c0,0.4-0.1,0.7-0.3,1c-0.2,0.2-0.4,0.3-0.7,0.4s-0.5-0.1-0.7-0.2c-0.3-0.3-0.3-0.7-0.1-1c0.1-0.1,0.2-0.1,0.3-0.1
-									c0.1,0,0.2,0.1,0.2,0.1c0.1,0.2,0.5,0.3,0.7,0.2s0.3-0.5,0.2-0.7c-0.2-0.4-0.6-0.6-1-0.6c-0.5,0-0.9,0.1-1.2,0.5
-									c-0.6,0.7-0.5,1.9,0.2,2.5c0.4,0.4,1,0.5,1.5,0.5c0.5,0,1-0.3,1.4-0.7c0.4-0.5,0.6-1.1,0.6-1.8c-0.1-0.7-0.4-1.2-0.9-1.7
-									C58.9,42.8,57,43,56,44.2c-1.3,1.5-1.1,3.7,0.4,5c0.7,0.6,1.6,1,2.6,1c-0.3,0.2-0.6,0.7-0.6,1.4c0,0.6,0.2,1.2,0.5,1.4
-									c-0.6,0.3-1,1.4-1.1,2c-0.2,0.7,0.5,1.5,1.4,1.6c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4
-									c0-0.7-0.2-1.3-0.6-1.4c0.1,0,0.1,0,0.2,0c1.1-0.1,2.2-0.6,2.9-1.5c0.9-1.1,1.3-2.4,1.2-3.8c-0.1-1.4-0.8-2.7-1.8-3.6
-									c-1.2-1-3-1.4-5-1.1c-1.8,0.3-3.4,1.1-4.5,2.1c-0.1-3.6-1.2-4.5-1.2-4.5h0v-3.4c1.7-0.8,3-2.6,3-4.6s-1.2-3.8-3-4.6v-3.9h0l5.7-4.8
-									c1.8-1.7-0.1-2.3-0.7-2.4c-3.5-0.5-10.7-0.5-14.2,0c-0.6,0.1-2.5,0.7-0.7,2.4l5.7,4.8h0v3.9c-1.7,0.8-3,2.6-3,4.6c0,2,1.2,3.8,3,4.6
-									v3.4l0,0c0,0-1.1,1-1.2,4.5c-1.1-1.1-2.7-1.9-4.5-2.1c-2-0.3-3.8,0.1-5,1.1c-1.1,0.9-1.7,2.2-1.8,3.6s0.3,2.8,1.2,3.8
-									c0.7,0.9,1.8,1.4,2.9,1.5c0,0,0.1,0,0.1,0c-0.3,0.2-0.6,0.7-0.6,1.4c0,0.6,0.2,1.2,0.5,1.4c-0.6,0.3-1,1.4-1.1,2
-									c-0.2,0.7,0.5,1.5,1.4,1.6c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4c0-0.7-0.2-1.3-0.6-1.4
-									c1,0,1.9-0.4,2.6-1c1.5-1.3,1.7-3.5,0.4-5c-1-1.2-2.9-1.4-4.1-0.3c-0.5,0.4-0.8,1-0.9,1.7c-0.1,0.7,0.2,1.3,0.6,1.8
-									c0.4,0.4,0.9,0.7,1.4,0.7c0.5,0,1.1-0.1,1.5-0.5c0.7-0.6,0.8-1.7,0.2-2.5c-0.3-0.3-0.7-0.5-1.2-0.5c-0.4,0-0.8,0.3-1,0.6
-									c-0.1,0.2-0.1,0.6,0.2,0.7s0.6,0.1,0.7-0.2c0-0.1,0.1-0.1,0.2-0.1c0.1,0,0.3,0,0.3,0.1c0.3,0.3,0.2,0.8-0.1,1
-									c-0.2,0.2-0.5,0.3-0.7,0.2s-0.5-0.1-0.7-0.4c-0.2-0.3-0.4-0.7-0.3-1c0-0.4,0.2-0.7,0.5-1c0.8-0.7,2-0.6,2.7,0.2
-									c0.9,1,0.8,2.6-0.3,3.5c-1.4,1.2-3.4,1-4.6-0.4c-0.7-0.9-1.1-1.9-1-3.1c0.1-1.1,0.6-2.1,1.5-2.9c1-0.8,2.5-1.1,4.2-0.9
-									c2,0.3,3.8,1.4,4.7,2.7c0.1,1.7,0.4,3.8,1,6.5c0.6,2.7,1,6.3,1.1,10.6c-1.7,0.3-3.1,1.3-4.3,2.7c-7.1,0-8.3,7.9-8.5,10.2
-									c-0.4,4.5-2.8,7.8-5.7,7.8c-3.1,0-5.6-3.4-5.7-7.6h1.4c0.4,0,0.8-0.3,0.8-0.8c0-0.4-0.3-0.8-0.8-0.8h-0.5c3.4-0.9,6-4,6-7.7h-6.5
-									c2.6-6.5-1.3-9.7-1.3-9.7h0c0,0-3.9,3.2-1.3,9.7h-6.6c0,3.7,2.6,6.8,6,7.7h-0.5c-0.4,0-0.8,0.3-0.8,0.8c0,0.4,0.3,0.8,0.8,0.8h1.4
-									c0,5.1,3.2,9.3,7.2,9.7c-0.2,0.3-0.3,0.7-0.3,1.2c0,0.6,0.2,1.2,0.5,1.4c-0.6,0.3-1,1.4-1.1,2c-0.2,0.7,0.5,1.5,1.4,1.6
-									c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4c0-0.5-0.1-1-0.3-1.2c3.9-0.2,7-4.1,7.4-9.7
-									c0.2-2.3,1.1-7.2,5.1-8.2c-0.5,1.3-0.9,2.7-0.9,4.3c0,1.4,0.3,2.8,0.7,4H38c1.4,7.1,4.7,16,10.4,16.6c-2.4,0.4-4,2.7-3.5,4.7
-									c0.4,1.9,1.8,5.4,3.6,6.1v2.3c-0.4,0.4-0.6,1.2-0.6,2c0,1,0.3,1.9,0.8,2.2c-0.9,0.4-1.6,2.2-1.8,3.2c-0.3,1.1,0.7,2.4,2.2,2.5
-									c1.5-0.1,2.5-1.4,2.2-2.5c-0.2-1-0.9-2.7-1.8-3.2c0.5-0.3,0.8-1.2,0.8-2.2c0-0.9-0.2-1.6-0.6-2v-2.3c1.8-0.7,3.2-4.1,3.6-6.1
-									c0.4-2-1.1-4.2-3.5-4.7c5.7-0.7,8.9-9.5,10.4-16.6h-4.2c0.5-1.2,0.7-2.6,0.7-4c0-1.5-0.3-3-0.9-4.3c4,0.9,4.9,5.9,5.1,8.2
-									c0.5,5.7,3.6,9.6,7.6,9.7c-0.2,0.3-0.3,0.7-0.3,1.2c0,0.6,0.2,1.2,0.5,1.4c-0.6,0.3-1,1.4-1.1,2c-0.2,0.7,0.5,1.5,1.4,1.6
-									c0.9,0,1.6-0.9,1.4-1.6c-0.1-0.6-0.6-1.7-1.1-2c0.3-0.2,0.5-0.7,0.5-1.4c0-0.5-0.1-1-0.4-1.3c3.9-0.4,7-4.6,7.1-9.7h1.4
-									c0.4,0,0.8-0.3,0.8-0.8c0-0.4-0.3-0.8-0.8-0.8h-0.5C80.7,71.9,83.2,68.8,83.2,65.1z"/>
-								</svg>
-							</div>
+									<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+									width="300px" height="300px" viewBox="0 0 570 570"
+									preserveAspectRatio="xMidYMid meet">
+
+									<g transform="translate(0.000000,461.000000) scale(0.100000,-0.100000)"
+									fill="#000000" stroke="none">
+									<path stroke-width="50" class="st0" d="M2761 4498 c-70 -151 -100 -242 -107 -331 -8 -87 5 -133 49 -183 72
+									-83 155 -85 229 -7 86 90 75 217 -42 481 -34 75 -65 141 -69 145 -4 4 -31 -43
+									-60 -105z"/>
+									<path stroke-width="50" class="st0" d="M2510 3968 c-14 -7 -33 -30 -43 -51 -26 -53 -15 -89 44 -145 63 -60
+									103 -121 134 -208 30 -84 65 -228 65 -268 0 -25 -8 -16 -52 59 -102 173 -284
+									325 -389 325 -71 0 -116 -97 -74 -157 9 -12 44 -36 78 -52 118 -56 228 -196
+									310 -393 15 -35 12 -33 -46 29 -117 125 -256 212 -397 248 -95 25 -261 17
+									-352 -17 -102 -38 -174 -85 -258 -168 -92 -90 -146 -168 -211 -304 -46 -97
+									-99 -255 -99 -300 -1 -20 -1 -20 -11 -2 -15 25 -6 242 12 281 7 17 21 41 31
+									54 26 35 23 93 -7 129 -52 62 -114 50 -163 -31 -43 -71 -62 -153 -62 -265 l0
+									-94 -45 55 c-94 115 -244 217 -321 217 -42 0 -74 -38 -74 -89 0 -45 32 -79
+									103 -109 42 -19 183 -139 174 -149 -2 -2 -37 12 -78 31 -192 89 -365 93 -524
+									13 -64 -32 -150 -127 -189 -209 -52 -110 -70 -214 -63 -378 6 -136 11 -165 75
+									-390 34 -119 38 -128 179 -337 138 -206 202 -346 219 -477 9 -66 27 -102 64
+									-121 39 -20 62 -19 252 10 1274 193 2710 200 3914 19 314 -47 338 -49 373 -34
+									45 18 55 38 90 175 38 146 84 241 197 410 53 79 98 159 115 205 15 41 43 112
+									63 156 53 120 76 229 83 379 4 102 2 150 -11 215 -38 184 -132 317 -274 388
+									-69 34 -83 37 -178 40 -125 5 -206 -12 -320 -68 -43 -21 -80 -37 -82 -35 -2 2
+									25 32 60 67 43 45 84 75 131 97 56 26 71 38 83 68 18 42 12 75 -18 103 -31 29
+									-75 25 -155 -15 -69 -34 -158 -111 -224 -192 l-34 -43 -1 88 c-1 108 -17 179
+									-57 255 -49 93 -117 111 -172 45 -33 -39 -32 -75 6 -147 36 -68 47 -142 39
+									-266 l-5 -80 -19 75 c-78 318 -266 585 -491 698 -260 130 -550 67 -791 -172
+									-99 -98 -100 -97 -31 39 76 151 166 252 265 297 52 24 66 35 78 65 30 72 -10
+									143 -81 143 -56 0 -165 -63 -238 -137 -68 -69 -111 -127 -163 -220 -16 -29
+									-32 -53 -35 -53 -12 0 23 166 57 267 39 120 68 170 141 239 45 44 53 57 53 88
+									0 75 -55 127 -117 111 -46 -11 -155 -130 -198 -217 l-38 -77 -29 61 c-37 79
+									-89 149 -142 193 -49 40 -90 51 -126 33z m-395 -860 c106 -26 257 -143 342
+									-266 l42 -59 -54 -6 c-70 -7 -150 -44 -204 -93 -87 -78 -121 -202 -87 -318 57
+									-194 330 -275 450 -134 19 22 37 51 41 65 13 54 -37 113 -96 113 -11 0 -37
+									-16 -56 -35 -38 -38 -67 -44 -113 -20 -89 46 -76 170 23 215 71 33 135 22 195
+									-33 37 -34 67 -147 66 -252 0 -75 -5 -102 -28 -159 -28 -67 -28 -70 -12 -103
+									10 -21 28 -39 46 -46 25 -10 30 -17 30 -45 0 -38 -2 -37 -60 14 -68 60 -195
+									104 -300 104 -126 0 -229 -40 -316 -121 -71 -68 -106 -148 -112 -256 -4 -75
+									-2 -87 26 -147 54 -116 151 -199 270 -232 80 -22 161 -10 232 36 59 38 78 76
+									60 120 -23 55 -81 66 -140 27 -19 -13 -45 -26 -57 -29 -62 -16 -165 47 -205
+									125 -47 92 2 218 105 271 76 39 185 42 262 8 79 -36 154 -118 175 -192 16 -55
+									-56 -229 -146 -357 -118 -166 -297 -254 -457 -225 -277 51 -517 366 -603 790
+									-22 109 -24 140 -19 241 11 191 57 259 169 248 41 -4 55 -11 82 -40 38 -41 58
+									-103 48 -152 -4 -21 -27 -58 -61 -97 -31 -35 -68 -83 -84 -107 -36 -56 -63
+									-174 -57 -253 4 -51 9 -65 32 -85 33 -28 85 -30 116 -5 19 15 22 29 25 97 3
+									98 21 143 83 209 68 72 99 122 116 190 37 142 -41 318 -172 389 -58 31 -163
+									49 -218 37 -21 -5 -40 -7 -43 -4 -18 17 88 257 153 348 139 195 315 273 511
+									224z m1615 0 c120 -36 256 -157 338 -300 38 -67 118 -266 110 -274 -2 -1 -23
+									1 -46 7 -53 12 -148 -2 -206 -30 -96 -47 -151 -120 -182 -242 -31 -119 0 -218
+									105 -331 75 -81 92 -119 99 -222 6 -94 22 -116 80 -116 83 0 114 99 77 249
+									-19 79 -47 128 -129 220 -58 67 -73 106 -62 164 15 80 73 127 155 127 58 0
+									106 -45 127 -117 27 -93 23 -284 -8 -418 -96 -412 -328 -703 -595 -748 -136
+									-22 -257 25 -379 147 -87 88 -145 177 -193 298 -48 118 -39 168 44 257 63 67
+									128 95 226 95 65 1 84 -3 135 -29 82 -43 119 -102 119 -195 0 -57 -4 -72 -28
+									-103 -37 -49 -89 -87 -130 -97 -38 -8 -97 8 -126 34 -27 25 -83 20 -111 -9
+									-75 -79 45 -189 206 -189 96 0 180 40 257 123 83 91 102 136 102 251 0 83 -4
+									103 -28 155 -118 253 -467 314 -708 124 l-49 -39 0 32 c0 27 6 36 32 48 55 26
+									61 61 27 160 -45 134 -34 289 26 381 47 73 159 89 231 34 75 -57 80 -151 10
+									-194 -49 -31 -82 -27 -120 14 -43 46 -85 47 -127 6 -45 -46 -35 -103 28 -163
+									90 -86 248 -74 360 26 115 104 117 303 5 420 -67 70 -166 116 -249 116 l-34 0
+									32 48 c136 198 328 313 499 295 25 -3 61 -9 80 -15z m-3057 -707 l59 -23 -49
+									-28 c-93 -54 -139 -144 -131 -259 12 -162 126 -295 303 -351 94 -30 161 -82
+									213 -165 33 -53 50 -64 94 -65 28 0 41 6 57 26 12 15 21 34 21 43 0 36 -53
+									120 -114 181 -73 72 -119 103 -191 126 -125 41 -179 84 -201 160 -13 46 -13
+									57 -1 87 17 39 72 77 113 77 46 0 111 -38 156 -92 24 -28 62 -71 86 -96 52
+									-56 110 -160 147 -262 94 -263 92 -505 -4 -651 -223 -336 -824 78 -982 678
+									-26 100 -36 280 -19 365 24 127 93 224 182 260 60 25 183 19 261 -11z m4552 5
+									c118 -55 185 -194 185 -387 0 -340 -217 -746 -498 -930 -97 -64 -170 -91 -264
+									-97 -69 -4 -83 -2 -132 22 -123 60 -186 192 -186 389 0 214 99 503 214 623 23
+									24 61 66 86 95 89 103 192 116 255 33 19 -25 19 -92 0 -137 -21 -51 -61 -79
+									-181 -127 -102 -41 -114 -49 -190 -124 -83 -83 -117 -139 -117 -190 0 -36 34
+									-66 75 -66 42 0 65 15 87 58 28 56 118 136 176 157 183 66 270 135 315 250 33
+									82 34 202 3 260 -24 45 -72 93 -121 123 l-33 19 48 21 c65 27 77 30 158 31 54
+									1 81 -5 120 -23z"/>
+									<path stroke-width="50" class="st0" d="M735 3206 c-11 -184 11 -273 76 -314 55 -33 100 -37 133 -11 31 24
+									56 75 56 112 0 50 -62 148 -152 243 -50 52 -94 94 -98 94 -4 0 -11 -56 -15
+									-124z"/>
+									<path stroke-width="50" class="st0" d="M4781 3245 c-130 -136 -172 -217 -151 -293 14 -55 52 -87 100 -86 81
+									3 139 67 156 172 8 50 -5 292 -16 292 -4 0 -44 -38 -89 -85z"/>
+									<path stroke-width="50" class="st0" d="M2250 764 c-25 -2 -135 -9 -245 -15 -110 -6 -202 -12 -203 -14 -2 -2
+									15 -21 39 -42 86 -78 112 -193 64 -288 -13 -27 -23 -50 -22 -51 1 -1 88 2 192
+									7 105 4 274 8 378 9 103 0 187 4 187 8 0 5 -14 21 -31 38 -87 81 -93 223 -13
+									332 l16 22 -158 -2 c-88 -1 -179 -3 -204 -4z"/>
+									<path stroke-width="50" class="st0" d="M3047 749 c86 -95 81 -243 -13 -340 l-35 -36 283 -6 c156 -4 330 -10
+									388 -13 103 -7 105 -7 88 12 -77 87 -57 238 41 327 24 21 41 40 39 42 -8 9
+									-308 26 -553 31 l-260 7 22 -24z"/>
+									<path stroke-width="50" class="st0" d="M2739 699 c-126 -74 -77 -245 73 -256 161 -12 230 175 96 257 -44 27
+									-121 26 -169 -1z"/>
+									<path stroke-width="50" class="st0" d="M4220 705 c0 -3 12 -24 27 -47 21 -32 28 -55 31 -107 4 -80 -12 -124
+									-69 -186 l-40 -43 73 -7 c40 -3 183 -18 318 -32 135 -13 272 -27 305 -30 l60
+									-5 64 167 c35 92 59 171 55 175 -14 13 -504 84 -724 105 -36 4 -73 9 -82 11
+									-10 3 -18 3 -18 -1z"/>
+									<path stroke-width="50" class="st0" d="M1170 674 c-273 -33 -543 -74 -553 -84 -5 -4 18 -79 51 -166 53 -141
+									63 -159 85 -162 13 -2 107 6 208 17 101 11 255 26 342 33 86 6 157 15 157 18
+									0 4 -12 17 -26 31 -86 78 -99 239 -26 322 14 16 13 17 -14 16 -16 -1 -117 -12
+									-224 -25z"/>
+									<path stroke-width="50" class="st0" d="M1582 653 c-13 -3 -38 -20 -57 -39 -30 -30 -35 -41 -35 -82 0 -57 24
+									-97 77 -129 71 -43 175 -24 213 39 68 113 -50 239 -198 211z"/>
+									<path stroke-width="50" class="st0" d="M3930 638 c-146 -74 -103 -258 61 -258 53 0 123 39 145 82 36 69 9
+									149 -60 182 -47 22 -94 20 -146 -6z"/>
+									<path stroke-width="50" class="st0" d="M2125 260 c-446 -19 -1149 -71 -1303 -96 -73 -12 -96 -82 -43 -135
+									37 -36 35 -36 385 -4 1084 98 2271 100 3296 4 388 -36 380 -36 418 -4 29 24
+									33 33 30 69 -3 36 -7 43 -38 58 -47 22 -543 67 -1085 99 -234 13 -1402 20
+									-1660 9z"/>
+								</g>
+							</svg>
 
 						</div>
-
-
-						<hr class="separator-line separator-line-gradient">
-
-
-
-
-					</div>
-					<div class="row">
-						<section id="events">
-							<div class="container">
-								<div class="raw">
-									<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
-										<div class="eventName">Technical</div>
-										<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
-										<img src="{{ url_for('static', filename='images/index_events/main.png') }}" class="letterMain"><br>
-										<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="row">
-
-						<section id="team">
-							<div class="container">
-								<div class="row">
-									<h3> Team</h3>
-									<div class="out">
-										<div class="photo">
-											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-											<div class="des">
-												Your name here<br>
-												Post
-											</div>
-										</div>
-										<div class="photo">
-											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-											<div class="des">
-												Your name here<br>
-												Post
-											</div>
-										</div>
-									</div>
-									<div class="sout">
-										<div class="photo">
-											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-											<div class="des">
-												Your name here<br>
-												Post
-											</div>
-										</div>
-										<div class="photo">
-											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-											<div class="des">
-												Your name here<br>
-												Post
-											</div>
-										</div>
-										<div class="photo">
-											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-											<div class="des">
-												Your name here<br>
-												Post
-											</div>
-										</div>
-										<div class="photo">
-											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-											<div class="des">
-												Your name here<br>
-												Post
-											</div>
-										</div>
-										<div class="photo">
-											<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-											<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
-											<div class="des">
-												Your name here<br>
-												Post
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-						<hr class="separator-line separator-line-gradient">
-					</div>
-
-
-					<div class="row">
-						<section id="sponsor">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-12 text-center">
-										<h2 class="section-heading">Our Past Sponsers</h2>
-										<h3 class="section-subheading text-muted">A look at our previous year sponsers</h3>
-									</div>
-								</div>
-								<div class="row content">
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/sbi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/nbcc.jpeg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/divya_bhaskar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/aakash.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-										<img src="{{ url_for('static', filename='images/logos/aditya_birla_group.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-										<img src="{{ url_for('static', filename='images/logos/cococola.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-								</div>
-								<div class="row content">
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/ahir.png') }}" class="img-thumbnail img-responsive img-centered" alt="" >
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/AtosOrigin.svg.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/radio_city.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/aircel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img style="margin-top:" src="{{ url_for('static', filename='images/logos/faadooengineers.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/LnT.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-								</div>
-								<div class="row content">
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/rupa.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/dlf.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/ims.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/vlcc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/vrmall.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/bigfm.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-								</div>
-								<div class="row content">
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/aagam_group.gif') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/aolf.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/jalaram.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/cboi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/essar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/nishal.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-								</div>
-								<div class="row content">
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/honda.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/nh7.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/ongc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/bob.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/fast_ticket.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/cinepolis.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-								</div>
-								<div class="row content">
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/kaibhco.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/pantaloons.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img style="margin-top:" src="{{ url_for('static', filename='images/logos/Vasari.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/airtel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-
-										<img src="{{ url_for('static', filename='images/logos/GG.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-									<div class="col-md-2 col-sm-4 col-xs-6">
-										<img src="{{ url_for('static', filename='images/logos/Radiomirchi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-									</div>
-								</div>
-							</div>
-						</section>
-
-					</div>
-				</section>
-				<!-- /MAIN SECTION -->
-
-				<!-- SUBSCRIBE SECTION -->
-				<section class="col-xs-12 col-md-4 col-md-pull-4 animation-close-subscribe-lg animation-mode" id="subscribe">
-					<div class="vcenter">
-
-						<!-- COUNTER -->
-						<div id="counter">
-							<div class="counter-align">
-								<h2 class="countdown">98</h2>
-								<div class="counter-line"></div>
-								<p class="counter-days-left">days left</p>
-							</div>
-						</div>
-						<!-- /COUNTER -->
-
-						<!-- PARAGRAPH -->
-						<p class="subscribe-paragraphs">Subscribe to be updated on our release.</p>
-						<p class="subscribe-paragraphs">Make sure You don't miss anything!</p>
-						<!-- /PARAGRAPH -->
-
-						<div class="clearfix"></div>
-
-						<!-- FORM -->
-						<form>
-							<span class="subscribe-form">
-
-								<input class="subscribe-email-field" name="email" style="padding: 0px" type="text">
-
-
-
-								<label class="subscribe-email-label">
-									<span class="subscribe-email-span">Email:</span>
-								</label>
-
-								<span class="subscribe-response"></span>
-
-							</span>
-							<br>
-							<span class="subscribe-form">
-
-								<input class="subscribe-email-field" name="name" style="padding: 0px" type="text">
-
-								<label class="subscribe-email-label">
-									<span class="subscribe-email-span">Name:</span>
-								</label>
-
-								<span class="subscribe-response"></span>
-
-							</span>
-							<br>
-							<span class="subscribe-form">
-
-								<input class="subscribe-email-field" name="mobile" maxlength="10" style="padding: 0px" type="text">
-
-								<label class="subscribe-email-label">
-									<span class="subscribe-email-span">Mobile:</span>
-								</label>
-
-								<span class="subscribe-response"></span>
-
-							</span>
-							<br>
-							<span class="subscribe-form">
-
-								<textarea class="subscribe-email-field" name="query" style="padding: 0px" type="text"></textarea>
-
-								<label class="subscribe-email-label">
-									<span class="subscribe-email-span">Query:</span>
-								</label>
-
-								<span class="subscribe-response"></span>
-
-							</span>
-							<br>
-
-							<button type="button" class="btn-primary btn" style="background: rgb(212,175,55)">Submit!</button>
-						</form>
-
-
-
-					</div>
-
-					<!-- CLOSE SUBSCRIBE -->
-					<div id="close-subscribe">
-						<div class="icon-container icon-container-close-subscribe">
-							<div class="vcenter-subscribe">
-								<img src="{{ url_for('static', filename='royal/x.png') }}" alt="Royal Subscribe Icon" class="open-close-icon close-subscribe-icon">
-								<!-- <i class="fa fa-close open-close-icon"></i> -->
-							</div>
-						</div>
-					</div>
-					<!-- /CLOSE SUBSCRIBE -->
-
-				</section>
-				<!-- /SUBSCRIBE SECTION -->
-
-				<!-- CONTACT SECTION -->
-
-				<!-- /CONTACT SECTION -->
-
-
-				<!-- OPEN SUBSCRIBE -->
-				<div id="open-subscribe" class="animation-subscribe-icon-show-lg animation-mode">
-					<div class="icon-container icon-container-open-subscribe">
-						<div class="vcenter-subscribe">
-							<img src="{{ url_for('static', filename='royal/subscribe.png') }}" alt="Royal Subscribe Icon" class="open-close-icon open-subscribe-icon" style="opacity: 1;">
-							<!-- <i class="fa fa-send fa-fw open-close-icon open-subscribe-icon"></i> -->
-							<span class="open-subscribe-title open-icon-title" style="opacity: 0; font-size:10px;">subscribe</span>
+						<div class="sparsh-writrup">
+							<img src="{{ url_for('static', filename='sparsh.png') }}" width="600px" height="300px"></img>
 						</div>
 					</div>
 				</div>
-				<!-- /OPEN SUBSCRIBE -->
-
-				<!-- OPEN CONTACT -->
-
-				<!-- /OPEN CONTACT -->
-
 			</div>
+			<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
+		</section>
 
-			<!-- ./ROW -->
+
+
+
+
+
+
+	</div>
+	<div class="row">
+		<section id="events">
+			<div class="container">
+				<div class="raw">
+					<h3> Events </h3>
+					<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
+						<div class="eventName"></div>
+						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
+						<img src="{{ url_for('static', filename='images/index_events/main.png') }}" class="letterMain"><br>
+						<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
+					</div>
+				</div>
+			</div>
+		</section>
+		<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
+	</div>
+	<div class="row">
+
+		<section id="team">
+			<div class="container">
+				<div class="row">
+					<h3> Team</h3>
+					<div class="out">
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<div class="des">
+								Your name here<br>
+								Post
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<div class="des">
+								Your name here<br>
+								Post
+							</div>
+						</div>
+					</div>
+					<div class="sout">
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<div class="des">
+								Your name here<br>
+								Post
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<div class="des">
+								Your name here<br>
+								Post
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<div class="des">
+								Your name here<br>
+								Post
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<div class="des">
+								Your name here<br>
+								Post
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<div class="des">
+								Your name here<br>
+								Post
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
+	</div>
+
+
+	<div class="row">
+		<section id="sponsor">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h3 class="section-heading">Our Past Sponsers</h3>
+						<h4 class="section-subheading text-muted">A look at our previous year sponsers</h4>
+					</div>
+				</div>
+				<div class="row content">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/sbi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/nbcc.jpeg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/divya_bhaskar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/aakash.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="{{ url_for('static', filename='images/logos/aditya_birla_group.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="{{ url_for('static', filename='images/logos/cococola.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+				</div>
+				<div class="row content">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/ahir.png') }}" class="img-thumbnail img-responsive img-centered" alt="" >
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/AtosOrigin.svg.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/radio_city.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/aircel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img style="margin-top:" src="{{ url_for('static', filename='images/logos/faadooengineers.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/LnT.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+				</div>
+				<div class="row content">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/rupa.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/dlf.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/ims.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/vlcc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/vrmall.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/bigfm.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+				</div>
+				<div class="row content">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/aagam_group.gif') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/aolf.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/jalaram.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/cboi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/essar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/nishal.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+				</div>
+				<div class="row content">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/honda.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/nh7.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/ongc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/bob.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/fast_ticket.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/cinepolis.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+				</div>
+				<div class="row content">
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/kaibhco.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/pantaloons.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img style="margin-top:" src="{{ url_for('static', filename='images/logos/Vasari.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/airtel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+
+						<img src="{{ url_for('static', filename='images/logos/GG.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<img src="{{ url_for('static', filename='images/logos/Radiomirchi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+</section>
+<!-- /MAIN SECTION -->
+
+<!-- SUBSCRIBE SECTION -->
+<section class="col-xs-12 col-md-4 col-md-pull-4 animation-close-subscribe-lg animation-mode" id="subscribe">
+	<div class="vcenter">
+
+		<!-- COUNTER -->
+		<div id="counter">
+			<div class="counter-align">
+				<h2 class="countdown">98</h2>
+				<div class="counter-line"></div>
+				<p class="counter-days-left">days left</p>
+			</div>
 		</div>
-		<!-- ./CONTAINER -->
+		<!-- /COUNTER -->
 
-		<!-- JAVASCRIPTS -->
-		<script type="text/javascript">
-		function showMainImg(n) {
-			var mainImg = document.getElementsByClassName('letterMain')[n];
-			mainImg.style.height = "200px";
-		}
+		<!-- PARAGRAPH -->
+		<p class="subscribe-paragraphs">Subscribe to be updated on our release.</p>
+		<p class="subscribe-paragraphs">Make sure You don't miss anything!</p>
+		<!-- /PARAGRAPH -->
 
-		function hideMainImg(n) {
-			var mainImg = document.getElementsByClassName('letterMain')[n];
-			mainImg.style.height = "0px";
-		}
-		</script>
-		<script src="{{ url_for('static', filename='royal/jquery-1.11.3.min.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/vegas.min.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/smoothscroll.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/loader.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/config.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/main.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
-		<script src="{{ url_for('static', filename='royal/app.js') }}"></script>
+		<div class="clearfix"></div>
+
+		<!-- FORM -->
+		<form>
+			<span class="subscribe-form">
+
+				<input class="subscribe-email-field" name="email" style="padding: 0px" type="text">
 
 
 
+				<label class="subscribe-email-label">
+					<span class="subscribe-email-span">Email:</span>
+				</label>
 
-	</body></html>
+				<span class="subscribe-response"></span>
+
+			</span>
+			<br>
+			<span class="subscribe-form">
+
+				<input class="subscribe-email-field" name="name" style="padding: 0px" type="text">
+
+				<label class="subscribe-email-label">
+					<span class="subscribe-email-span">Name:</span>
+				</label>
+
+				<span class="subscribe-response"></span>
+
+			</span>
+			<br>
+			<span class="subscribe-form">
+
+				<input class="subscribe-email-field" name="mobile" maxlength="10" style="padding: 0px" type="text">
+
+				<label class="subscribe-email-label">
+					<span class="subscribe-email-span">Mobile:</span>
+				</label>
+
+				<span class="subscribe-response"></span>
+
+			</span>
+			<br>
+			<span class="subscribe-form">
+
+				<textarea class="subscribe-email-field" name="query" style="padding: 0px" type="text"></textarea>
+
+				<label class="subscribe-email-label">
+					<span class="subscribe-email-span">Query:</span>
+				</label>
+
+				<span class="subscribe-response"></span>
+
+			</span>
+			<br>
+
+			<button type="button" class="btn-primary btn" style="background: rgb(212,175,55)">Submit!</button>
+		</form>
+
+
+
+	</div>
+
+	<!-- CLOSE SUBSCRIBE -->
+	<div id="close-subscribe">
+		<div class="icon-container icon-container-close-subscribe">
+			<div class="vcenter-subscribe">
+				<img src="{{ url_for('static', filename='royal/x.png') }}" alt="Royal Subscribe Icon" class="open-close-icon close-subscribe-icon">
+				<!-- <i class="fa fa-close open-close-icon"></i> -->
+			</div>
+		</div>
+	</div>
+	<!-- /CLOSE SUBSCRIBE -->
+
+</section>
+<!-- /SUBSCRIBE SECTION -->
+
+<!-- CONTACT SECTION -->
+
+<!-- /CONTACT SECTION -->
+
+
+<!-- OPEN SUBSCRIBE -->
+<div id="open-subscribe" class="animation-subscribe-icon-show-lg animation-mode">
+	<div class="icon-container icon-container-open-subscribe">
+		<div class="vcenter-subscribe">
+			<img src="{{ url_for('static', filename='royal/subscribe.png') }}" alt="Royal Subscribe Icon" class="open-close-icon open-subscribe-icon" style="opacity: 1;">
+			<!-- <i class="fa fa-send fa-fw open-close-icon open-subscribe-icon"></i> -->
+			<span class="open-subscribe-title open-icon-title" style="opacity: 0; font-size:10px;">subscribe</span>
+		</div>
+	</div>
+</div>
+<!-- /OPEN SUBSCRIBE -->
+
+<!-- OPEN CONTACT -->
+
+<!-- /OPEN CONTACT -->
+
+</div>
+
+<!-- ./ROW -->
+
+</div>
+<!-- ./CONTAINER -->
+
+<!-- JAVASCRIPTS -->
+<script type="text/javascript">
+function showMainImg(n) {
+	var mainImg = document.getElementsByClassName('letterMain')[n];
+	mainImg.style.height = "200px";
+}
+
+function hideMainImg(n) {
+	var mainImg = document.getElementsByClassName('letterMain')[n];
+	mainImg.style.height = "0px";
+}
+</script>
+<script src="{{ url_for('static', filename='royal/jquery-1.11.3.min.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/vegas.min.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/smoothscroll.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/loader.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/config.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/main.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/app.js') }}"></script>
+
+
+
+
+</body></html>
