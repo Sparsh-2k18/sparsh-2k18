@@ -45,10 +45,10 @@
 	.st0 {
 		stroke-dasharray: 1900;
 		stroke-dashoffset: 2050;
-		-webkit-animation: dash 40s linear forwards;
-		-moz-animation: dash 40s linear forwards;
-		-o-animation: dash 40s linear forwards;
-		animation: dash 40s linear forwards;
+		-webkit-animation: dash 40s linear forwards infinite;
+		-moz-animation: dash 40s linear forwards infinite;
+		-o-animation: dash 40s linear forwards infinite;
+		animation: dash 40s linear forwards infinite;
 	}
 
 	@-webkit-keyframes dash {
@@ -354,7 +354,7 @@
 					<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
 						<div class="eventName"></div>
 						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
-						<img src="{{ url_for('static', filename='images/index_events/main.png') }}" class="letterMain"><br>
+						<a href="#"><img src="{{ url_for('static', filename='images/index_events/main1.png') }}" class="letterMain"></a><br>
 						<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
 					</div>
 				</div>
@@ -371,7 +371,7 @@
 					<div class="out">
 						<div class="photo">
 							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<img src="{{ url_for('static', filename='royal/a3_golden.png') }}" class="border">
 							<div class="des">
 								Your name here<br>
 								Post
@@ -379,7 +379,7 @@
 						</div>
 						<div class="photo">
 							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<img src="{{ url_for('static', filename='royal/a3_golden.png') }}" class="border">
 							<div class="des">
 								Your name here<br>
 								Post
@@ -389,7 +389,7 @@
 					<div class="sout">
 						<div class="photo">
 							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<img src="{{ url_for('static', filename='royal/a3_golden.png') }}" class="border">
 							<div class="des">
 								Your name here<br>
 								Post
@@ -397,7 +397,7 @@
 						</div>
 						<div class="photo">
 							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<img src="{{ url_for('static', filename='royal/a3_golden.png') }}" class="border">
 							<div class="des">
 								Your name here<br>
 								Post
@@ -405,7 +405,7 @@
 						</div>
 						<div class="photo">
 							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<img src="{{ url_for('static', filename='royal/a3_golden.png') }}" class="border">
 							<div class="des">
 								Your name here<br>
 								Post
@@ -413,7 +413,7 @@
 						</div>
 						<div class="photo">
 							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<img src="{{ url_for('static', filename='royal/a3_golden.png') }}" class="border">
 							<div class="des">
 								Your name here<br>
 								Post
@@ -421,7 +421,7 @@
 						</div>
 						<div class="photo">
 							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3.png') }}" class="border">
+							<img src="{{ url_for('static', filename='royal/a3_golden.png') }}" class="border">
 							<div class="des">
 								Your name here<br>
 								Post
@@ -435,7 +435,7 @@
 	</div>
 
 
-	<div class="row">
+	<div class="row" style="margin-bottom:50px;">
 		<section id="sponsor">
 			<div class="container">
 				<div class="row">
@@ -629,7 +629,15 @@
 		</section>
 
 	</div>
-
+	<div class="row">
+		<div class="footer">
+			<p> Made by Web-dev team with
+				<p class="heart">
+  					<i class="fa fa-heart fa-4x fa-beat"></i>
+				</p>
+			</p>
+		</div>
+	</div>
 
 </section>
 <!-- /MAIN SECTION -->
@@ -761,7 +769,7 @@
 <script type="text/javascript">
 function showMainImg(n) {
 	var mainImg = document.getElementsByClassName('letterMain')[n];
-	mainImg.style.height = "200px";
+	mainImg.style.height = "300px";
 }
 
 function hideMainImg(n) {
