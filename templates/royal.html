@@ -56,16 +56,12 @@
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
-		25% {
-			stroke-dashoffset: 0;
-			fill: none;
-		}
 		50% {
-			stroke-dashoffset: 2050;
+			stroke-dashoffset: 0;
 			fill: none;
 		}
 		100% {
-			stroke-dashoffset: 0;
+			stroke-dashoffset: 2050;
 			fill: none;
 		}
 	}
@@ -75,16 +71,12 @@
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
-		25% {
-			stroke-dashoffset: 0;
-			fill: none;
-		}
 		50% {
-			stroke-dashoffset: 2050;
+			stroke-dashoffset: 0;
 			fill: none;
 		}
 		100% {
-			stroke-dashoffset: 0;
+			stroke-dashoffset: 2050;
 			fill: none;
 		}
 	}
@@ -94,16 +86,12 @@
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
-		25% {
-			stroke-dashoffset: 0;
-			fill: none;
-		}
 		50% {
-			stroke-dashoffset: 2050;
+			stroke-dashoffset: 0;
 			fill: none;
 		}
 		100% {
-			stroke-dashoffset: 0;
+			stroke-dashoffset: 2050;
 			fill: none;
 		}
 	}
@@ -113,16 +101,12 @@
 			stroke-dashoffset: 2050;
 			fill: none;
 		}
-		25% {
-			stroke-dashoffset: 0;
-			fill: none;
-		}
 		50% {
-			stroke-dashoffset: 2050;
+			stroke-dashoffset: 0;
 			fill: none;
 		}
 		100% {
-			stroke-dashoffset: 0;
+			stroke-dashoffset: 2050;
 			fill: none;
 		}
 	}
@@ -327,13 +311,14 @@
 									33 33 30 69 -3 36 -7 43 -38 58 -47 22 -543 67 -1085 99 -234 13 -1402 20
 									-1660 9z"/>
 								</g>
-							</svg>
+								</svg>
 
-						</div>
-						<div class="sparsh-writrup">
-							<img src="{{ url_for('static', filename='sparsh.png') }}" width="600px" height="300px"></img>
-						</div>
-					</div>
+								</div>
+								<div class="sparsh-writrup">
+									<img src="{{ url_for('static', filename='sparsh.png') }}" width="600px" height="300px"></img>
+								</div>
+
+							</div>
 				</div>
 			</div>
 			<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
@@ -354,7 +339,7 @@
 					<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
 						<div class="eventName"></div>
 						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
-						<a href="#"><img src="{{ url_for('static', filename='images/index_events/main1.png') }}" class="letterMain"></a><br>
+						<a href="{{ url_for('event_page') }}"><img src="{{ url_for('static', filename='images/index_events/main1.png') }}" class="letterMain"></a><br>
 						<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
 					</div>
 				</div>
