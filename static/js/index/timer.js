@@ -3,7 +3,7 @@ countdown_to: "2/16/2018",
 rings: {
   'DAYS': {
     s: 86400000, // mseconds in a day,
-    max: 365
+    max: 30
   },
   'HOURS': {
     s: 3600000, // mseconds per hour,
