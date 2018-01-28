@@ -13,7 +13,7 @@
 
 	<!-- GOOGLE FONTS -->
 	<link href="{{ url_for('static', filename='royal/css') }}" rel="stylesheet" type="text/css">
-
+   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/sponser/style.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -30,9 +30,25 @@
 	/* SVG settings */
 
 	@media only screen and (max-width : 767px) {
+		.timer canvas{
+			width: 80% !important;
+			height: 80px !important;
+
+		}
+		.letterHeader{
+			width: 100% !important;
+
+		}
+		.letterMain{
+			width: 100% !important;
+		}
+		.letterFooter{
+			width:100% !important;
+			margin-top: -26px;
+		}
 
 	}
-
+    
 	.svg-animated3{
 		/* width: 250px; */
 		text-align: center;
@@ -142,6 +158,27 @@
 		background-position: center center;
 		margin: 0 auto;
 	}
+	.sparsh-heading{
+		width: 100%;
+
+		height: 16vh;
+		font-size: 52px;
+		font-family: 'Dancing Script', cursive;
+		font-weight: bold;
+	    color: #e5cc7f;
+	}
+	.abt-heading{
+         text-align: center;
+         font-family: 'Dancing Script', cursive;
+         font-size: 42px;
+	}
+	.abt-para{
+         text-align: center;
+         width: 80%;
+         font-size: 21px;
+         font-family: 'Dancing Script', cursive;
+         margin: 0 auto;
+	}
 
 	</style>
 </head>
@@ -216,7 +253,7 @@
 						<!-- LOGO AREA -->
 						<div class="row">
 
-							<div class="main-animation" style="height:100vh;">
+							<div class="main-animation">
 								<div class="svg-animated3">
 									<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 									width="300px" height="300px" viewBox="0 0 570 570"
@@ -326,7 +363,7 @@
 
 								</div>
 								<div class="sparsh-writrup">
-									<img src="{{ url_for('static', filename='sparsh.png') }}" width="600px" height="300px"></img>
+									<div><h1 class="sparsh-heading">SPARSH 2K18</h1></div>
 								</div>
 								<!-- COUNTER -->
 								<div class="row">
@@ -354,11 +391,18 @@
 					<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 				</section>
 			</div>
+			<div class="row"> 
+				<h3 class="abt-heading">About</h3>
+                <p class="abt-para">
+                	Sparsh is the annual techno-cultural festival of Sardar Vallabhbhai National Institute of Technology.It usually takes place in the second or third week of February, and is one of the largest of its kind in the western Region. This five-day festival consists of mega-attractions as well as informal,technical and managerial events among numerous other competitions. 
+                </p>
+			</div>
+			<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 	<div class="row">
 		<section id="events">
-			<div class="container">
+			<div class="container" style="padding: 0;">
 				<div class="raw">
-					<h3> Events </h3>
+					<h3 class="abt-heading" style="font-weight: bold;"> EVENTS </h3>
 					<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
 						<div class="eventName"></div>
 						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
