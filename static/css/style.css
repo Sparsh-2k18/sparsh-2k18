@@ -6,7 +6,10 @@ div.eventLetters{
     width: 100%;
     text-align: center;
 }
-
+/*.eventLetters:hover > .letterMain{
+    height: 300px;
+}
+*/
 .letterHeader{
     width: 300px;
     height: 50px;
@@ -17,11 +20,17 @@ div.eventLetters{
     height: 80px;
 }
 
-img.letterMain{
+div.letterMain{
     height: 0;
-    width: 300px;
-    margin-top: -6px;
+    width: 59%;
+    margin: 0 auto;
+    margin-top: -20px;
+    padding-top: 10px;
+    overflow: hidden;
     transition: height 0.5s;
+    background: url("../images/index_events/main.png") no-repeat center center;
+
+
 }
 
 .letterFooter{
