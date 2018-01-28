@@ -39,8 +39,8 @@
 			width: 100% !important;
 
 		}
-		.letterMain{
-			width: 100% !important;
+		div.letterMain{
+			width: 59% !important;
 		}
 		.letterFooter{
 			width:100% !important;
@@ -178,6 +178,12 @@
          font-size: 21px;
          font-family: 'Dancing Script', cursive;
          margin: 0 auto;
+	}
+	.event-name{
+		font-size: 20px;
+		color: #783000;
+		font-family: 'Dancing Script', cursive;
+
 	}
 
 	</style>
@@ -405,8 +411,13 @@
 					<h3 class="abt-heading" style="font-weight: bold;"> EVENTS </h3>
 					<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
 						<div class="eventName"></div>
-						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
-						<a href="{{ url_for('event_page') }}"><img src="{{ url_for('static', filename='images/index_events/main1.png') }}" class="letterMain"></a><br>
+						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader">
+						<div class="letterMain"><a href=""><h3 class="event-name">Technical</h3></a>
+							                    <a href=""><h3 class="event-name">Managerial</h3></a>
+							                    <a href=""><h3 class="event-name">School Events</h3></a>
+							                	<a href=""><h3 class="event-name">Informals</h3></a>
+							             
+							                	<a href=""><h3 class="event-name">Mega Attraction</h3></a></div>
 						<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
 					</div>
 				</div>
