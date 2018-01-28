@@ -54,7 +54,7 @@
 			FUNCTIONS
 		*************************************/
 
-			/**	OPEN SUBSCRIBE LARGE SCREEN		
+			/**	OPEN SUBSCRIBE LARGE SCREEN
 			**************************************/
 				function open_subscribe_fn_lg() {
 					subscribe.removeClass('animation-close-subscribe-lg animation-mode');
@@ -62,8 +62,8 @@
 
 					open_subscribe_button.removeClass('animation-subscribe-icon-show-lg animation-subscribe-icon-hide-lg animation-mode');
 					open_subscribe_button.addClass('animation-subscribe-icon-hide-lg animation-mode');
-					
-					main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
+
+				//	main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
 				}
 
 			/**	CLOSE SUBSCRIBE LARGE SCREEN
@@ -75,10 +75,10 @@
 					open_subscribe_button.removeClass('animation-subscribe-icon-show-lg animation-subscribe-icon-hide-lg animation-mode');
 					open_subscribe_button.addClass('animation-subscribe-icon-show-lg animation-mode');
 
-					main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
+				//	main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
 				}
 
-			/**	OPEN CONTACT LARGE SCREEN			
+			/**	OPEN CONTACT LARGE SCREEN
 			**************************************/
 				function open_contact_fn_lg() {
 					contact.removeClass('animation-close-contact-lg animation-mode');
@@ -86,11 +86,11 @@
 
 					open_contact_button.removeClass('animation-contact-icon-show-lg animation-contact-icon-hide-lg animation-mode');
 					open_contact_button.addClass('animation-contact-icon-hide-lg animation-mode');
-					
-					main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
+
+				//	main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
 				}
 
-			/**	CLOSE CONTACT			
+			/**	CLOSE CONTACT
 			**************************************/
 				function close_contact_fn_lg() {
 					contact.removeClass('animation-open-contact-lg animation-mode');
@@ -99,38 +99,38 @@
 					open_contact_button.removeClass('animation-contact-icon-show-lg animation-contact-icon-hide-lg animation-mode');
 					open_contact_button.addClass('animation-contact-icon-show-lg animation-mode');
 
-					main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
+				//	main.removeClass('animation-main-center-left-lg animation-main-left-center-lg animation-main-center-right-lg animation-main-right-center-lg animation-main-right-left-lg animation-main-left-right-lg animation-mode');
 				}
 
-			/**	OPEN SUBSCRIBE TABLET			
+			/**	OPEN SUBSCRIBE TABLET
 			**************************************/
 				function open_subscribe_fn_md() {
 					subscribe.removeClass('animation-subscribe-show-md animation-subscribe-hide-md animation-mode');
 					subscribe.addClass('animation-subscribe-show-md animation-mode');
 				}
 
-			/**	CLOSE SUBSCRIBE TABLET			
+			/**	CLOSE SUBSCRIBE TABLET
 			**************************************/
 				function close_subscribe_fn_md() {
 					subscribe.removeClass('animation-subscribe-show-md animation-subscribe-hide-md animation-mode');
 					subscribe.addClass('animation-subscribe-hide-md animation-mode');
 				}
 
-			/**	OPEN CONTACT TABLET			
+			/**	OPEN CONTACT TABLET
 			**************************************/
 				function open_contact_fn_md() {
 					contact.removeClass('animation-contact-show-md animation-contact-hide-md animation-mode');
 					contact.addClass('animation-contact-show-md animation-mode');
 				}
 
-			/**	CLOSE CONTACT TABLET			
+			/**	CLOSE CONTACT TABLET
 			**************************************/
 				function close_contact_fn_md() {
 					contact.removeClass('animation-contact-show-md animation-contact-hide-md animation-mode');
 					contact.addClass('animation-contact-hide-md animation-mode');
 				}
-				
-			/**	SHOW MAIN TABLET			
+
+			/**	SHOW MAIN TABLET
 			**************************************/
 				function show_main_fn_md() {
 					main.removeClass('animation-main-hide-md animation-main-show-md animation-mode');
@@ -140,12 +140,12 @@
 					open_subscribe_button.removeClass('animation-main-hide-md animation-main-show-md animation-mode');
 					open_subscribe_button.addClass('animation-main-show-md animation-mode');
 				}
-				
-			/**	HIDE MAIN TABLET			
+
+			/**	HIDE MAIN TABLET
 			**************************************/
 				function hide_main_fn_md() {
-					main.removeClass('animation-main-hide-md animation-main-show-md animation-mode');
-					main.addClass('animation-main-hide-md animation-mode');
+				//	main.removeClass('animation-main-hide-md animation-main-show-md animation-mode');
+				//	main.addClass('animation-main-hide-md animation-mode');
 					open_contact_button.removeClass('animation-main-hide-md animation-main-show-md animation-mode');
 					open_contact_button.addClass('animation-main-hide-md animation-mode');
 					open_subscribe_button.removeClass('animation-main-hide-md animation-main-show-md animation-mode');
@@ -156,7 +156,7 @@
 			EVENTS
 		*************************************/
 
-			/**	OPEN SUBSCRIBE			
+			/**	OPEN SUBSCRIBE
 			**************************************/
 				open_subscribe_icon.on('click', function() {
 
@@ -184,7 +184,7 @@
 
 				});
 
-			/**	CLOSE SUBSCRIBE			
+			/**	CLOSE SUBSCRIBE
 			**************************************/
 				close_subscribe_icon.on('click',function() {
 
@@ -209,9 +209,10 @@
 
 				});
 
-			/**	OPEN CONTACT			
+			/**	OPEN CONTACT
 			**************************************/
 				open_contact_icon.on('click', function() {
+
 
 					if ( $(window).width() <= 992 ) {
 						hide_main_fn_md();
@@ -225,7 +226,7 @@
 						if( subscribe.hasClass('animation-open-subscribe-lg')) {
 
 							close_subscribe_fn_lg();
-							
+
 							main.addClass('animation-main-right-left-lg animation-mode');
 						}
 
@@ -237,7 +238,7 @@
 
 				});
 
-			/**	CLOSE CONTACT			
+			/**	CLOSE CONTACT
 			**************************************/
 				close_contact_icon.on('click',function() {
 
@@ -265,9 +266,9 @@
 /******************************************************************
 *******************************		2. HOVER ANIMATION
 ******************************************************************/
-	
+
 	$(document).ready(function() {
-		
+
 		var open_subscribe_button 	= $('#open-subscribe'),
 			open_subscribe_icon		= $('.open-subscribe-icon'),
 			open_subscribe_title	= $('.open-subscribe-title'),
@@ -302,26 +303,26 @@
 	var Day = counter.setDay;
 	var Year = counter.setYear;
 	var target_date = new Date(Month +','+ Day +','+ Year).getTime();
-	 
+
 	// variables for time units
 	var days;
-	 
+
 	// get tag element
 	var countdown = document.getElementsByClassName("countdown")[0];
 
 	// update the tag with id "countdown" every 1 second
 	setInterval(function () {
-	 
+
 	    // find the amount of "seconds" between now and target
 	    var current_date = new Date().getTime();
 	    var seconds_left = (target_date - current_date) / 1000;
-	 
+
 	    // do some time calculations
 	    days = parseInt(seconds_left / 86400);
-	     
+
 	    // format countdown string + set tag value
 	    countdown.innerHTML = days;
-	 
+
 	}, 1000);
 
 /******************************************************************
@@ -331,7 +332,7 @@
 	/*!
 	 * classie - class helper functions
 	 * from bonzo https://github.com/ded/bonzo
-	 * 
+	 *
 	 * classie.has( elem, 'my-class' ) -> true/false
 	 * classie.add( elem, 'my-new-class' )
 	 * classie.remove( elem, 'my-unwanted-class' )
@@ -508,5 +509,3 @@
 		wrap: carousel.wrap
 		}
 	);
-
-

@@ -30,6 +30,10 @@
 
 	/* SVG settings */
 
+	@media only screen and (max-width : 767px) {
+		
+	}
+
 	.svg-animated3{
 		/* width: 250px; */
 		text-align: center;
@@ -131,6 +135,15 @@
 		}
 	}
 
+
+
+	.carousel-inner, .carousel, .item,.container,.fill {
+		height: 90%;
+		width: 90%;
+		background-position: center center;
+		margin: 0 auto;
+	}
+
 	</style>
 </head>
 
@@ -182,7 +195,7 @@
 			<div class="navbar-collapse bs-nav-style collapse" id="myNavbar" style="height: 1px;">
 				<ul class="nav navbar-nav">
 					<li><a href="#" class="smoothScroll">Home</a></li>
-					<li><a href="#" class="smoothScroll">Subscribe</a></li>
+					<li><a href="#subscribe" class="smoothScroll">Subscribe</a></li>
 					<li><a href="#" class="smoothScroll">Contact</a></li>
 				</ul>
 			</div>
@@ -207,7 +220,7 @@
 								<div class="svg-animated3">
 									<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 									width="300px" height="300px" viewBox="0 0 570 570"
-									preserveAspectRatio="xMidYMid meet">
+									preserveAspectRatio="xMidYMid meet" id="crown-animation">
 
 									<g transform="translate(0.000000,461.000000) scale(0.100000,-0.100000)"
 									fill="#000000" stroke="none">
@@ -311,14 +324,14 @@
 									33 33 30 69 -3 36 -7 43 -38 58 -47 22 -543 67 -1085 99 -234 13 -1402 20
 									-1660 9z"/>
 								</g>
-								</svg>
+							</svg>
 
-								</div>
-								<div class="sparsh-writrup">
-									<img src="{{ url_for('static', filename='sparsh.png') }}" width="600px" height="300px"></img>
-								</div>
+						</div>
+						<div class="sparsh-writrup">
+							<img src="{{ url_for('static', filename='sparsh.png') }}" width="600px" height="300px"></img>
+						</div>
 
-							</div>
+					</div>
 				</div>
 			</div>
 			<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
@@ -342,6 +355,51 @@
 						<a href="{{ url_for('event_page') }}"><img src="{{ url_for('static', filename='images/index_events/main1.png') }}" class="letterMain"></a><br>
 						<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
 					</div>
+				</div>
+				<div class="row">
+					<h3> Night Events</h3>
+					<div class="container">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+
+								<div class="item active">
+									<img src="{{ url_for('static', filename='images/events/img-2.gif') }}" alt="Los Angeles" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>Los Angeles</h3>
+										<p>LA is always so much fun!</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="{{ url_for('static', filename='images/events/img-2.gif') }}" alt="Chicago" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>Chicago</h3>
+										<p>Thank you, Chicago!</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="{{ url_for('static', filename='images/events/img-2.gif') }}" alt="New York" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>New York</h3>
+										<p>We love the Big Apple!</p>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
@@ -618,7 +676,7 @@
 		<div class="footer">
 			<p> Made by Web-dev team with
 				<p class="heart">
-  					<i class="fa fa-heart fa-4x fa-beat"></i>
+					<i class="fa fa-heart fa-4x fa-beat"></i>
 				</p>
 			</p>
 		</div>
@@ -771,6 +829,8 @@ function hideMainImg(n) {
 <script src="{{ url_for('static', filename='royal/main.js') }}"></script>
 <script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
 <script src="{{ url_for('static', filename='royal/app.js') }}"></script>
+
+
 
 
 

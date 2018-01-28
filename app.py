@@ -12,7 +12,7 @@ def single_page():
 
 @app.route("/events")
 def event_page():
-    return render_template("events.html")
+    return render_template("new_events.html")
 
 @app.route("/detail")
 def detail_page():
