@@ -321,7 +321,7 @@
 	    days = parseInt(seconds_left / 86400);
 
 	    // format countdown string + set tag value
-	    countdown.innerHTML = days;
+	    //countdown.innerHTML = days;
 
 	}, 1000);
 
