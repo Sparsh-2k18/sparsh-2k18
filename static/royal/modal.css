@@ -1,84 +1,83 @@
 /*  MODALS   */
 .close{
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 40px;
-  border: 0;
-  padding: 0px 5px;
-  transition: 0.3s;
-  cursor: pointer;
-  color: #bb1616;
-  text-shadow: 0px 0px 0px;
-  opacity: 1;
-  font-weight: 200;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 40px;
+    border: 0;
+    padding: 0px 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #bb1616;
+    text-shadow: 0px 0px 0px;
+    opacity: 0.8;
+    font-weight: 200;
 }
 .close:hover{
-  background-color: #bb1616;
-  color: white;
+    background-color: #bb1616;
+    color: white;
 }
 
 .mo-content{
-  min-width: 70%;
-  min-height: 300px;
-  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
-  background-color:rgba(36, 41, 46,0.99);
-  color: white;
-  border-top: 4px solid #8a5e0f;
-  border-bottom: 4px solid #8a5e0f;
-  padding:10px;
-  position:fixed;
-  overflow-y: auto;
-  top:15%;
-  left:15%;
-  animation:zoom 0.5s;
-  -webkit-animation:zoom 0.5s; 
-  -webkit-animation:zoom 0.5s;
-  
+    min-width: 70%;
+    min-height: 300px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color:rgba(36, 41, 46,0.99);
+    color: white;
+    border-top: 4px solid #8a5e0f;
+    border-bottom: 4px solid #8a5e0f;
+    padding:10px;
+    position:fixed;
+    overflow: auto;
+    top:20%;
+    left:15%;
+    animation:zoom 0.5s;
+    -webkit-animation:zoom 0.5s;
+    -webkit-animation:zoom 0.5s;
+
 }
 @keyframes zoom{
-  from{transform:scale(0)} to{transform:scale(1)}
+    from{transform:scale(0)} to{transform:scale(1)}
 }
 @keyframes zoomOne{
-  from{transform:scale(0)} to{transform:scale(1)}
+    from{transform:scale(0)} to{transform:scale(1)}
 }
 @-webkit-keyframes zoom{
-  from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}
+    from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}
 }
 @-webkit-keyframes zoomOne{
-  from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}
+    from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}
 }
 @-moz-keyframes zoom{
-  from{-moz-transform:scale(0)} to{-moz-transform:scale(1)}
+    from{-moz-transform:scale(0)} to{-moz-transform:scale(1)}
 }
 @-moz-keyframes zoomOne{
-  from{-moz-transform:scale(0)} to{-moz-transform:scale(1)}
+    from{-moz-transform:scale(0)} to{-moz-transform:scale(1)}
 }
 .mo{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(36,34,31,0.4);
-  z-index:25;
-  display: none;
-  position: fixed;
-  left:0;
-  top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36,34,31,0.4);
+    z-index:25;
+    display: none;
+    position: fixed;
+    left:0;
+    top: 0;
 }
 
 .mo-content img{
-  height: 300px;
+    height: 300px;
 }
 .mo-content h2{
-  text-align: center;
+    text-align: center;
 }
 .mo i{
-  margin: 10px;
+    margin: 10px;
 }
 .mo-body{
-  font-size: 20px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 1050px){
-  .mo-content{width: 94%;left:3%;animation:zoomOne 0.5s;}
+    .mo-content{width: 94%;left:3%;animation:zoomOne 0.5s;}
 }
-
