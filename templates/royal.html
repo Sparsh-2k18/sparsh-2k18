@@ -13,7 +13,7 @@
 
 	<!-- GOOGLE FONTS -->
 	<link href="{{ url_for('static', filename='royal/css') }}" rel="stylesheet" type="text/css">
-   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/sponser/style.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -25,30 +25,15 @@
 	<link href="{{ url_for('static', filename='royal/style.css') }}" rel="stylesheet" type="text/css">
 	<link href="{{ url_for('static', filename='royal/animation.css') }}" rel="stylesheet" type="text/css">
 	<link href="{{ url_for('static', filename='royal/style1.css') }}" rel="stylesheet" type="text/css">
-	<style>
+	<link href="{{ url_for('static', filename='royal/agency.css') }}" rel="stylesheet" type="text/css">
 
-	/* SVG settings */
+	<style>
+    /* SVG settings */
 
 	@media only screen and (max-width : 767px) {
-		.timer canvas{
-			width: 80% !important;
-			height: 80px !important;
-
-		}
-		.letterHeader{
-			width: 100% !important;
-
-		}
-		div.letterMain{
-			width: 59% !important;
-		}
-		.letterFooter{
-			width:100% !important;
-			margin-top: -26px;
-		}
 
 	}
-    
+
 	.svg-animated3{
 		/* width: 250px; */
 		text-align: center;
@@ -158,38 +143,53 @@
 		background-position: center center;
 		margin: 0 auto;
 	}
-	.sparsh-heading{
-		width: 100%;
-
-		height: 16vh;
-		font-size: 52px;
-		font-family: 'Dancing Script', cursive;
-		font-weight: bold;
-	    color: #e5cc7f;
-	}
-	.abt-heading{
-         text-align: center;
-         font-family: 'Dancing Script', cursive;
-         font-size: 42px;
-	}
-	.abt-para{
-         text-align: center;
-         width: 80%;
-         font-size: 21px;
-         font-family: 'Dancing Script', cursive;
-         margin: 0 auto;
-	}
-	.event-name{
-		font-size: 20px;
-		color: #783000;
-		font-family: 'Dancing Script', cursive;
-
-	}
 
 	</style>
 </head>
 
-<body>
+<body id="page-top" class="index">
+	    <!-- Navigation -->
+		<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand page-scroll" href="#page-top">Sparsh2k18</a>
+				</div>
+	
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#events">Events</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#team">Team</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#sponsor">Sponsors</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#contact-us">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+	    <!-- jQuery -->
+		<script src="{{ url_for('static', filename='royal/jquery.min.js') }}"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
+		<!-- Theme JavaScript -->
+		<script src="{{ url_for('static', filename='royal/agency.min.js') }}"></script>
+
 
 	<!-- LOADING -->
 	<div class="container-fluid">
@@ -222,7 +222,7 @@
 
 
 	<!-- BOOTSTRAP MOBILE NAVIGATION -->
-	<nav class="navbar navbar-inverse navbar-fixed-top bs-nav">
+	<!-- <nav class="navbar navbar-inverse navbar-fixed-top bs-nav">
 
 		<div class="navbar-header">
 			<img src="{{ url_for('static', filename='royal/sparsh.png') }}" style="position:fixed; margin-left:-37%; margin-top:1%" height="8%" width="10%" />
@@ -237,13 +237,14 @@
 
 		<div class="navbar-collapse bs-nav-style collapse" id="myNavbar" style="height: 1px;">
 			<ul class="nav navbar-nav">
-				<li><a href="#" class="smoothScroll">Home</a></li>
-				<li><a href="#subscribe" class="smoothScroll">Subscribe</a></li>
+				<li><a href="#" class="smoothScroll">Events</a></li>
+				<li><a href="#" class="snmoothScroll">Team</a></li>
+				<li><a href="#subscribe" class="smoothScroll">Sponsors</a></li>
 				<li><a href="#" class="smoothScroll">Contact</a></li>
 			</ul>
 		</div>
 
-	</nav>
+	</nav> -->
 
 
 		<!-- CONTAINER -->
@@ -259,7 +260,7 @@
 						<!-- LOGO AREA -->
 						<div class="row">
 
-							<div class="main-animation">
+							<div class="main-animation" style="height:100vh;">
 								<div class="svg-animated3">
 									<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
 									width="300px" height="300px" viewBox="0 0 570 570"
@@ -369,26 +370,16 @@
 
 								</div>
 								<div class="sparsh-writrup">
-									<div><h1 class="sparsh-heading">SPARSH 2K18</h1></div>
-								</div>
+							<img src="{{ url_for('static', filename='sparsh.png') }}" width="600px" height="300px"></img>
+						</div>
 								<!-- COUNTER -->
-								<div class="row">
-							        <section id="timer">
-							            <div class="countdown">
-							                <center>
-							                    <div class="timer">
-							                        <script type="text/javascript" src="{{ url_for('static', filename='js/index/timer.js') }}"></script>
-							                        <!-- jQuery -->
-							                        <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
-							                        <!-- Bootstrap Core JavaScript -->
-							                        <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-							                        <!-- Theme JavaScript -->
-							                        <script src="{{ url_for('static', filename='js/index/agency.min.js') }}"></script>
-							                    </div>
-							                </center>
-							            </div>
-							        </section>
-							    </div>
+								<div id="counter">
+							<div class="counter-align">
+								<h2 class="countdown">98</h2>
+								<div class="counter-line"></div>
+								<p class="counter-days-left">days left</p>
+							</div>
+						</div>
 								<!-- /COUNTER -->
 
 							</div>
@@ -397,93 +388,59 @@
 					<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 				</section>
 			</div>
-			<div class="row"> 
-				<h3 class="abt-heading">About</h3>
-                <p class="abt-para">
-                	Sparsh is the annual techno-cultural festival of Sardar Vallabhbhai National Institute of Technology.It usually takes place in the second or third week of February, and is one of the largest of its kind in the western Region. This five-day festival consists of mega-attractions as well as informal,technical and managerial events among numerous other competitions. 
-                </p>
-			</div>
-			<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 	<div class="row">
 		<section id="events">
-			<div class="container" style="padding: 0;">
+			<div class="container">
 				<div class="raw">
-					<h3 class="abt-heading" style="font-weight: bold;"> EVENTS </h3>
+					<h3> Events </h3>
 					<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
 						<div class="eventName"></div>
-						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader">
-						<div class="letterMain"><a href=""><h3 class="event-name">Technical</h3></a>
-							                    <a href=""><h3 class="event-name">Managerial</h3></a>
-							                    <a href=""><h3 class="event-name">School Events</h3></a>
-							                	<a href=""><h3 class="event-name">Informals</h3></a>
-							             
-							                	<a href=""><h3 class="event-name">Mega Attraction</h3></a></div>
+						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader"><br>
+						<a href="{{ url_for('event_page') }}"><img src="{{ url_for('static', filename='images/index_events/main1.png') }}" class="letterMain"></a><br>
 						<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
 					</div>
 				</div>
 				<div class="row">
-					<div class="slider-container">
-						<div class="flexbox-slider flexbox-slider-2">
-							<div class="flexbox-slide">
-								<img src="{{ url_for('static', filename='images/index_events/eff-1.jpg') }}" alt="Slide Image">
-								<div class="text-block">
-									<h3>Dancing Night</h3>
-									<div class="text">
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-											magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-											gubergren
-										</p>
+					<h3> Night Events</h3>
+					<div class="container">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+
+								<div class="item active">
+									<img src="{{ url_for('static', filename='images/events/img-2.gif') }}" alt="Los Angeles" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>Los Angeles</h3>
+										<p>LA is always so much fun!</p>
 									</div>
 								</div>
-							</div>
-							<div class="flexbox-slide">
-								<img src="{{ url_for('static', filename='images/index_events/eff-2.jpg') }}" alt="Slide Image">
-								<div class="text-block">
-									<h3>Singing Night</h3>
-									<div class="text">
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-											magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-											gubergren
-										</p>
+
+								<div class="item">
+									<img src="{{ url_for('static', filename='images/events/img-2.gif') }}" alt="Chicago" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>Chicago</h3>
+										<p>Thank you, Chicago!</p>
 									</div>
 								</div>
-							</div>
-							<div class="flexbox-slide">
-								<img src="{{ url_for('static', filename='images/index_events/eff-3.jpg') }}" alt="Slide Image">
-								<div class="text-block">
-									<h3>Fashion Night</h3>
-									<div class="text">
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-											magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-											gubergren
-										</p>
+
+								<div class="item">
+									<img src="{{ url_for('static', filename='images/events/img-2.gif') }}" alt="New York" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>New York</h3>
+										<p>We love the Big Apple!</p>
 									</div>
 								</div>
+
 							</div>
-							<div class="flexbox-slide">
-								<img src="{{ url_for('static', filename='images/index_events/eff-4.jpg') }}" alt="Slide Image">
-								<div class="text-block">
-									<h3>Celebrity Night</h3>
-									<div class="text">
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-											magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-											gubergren
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="flexbox-slide">
-								<img src="{{ url_for('static', filename='images/index_events/eff-9.jpg') }}" alt="Slide Image">
-								<div class="text-block">
-									<h3>EDM Night</h3>
-									<div class="text">
-										<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-											magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-											gubergren
-										</p>
-									</div>
-								</div>
-							</div>
+
+
 						</div>
 					</div>
 
@@ -863,10 +820,7 @@ function hideMainImg(n) {
 <script src="{{ url_for('static', filename='royal/main.js') }}"></script>
 <script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
 <script src="{{ url_for('static', filename='royal/app.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/index/timer.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/index/agency.min.js') }}"></script>
+<script src="{{ url_for('static', filename='royal/agency.js') }}"></script>
 
 
 
