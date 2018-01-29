@@ -48,7 +48,7 @@
 		}
 
 	}
-    
+
 	.svg-animated3{
 		/* width: 250px; */
 		text-align: center;
@@ -180,7 +180,7 @@
          margin: 0 auto;
 	}
 	.event-name{
-		font-size: 20px;
+		font-size: 2.0em;
 		color: #783000;
 		font-family: 'Dancing Script', cursive;
 
@@ -397,10 +397,10 @@
 					<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 				</section>
 			</div>
-			<div class="row"> 
+			<div class="row">
 				<h3 class="abt-heading">About</h3>
                 <p class="abt-para">
-                	Sparsh is the annual techno-cultural festival of Sardar Vallabhbhai National Institute of Technology.It usually takes place in the second or third week of February, and is one of the largest of its kind in the western Region. This five-day festival consists of mega-attractions as well as informal,technical and managerial events among numerous other competitions. 
+                	Sparsh is the annual techno-cultural festival of Sardar Vallabhbhai National Institute of Technology.It usually takes place in the second or third week of February, and is one of the largest of its kind in the western Region. This five-day festival consists of mega-attractions as well as informal,technical and managerial events among numerous other competitions.
                 </p>
 			</div>
 			<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
@@ -409,14 +409,14 @@
 			<div class="container" style="padding: 0;">
 				<div class="raw">
 					<h3 class="abt-heading" style="font-weight: bold;"> EVENTS </h3>
-					<div class="eventLetters" onmouseover="showMainImg(0)" onmouseout="hideMainImg(0)">
+					<div class="eventLetters" onmouseclick="showMainImg(0)" onmouseout="hideMainImg(0)">
 						<div class="eventName"></div>
 						<img src="{{ url_for('static', filename='images/index_events/up.png') }}" class="letterHeader">
 						<div class="letterMain"><a href=""><h3 class="event-name">Technical</h3></a>
 							                    <a href=""><h3 class="event-name">Managerial</h3></a>
 							                    <a href=""><h3 class="event-name">School Events</h3></a>
 							                	<a href=""><h3 class="event-name">Informals</h3></a>
-							             
+
 							                	<a href=""><h3 class="event-name">Mega Attraction</h3></a></div>
 						<img src="{{ url_for('static', filename='images/index_events/down.png') }}" class="letterFooter">
 					</div>
@@ -487,77 +487,6 @@
 						</div>
 					</div>
 
-				</div>
-			</div>
-		</section>
-		<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
-	</div>
-	<div class="row">
-
-		<section id="team">
-			<div class="container">
-				<div class="row">
-					<h3> Team</h3>
-					<div class="out">
-						<div class="photo">
-							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
-							<div class="des">
-								Umang Chavada<br>
-								Cultural Secratery
-							</div>
-						</div>
-						<div class="photo">
-							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
-							<div class="des">
-								Lokesh Nagar<br>
-								Co-Curricular Secratery
-							</div>
-						</div>
-					</div>
-					<div class="sout">
-						<div class="photo">
-							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
-							<div class="des">
-								Ankit Malani<br>
-								Convener
-							</div>
-						</div>
-						<div class="photo">
-							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
-							<div class="des">
-								Kuldeep Chaudhary<br>
-								Convener
-							</div>
-						</div>
-						<div class="photo">
-							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
-							<div class="des">
-								Aum Talaviya<br>
-								Convener
-							</div>
-						</div>
-						<div class="photo">
-							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
-							<div class="des">
-								Vineet Sahu<br>
-								Convener
-							</div>
-						</div>
-						<div class="photo">
-							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
-							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
-							<div class="des">
-								V.Akhilesh<br>
-								Convener
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -660,104 +589,84 @@
 
 					</div>
 				</div>
-				<div class="row content">
-					<div class="col-md-2 col-sm-4 col-xs-6">
 
-						<img src="{{ url_for('static', filename='images/logos/aagam_group.gif') }}" class="img-thumbnail img-responsive img-centered" alt="">
 
+			</div>
+		</section>
+		<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
+	</div>
+	<div class="row">
+
+		<section id="team">
+			<div class="container">
+				<div class="row">
+					<h3> Team</h3>
+					<div class="out">
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+							<div class="des">
+								Umang Chavada<br>
+								Cultural Secratery
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+							<div class="des">
+								Lokesh Nagar<br>
+								Co-Curricular Secratery
+							</div>
+						</div>
 					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/aolf.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/jalaram.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/cboi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/essar.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/nishal.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-				</div>
-				<div class="row content">
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/honda.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/nh7.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/ongc.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/bob.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/fast_ticket.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/cinepolis.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-				</div>
-				<div class="row content">
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/kaibhco.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/pantaloons.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img style="margin-top:" src="{{ url_for('static', filename='images/logos/Vasari.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/airtel.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
-
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-
-						<img src="{{ url_for('static', filename='images/logos/GG.png') }}" class="img-thumbnail img-responsive img-centered" alt="">
-					</div>
-					<div class="col-md-2 col-sm-4 col-xs-6">
-						<img src="{{ url_for('static', filename='images/logos/Radiomirchi.jpg') }}" class="img-thumbnail img-responsive img-centered" alt="">
+					<div class="sout">
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+							<div class="des">
+								Ankit Malani<br>
+								Convener
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+							<div class="des">
+								Kuldeep Chaudhary<br>
+								Convener
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+							<div class="des">
+								Aum Talaviya<br>
+								Convener
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+							<div class="des">
+								Vineet Sahu<br>
+								Convener
+							</div>
+						</div>
+						<div class="photo">
+							<img src="{{ url_for('static', filename='royal/ac.jpg') }}" class="image">
+							<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+							<div class="des">
+								V.Akhilesh<br>
+								Convener
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-
+		<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 	</div>
+
 	<div class="row" style="margin: 0 0 50px 0;">
 		<section id="contact-us">
 			<div class="container">
