@@ -712,12 +712,10 @@
 		/**	SLIDER
 		**************************************/
 
-			#slider, .carousel-inner
-			{
-				height: 180px;
-				max-width: 450px;
+			/* #slider, .carousel-inner
+
 				margin: 0 auto;
-			}
+			} */
 
 			#slider h2
 			{
@@ -1157,7 +1155,7 @@
 				}
 
 				#slider,
-				.carousel-inner
+				/* .carousel-inner */
 				{
 					height: 130px;
 					max-width: 320px;
