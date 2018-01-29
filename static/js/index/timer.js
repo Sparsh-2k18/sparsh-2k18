@@ -1,5 +1,5 @@
 var ringer = {
-countdown_to: "2/16/2018",
+countdown_to: "2/22/2018",
 rings: {
   'DAYS': {
     s: 86400000, // mseconds in a day,
@@ -88,14 +88,14 @@ unit: function(idx,label,ring) {
   $r.ctx.stroke();
 
   // second circle
-  $r.ctx.strokeStyle = "rgb(229, 204, 127)";
+  $r.ctx.strokeStyle = "rgb(255,64,64)";
   $r.ctx.beginPath();
   $r.ctx.arc(0,0,$r.r_size/2,0,endAngle, 1);
   $r.ctx.lineWidth =$r.r_thickness;
   $r.ctx.stroke();
 
   // label
-  $r.ctx.fillStyle = "rgb(255,255,255)";
+  $r.ctx.fillStyle = "rgb(255,165,0)";
 
   $r.ctx.font = '12px Helvetica';
   $r.ctx.fillText(label, 0, 23);

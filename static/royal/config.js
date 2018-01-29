@@ -194,7 +194,7 @@
 		//
 		// OPTIONS:"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 
-		setMonth: 'February',
+		setMonth: 'May',
 
 
 
@@ -202,7 +202,7 @@
 		// -------
 		// SET DAY : INTEGER[ 1 - 31 ]
 
-		setDay: 16,
+		setDay: 1,
 
 
 
