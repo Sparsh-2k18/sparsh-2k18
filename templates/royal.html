@@ -189,7 +189,7 @@
 		text-align: center;
 		font-family: 'Dancing Script', cursive;
 		font-size: 42px;
-	
+
 	}
 	.abt-para{
 		text-align: center;
@@ -228,6 +228,11 @@
 		line-height: 1.5;
 	}
 
+	.footer-image {
+		width: 100%;
+		height: 250px;
+		opacity: 0.5;
+	}
 
 	</style>
 </head>
@@ -863,8 +868,8 @@
 					</section>
 				</div>
 				<div class="row">
-					<div class="footer-image">
-						<img src="{{ url_for('static', filename='india.png') }}" width="100%" height="250px" style="opacity:0.5;"></img>
+					<div>
+						<img class="footer-image" src="{{ url_for('static', filename='india.png') }}"></img>
 					</div>
 				</div>
 				<div class="row">
