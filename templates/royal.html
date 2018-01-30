@@ -47,6 +47,17 @@
 			margin-top: -26px;
 		}
 
+		.footer-image {
+			height: 100px;
+		}
+
+		.about-sparsh {
+			width:90% !important;
+		}
+
+		.abt-para {
+			margin: 10px auto 30px auto !important;
+		}
 	}
 
 	.svg-animated3{
@@ -168,9 +179,11 @@
 		color: #e5cc7f;
 	}
 	.abt-heading{
+		margin-top: 20px;
 		text-align: center;
 		font-family: 'Dancing Script', cursive;
 		font-size: 42px;
+		color: #783000;
 	}
 	.abt-para{
 		text-align: center;
@@ -191,6 +204,21 @@
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+	}
+
+	.about-sparsh {
+		color: : #783000;
+		margin: 0 auto;
+		width: 60%;
+		background-image: url("{{ url_for('static', filename='about-background.png') }}");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.abt-para {
+		color: #783000;
+		margin: 50px 100px 100px 100px;
+		line-height: 1.5;
 	}
 	</style>
 </head>
@@ -410,7 +438,7 @@
 					<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 				</section>
 			</div>
-			<div class="row">
+			<div class="row about-sparsh">
 				<h3 class="abt-heading">About</h3>
 				<p class="abt-para">
 					Sparsh is the annual techno-cultural festival of Sardar Vallabhbhai National Institute of Technology.It usually takes place in the second or third week of February, and is one of the largest of its kind in the western Region. This five-day festival consists of mega-attractions as well as informal,technical and managerial events among numerous other competitions.
@@ -813,7 +841,9 @@
 					</section>
 				</div>
 				<div class="row">
-					<img src="{{ url_for('static', filename='india.png') }}" width="100%" height="250px" style="opacity:0.5;"></img>
+					<div class="footer-image">
+						<img src="{{ url_for('static', filename='india.png') }}" width="100%" height="250px" style="opacity:0.5;"></img>
+					</div>
 				</div>
 				<div class="row">
 					<div class="footer">
