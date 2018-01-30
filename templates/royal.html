@@ -48,7 +48,7 @@
 		}
 
 		.footer-image {
-			height: 100px;
+			height: 100px !important;
 		}
 
 		.about-sparsh {
@@ -213,6 +213,7 @@
 		background-image: url("{{ url_for('static', filename='about-background.png') }}");
 		background-repeat: no-repeat;
 		background-size: cover;
+		opacity: 0.9;
 	}
 
 	.abt-para {
@@ -220,6 +221,8 @@
 		margin: 50px 100px 100px 100px;
 		line-height: 1.5;
 	}
+
+
 	</style>
 </head>
 
@@ -929,7 +932,7 @@
 
 			$(window).on('resize', function (){
 				$wHeight = $(window).height();
-				$item.height($wHeight);
+				$item.height($wHeight*0.80);
 			});
 
 			$('.carousel').carousel({
