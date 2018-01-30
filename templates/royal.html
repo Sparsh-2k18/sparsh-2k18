@@ -58,6 +58,10 @@
 		.abt-para {
 			margin: 10px auto 30px auto !important;
 		}
+
+		#loader {
+			margin-top: 280px;
+		}
 	}
 
 	.svg-animated3{
@@ -179,13 +183,18 @@
 	}
 	.sparsh-heading{
 		width: 100%;
-
 		height: 16vh;
 		font-size: 52px;
 		font-family: 'Dancing Script', cursive;
 		font-weight: bold;
 		color: #e5cc7f;
 	}
+
+	.sparsh-heading-date {
+		font-family: 'Dancing Script', cursive;
+		font-size: 40px;
+	}
+
 	.abt-heading{
 		margin-top: 20px;
 		text-align: center;
@@ -245,7 +254,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div id="loader-wrap" class="col-xs-12 col-sm-12">
-				<div id="loader" class="vcenter" style="margin-top:100px;">
+				<div id="loader" class="vcenter">
 					<img src="{{ url_for('static', filename='royal/logo-line.png') }}" alt="">
 					<h4>LOADING</h4>
 					<div class="load-progress"></div>
@@ -436,6 +445,7 @@
 								</div>
 								<div class="sparsh-writrup">
 									<div><h1 class="sparsh-heading">SPARSH 2K18</h1></div>
+									<div><h2 class="sparsh-heading-date">16-20 FEBRUARY 2018</h2></div>
 								</div>
 								<!-- COUNTER -->
 								<div class="row">

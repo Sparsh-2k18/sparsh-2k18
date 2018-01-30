@@ -64,6 +64,10 @@ def contact_page():
 def winter_page():
     return render_template("royal.html")
 
+@app.route("/rulebook",methods = ['GET'])
+def rulebook_page():
+    return render_template("rulebook.html")
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

@@ -29,36 +29,36 @@
     <link href="{{ url_for('static', filename='royal/modal.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
     <style>
-        body {
-            overflow-x: hidden !important;
-        }
-        h1, h2, h3, h4 {
-            font-family: "Dancing script";
-            height: 100%;
-            width:  100%;
-        }
+    body {
+        overflow-x: hidden !important;
+    }
+    h1, h2, h3, h4 {
+        font-family: "Dancing script";
+        height: 100%;
+        width:  100%;
+    }
 
-        .event-card :hover {
-            border-bottom: 1px solid #e5cc7f;
-        }
+    .event-card :hover {
+        border-bottom: 1px solid #e5cc7f;
+    }
 
-        #technical,#managerial,#informal,#school-events {
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
+    #technical,#managerial,#informal,#school-events {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-        p {
-            margin: 50px 10px 50px 10px;
-        }
+    p {
+        margin: 50px 10px 50px 10px;
+    }
 
-        .footer p {
-            margin: 0 !important;
+    .footer p {
+        margin: 0 !important;
+    }
+    @media only screen and (max-width : 767px) {
+        .image-event {
+            width: 80%; !important;
         }
-        @media only screen and (max-width : 767px) {
-            .image-event {
-                width: 80%; !important;
-            }
-        }
+    }
     </style>
 </head>
 
@@ -96,181 +96,181 @@
 
     <!-- BOOTSTRAP MOBILE NAVIGATION -->
     <header>
-  		<nav class="navbar navbar-inverse navbar-fixed-top">
-  			<div class="container">
-  				<div class="navbar-header">
-  					<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9"
-  					    aria-expanded="false">
-  						<span class="sr-only">Toggle navigation</span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  					</button>
-  					<a href="{{url_for('winter_page')}}" class="navbar-brand">Sparsh 2K18</a>
-  				</div>
-  				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-  					<ul class="nav navbar-nav navbar-right">
-  						<li>
-  							<a href="#technical">Technical</a>
-  						</li>
-  						<li>
-  							<a href="#managerial">Managerial</a>
-  						</li>
-  						<li>
-  							<a href="#informal">Informal</a>
-  						</li>
-  						<li>
-  							<a href="#school-events">School Events</a>
-  						</li>
-  					</ul>
-  				</div>
-  			</div>
-  		</nav>
-  	</header>
-      <!-- -/BOOTSTRAP MOBILE NAVIGATION -->
-
-        <!-- CONTAINER -->
-        <div class="container-fluid">
-
-            <!-- ROW -->
-            <div class="row">
-              <h1>Robowars</h1>
-              <h2 style="text-align: left">Task:</h2>
-                <p>Design and construct a remote controlled robot capable of fighting a one on one tournament .</p>
-
-                <h2 style="text-align: left">Team Specifications:</h2>
-                <ul>
-                  <li>A team of maximum 6 members can participate in the event.</li>
-                    <li>Team Name: Every team must have unique team name. Organizers reserves
-                      the right to reject entries from any Team whose name it deems inappropriate,
-                      offensive or conflicting. Organizers must be notified during if a Team's name
-                      has been changed.
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="{{url_for('winter_page')}}" class="navbar-brand">Sparsh 2K18</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#technical">Technical</a>
                     </li>
-                    <li>Team Representative: Each team must specify their Team Representative
-                      (Leader) at the time of registration on the website. All important
-                      communications between organizer and the registered teams will be done
-                      through their Team Representative. The Team representatives must submit
-                      valid contact details (phone no., email ID etc.) at the time of registration .</li>
-                    <li>In no case the arena should be damaged by bots.</li>
-                    <li>If teams don’t show up on allotted slot, they will be disqualified.</li>
-                    <li>A team can get a timeout of 2 minutes in a round to repair minor casualties
-                            for which certain points will be deducted.
+                    <li>
+                        <a href="#managerial">Managerial</a>
                     </li>
-                    <li>Core committee’s decision will be final and indisputable in any case.</li>
-                    <li>An AC source of 230V/50Hz would be provided by the Core Committee.</li>
-                </ul>
-
-
-
-                <h2 style="text-align: left">Dimensions and weight:</h2>
-                <ul>
-                    <li>The machine should fit in a box of dimension 750mm x 750mm x 1000 mm (l x b x h) at any given point during the match. The external device used to control the machine or any external tank is not included in the size constraint.
+                    <li>
+                        <a href="#informal">Informal</a>
                     </li>
-                    <li>The bot should not exceed 60kg weight including the pneumatic/hydraulic source and batteries.</li>
+                    <li>
+                        <a href="#school-events">School Events</a>
+                    </li>
                 </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- -/BOOTSTRAP MOBILE NAVIGATION -->
 
-                <h2 style="text-align: left">Mobility:</h2>
-                <ul>
-                    <li>Rolling (wheels or whole bot)</li>
-                    <li>Linear actuated legs or cam operated motion or any non-wheeled drive system.</li>
-                    <li>Jumping or flying with help of propellers or gas balloons is not allowed.</li>
-                </ul>
+<!-- CONTAINER -->
+<div class="container-fluid">
 
-                <h2 style="text-align: left">Battery and Power:</h2>
-                <ul>
-                    <li>Bot can be powered electrically(DC) by batteries with electrolytes such as lithium,NiCad,gel cells,fuel cells.</li>
-                    <li>The voltage between any two points on the bots should not exceed 36V.</li>
-                    <li>Change of batteries will not be allowed during the match. </li>
-                    <li>Batteries should be charged up before advancing to the match. If teams don’t show up on allotted slot, they will be disqualified.</li>
-                </ul>
+    <!-- ROW -->
+    <div class="row">
+        <h1>Robowars</h1>
+        <h2 style="text-align: left">Task:</h2>
+        <p>Design and construct a remote controlled robot capable of fighting a one on one tournament .</p>
+
+        <h2 style="text-align: left">Team Specifications:</h2>
+        <ul>
+            <li>A team of maximum 6 members can participate in the event.</li>
+            <li>Team Name: Every team must have unique team name. Organizers reserves
+                the right to reject entries from any Team whose name it deems inappropriate,
+                offensive or conflicting. Organizers must be notified during if a Team's name
+                has been changed.
+            </li>
+            <li>Team Representative: Each team must specify their Team Representative
+                (Leader) at the time of registration on the website. All important
+                communications between organizer and the registered teams will be done
+                through their Team Representative. The Team representatives must submit
+                valid contact details (phone no., email ID etc.) at the time of registration .</li>
+                <li>In no case the arena should be damaged by bots.</li>
+                <li>If teams don’t show up on allotted slot, they will be disqualified.</li>
+                <li>A team can get a timeout of 2 minutes in a round to repair minor casualties
+                    for which certain points will be deducted.
+                </li>
+                <li>Core committee’s decision will be final and indisputable in any case.</li>
+                <li>An AC source of 230V/50Hz would be provided by the Core Committee.</li>
+            </ul>
 
 
-                <h2 style="text-align: left">Pneumatics and hydraulics:</h2>
-                <ul>
-                    <li>Use of non-inflammable gases or fluid is permitted to actuate pneumatic/hydraulic devices.</li>
-                    <li>Maximum pressure in the storage/source tank must not exceed 8 bar.</li>
-                    <li>There should be provision to check the storage tank or source tank pressure with integrated or temporarily fitted pressure gauge.</li>
-                    <li>All hydraulics liquids should be non-corrosive and leak proof.</li>
-                </ul>
 
-                <h2 style="text-align: left">Attacking/weapon system:</h2>
-                <ul>
-                    <li>Robots can have any kind of magnetic weapons, cutters, flippers, saws, lifting devices, spinning hammers, drums etc.</li>
-                    <li>Following weapons or attacking systems are not permitted.
-                      <ol>
+            <h2 style="text-align: left">Dimensions and weight:</h2>
+            <ul>
+                <li>The machine should fit in a box of dimension 750mm x 750mm x 1000 mm (l x b x h) at any given point during the match. The external device used to control the machine or any external tank is not included in the size constraint.
+                </li>
+                <li>The bot should not exceed 60kg weight including the pneumatic/hydraulic source and batteries.</li>
+            </ul>
+
+            <h2 style="text-align: left">Mobility:</h2>
+            <ul>
+                <li>Rolling (wheels or whole bot)</li>
+                <li>Linear actuated legs or cam operated motion or any non-wheeled drive system.</li>
+                <li>Jumping or flying with help of propellers or gas balloons is not allowed.</li>
+            </ul>
+
+            <h2 style="text-align: left">Battery and Power:</h2>
+            <ul>
+                <li>Bot can be powered electrically(DC) by batteries with electrolytes such as lithium,NiCad,gel cells,fuel cells.</li>
+                <li>The voltage between any two points on the bots should not exceed 36V.</li>
+                <li>Change of batteries will not be allowed during the match. </li>
+                <li>Batteries should be charged up before advancing to the match. If teams don’t show up on allotted slot, they will be disqualified.</li>
+            </ul>
+
+
+            <h2 style="text-align: left">Pneumatics and hydraulics:</h2>
+            <ul>
+                <li>Use of non-inflammable gases or fluid is permitted to actuate pneumatic/hydraulic devices.</li>
+                <li>Maximum pressure in the storage/source tank must not exceed 8 bar.</li>
+                <li>There should be provision to check the storage tank or source tank pressure with integrated or temporarily fitted pressure gauge.</li>
+                <li>All hydraulics liquids should be non-corrosive and leak proof.</li>
+            </ul>
+
+            <h2 style="text-align: left">Attacking/weapon system:</h2>
+            <ul>
+                <li>Robots can have any kind of magnetic weapons, cutters, flippers, saws, lifting devices, spinning hammers, drums etc.</li>
+                <li>Following weapons or attacking systems are not permitted.
+                    <ol>
                         <li>Liquid projectiles and tethered or untethered projectiles.</li>
                         <li>Inflammable liquid based weapons.</li>
                         <li>Explosives</li>
                         <li>Nets, ropes, or glue or any other entanglement device.</li>
                         <li>Teasers, tesla coils or any other high voltage device.</li>
                         <li>Radio jammers are strictly prohibited.</li>
-                      </ol>
-                    </li>
-                </ul>
+                    </ol>
+                </li>
+            </ul>
 
-                <h2 style="text-align: left">Criteria for victory:</h2>
-                <ul>
-                    <li>The competition will be played on knockout basis.</li><li>
-A bot is declared victorious if its opponent is immobilized.</li><li>
-A bot is declared immobilized if it cannot move linearly for more than
-30 seconds.</li><li>
-In case both the robots remain mobile after the end of the round the
-winner will be decided subjectively.</li><li>
-If the robot is thrown out of the arena, the robot still inside the arena
-will automatic be declared as the winner.
-</li><li>Pinning occurs when one robot, through sheer force, holds an opponent
-stationary in order to immobilize it. Organizers will allow pinning or
-lifting for a maximum of 20 seconds per pin/lift then the attacker robot
-will be instructed to release the opponent. If team fails to stop the
-pinning/lifting for several times, that team can also be disqualified.
-</li><li>Points will be given on the basis of aggression, damage, control
-and strategy.</li>
-                </ul>
-
-
-
-                <h2 style="text-align: left">Certification Policy :</h2>
-                  <p>Certificates & Prize money will be provided to top three teams of the competition.</p>
-
-                  <h2 style="text-align: left">For Queries Contact :</h2>
-                    <p>Certificates & Prize money will be provided to top three teams of the competition.</p><br>
-
-
-</div>
-
-        <!-- ./ROW -->
-
-        <!-- ./CONTAINER -->
-
-        <!-- JAVASCRIPTS -->
-
-        <script src="{{ url_for('static', filename='royal/jquery-1.11.3.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/vegas.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/smoothscroll.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/loader.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/config.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/main.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
-        <script src="{{ url_for('static', filename='royal/app.js') }}"></script>
-        <script type="text/javascript" src="{{ url_for('static', filename='royal/modal.js') }}"></script>
-        <script>
-  			$(document).on('click', 'a[href^="#"]', function (e) {
-  					var id = $(this).attr('href');
-  					var $id = $(id);
-  					if ($id.length === 0) {
-  							return;
-  					}
-  					e.preventDefault();
-  					var pos = $id.offset().top;
-  					$('body, html').animate({
-  							scrollTop: pos
-  					});
-  			});
-  			</script>
+            <h2 style="text-align: left">Criteria for victory:</h2>
+            <ul>
+                <li>The competition will be played on knockout basis.</li><li>
+                    A bot is declared victorious if its opponent is immobilized.</li><li>
+                        A bot is declared immobilized if it cannot move linearly for more than
+                        30 seconds.</li><li>
+                            In case both the robots remain mobile after the end of the round the
+                            winner will be decided subjectively.</li><li>
+                                If the robot is thrown out of the arena, the robot still inside the arena
+                                will automatic be declared as the winner.
+                            </li><li>Pinning occurs when one robot, through sheer force, holds an opponent
+                                stationary in order to immobilize it. Organizers will allow pinning or
+                                lifting for a maximum of 20 seconds per pin/lift then the attacker robot
+                                will be instructed to release the opponent. If team fails to stop the
+                                pinning/lifting for several times, that team can also be disqualified.
+                            </li><li>Points will be given on the basis of aggression, damage, control
+                                and strategy.</li>
+                            </ul>
 
 
 
+                            <h2 style="text-align: left">Certification Policy :</h2>
+                            <p>Certificates & Prize money will be provided to top three teams of the competition.</p>
+
+                            <h2 style="text-align: left">For Queries Contact :</h2>
+                            <p>Certificates & Prize money will be provided to top three teams of the competition.</p><br>
 
 
-    </body></html>
+                        </div>
+
+                        <!-- ./ROW -->
+
+                        <!-- ./CONTAINER -->
+
+                        <!-- JAVASCRIPTS -->
+
+                        <script src="{{ url_for('static', filename='royal/jquery-1.11.3.min.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/vegas.min.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/smoothscroll.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/loader.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/config.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/main.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
+                        <script src="{{ url_for('static', filename='royal/app.js') }}"></script>
+                        <script type="text/javascript" src="{{ url_for('static', filename='royal/modal.js') }}"></script>
+                        <script>
+                        $(document).on('click', 'a[href^="#"]', function (e) {
+                            var id = $(this).attr('href');
+                            var $id = $(id);
+                            if ($id.length === 0) {
+                                return;
+                            }
+                            e.preventDefault();
+                            var pos = $id.offset().top;
+                            $('body, html').animate({
+                                scrollTop: pos
+                            });
+                        });
+                        </script>
+
+
+
+
+
+                    </body></html>
