@@ -32,7 +32,7 @@ div.letterMain{
     overflow: hidden;
     transition: height 0.5s;
     background: url("../images/index_events/main.png") no-repeat center center;
-    background-size: contain;
+    background-size: cover;
 
 }
 
