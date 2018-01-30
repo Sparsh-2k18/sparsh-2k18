@@ -6,5 +6,5 @@ window.onload = function() {
 		loader.style.opacity = 0;
 		loader.style.visibility = 'hidden';
 		body.style.overflow = 'visible';
-	},2500);
+	},1000);
 }
