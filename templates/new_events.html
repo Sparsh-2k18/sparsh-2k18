@@ -95,28 +95,39 @@
 
 
     <!-- BOOTSTRAP MOBILE NAVIGATION -->
-    <nav class="navbar navbar-inverse navbar-fixed-top bs-nav">
-
-        <div class="navbar-header">
-            <img src="{{ url_for('static', filename='royal/sparsh.png') }}" style="position:fixed; margin-left:-37%; margin-top:1%" height="8%" width="10%" /> <p style="position:fixed; margin-left:25%; margin-top:4%;">SPARSH 2K18</P>
-
-                <button type="button"  class="navbar-toggle bs-nav-drop-style collapsed" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar nav-drop-bar-style"></span>
-                    <span class="icon-bar nav-drop-bar-style"></span>
-                    <span class="icon-bar nav-drop-bar-style"></span>
-                </button>
-            </div>
-
-            <div class="navbar-collapse bs-nav-style collapse" id="myNavbar" style="height: 1px;">
-                <ul class="nav navbar-nav">
-                    <li><a href="#" class="smoothScroll">Home</a></li>
-                    <li><a href="#" class="smoothScroll">Subscribe</a></li>
-                    <li><a href="#" class="smoothScroll">Contact</a></li>
-                </ul>
-            </div>
-
-        </nav>
-        <!-- -/BOOTSTRAP MOBILE NAVIGATION -->
+    <header>
+  		<nav class="navbar navbar-inverse navbar-fixed-top">
+  			<div class="container">
+  				<div class="navbar-header">
+  					<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9"
+  					    aria-expanded="false">
+  						<span class="sr-only">Toggle navigation</span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  						<span class="icon-bar"></span>
+  					</button>
+  					<a href="{{url_for('winter_page')}}" class="navbar-brand">Sparsh 2K18</a>
+  				</div>
+  				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+  					<ul class="nav navbar-nav navbar-right">
+  						<li>
+  							<a href="#about">Technical</a>
+  						</li>
+  						<li>
+  							<a href="#managerial">Managerial</a>
+  						</li>
+  						<li>
+  							<a href="#informal">Informal</a>
+  						</li>
+  						<li>
+  							<a href="#school-events">School Events</a>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  		</nav>
+  	</header>
+      <!-- -/BOOTSTRAP MOBILE NAVIGATION -->
 
         <!-- CONTAINER -->
         <div class="container-fluid">
@@ -767,7 +778,20 @@
         <script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
         <script src="{{ url_for('static', filename='royal/app.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='royal/modal.js') }}"></script>
-
+        <script>
+  			$(document).on('click', 'a[href^="#"]', function (e) {
+  					var id = $(this).attr('href');
+  					var $id = $(id);
+  					if ($id.length === 0) {
+  							return;
+  					}
+  					e.preventDefault();
+  					var pos = $id.offset().top;
+  					$('body, html').animate({
+  							scrollTop: pos
+  					});
+  			});
+  			</script>
 
 
 
