@@ -270,7 +270,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="#" class="navbar-brand">Brand</a>
+					<a href="#" class="navbar-brand">Sparsh 2K18</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
 					<ul class="nav navbar-nav navbar-right">
@@ -278,10 +278,19 @@
 							<a href="#">Home</a>
 						</li>
 						<li>
-							<a href="#">Link</a>
+							<a href="#about">About</a>
 						</li>
 						<li>
-							<a href="#">Link</a>
+							<a href="#events">Event</a>
+						</li>
+						<li>
+							<a href="#sponsor">Sponsor</a>
+						</li>
+						<li>
+							<a href="#team">Team</a>
+						</li>
+						<li>
+							<a href="#contact-us">Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -440,9 +449,9 @@
 					</div>
 					<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
 				</section>
-			</div>
-			<div class="row about-sparsh">
-				<h3 class="abt-heading">About</h3>
+			</div><br><br>
+			<div class="row about-sparsh" id="about">
+				<br><br><br><h3 class="abt-heading">About</h3>
 				<p class="abt-para">
 					Sparsh is the annual techno-cultural festival of Sardar Vallabhbhai National Institute of Technology.It usually takes place in the second or third week of February, and is one of the largest of its kind in the western Region. This five-day festival consists of mega-attractions as well as informal,technical and managerial events among numerous other competitions.
 				</p>
@@ -452,6 +461,7 @@
 				<section id="events">
 					<div class="container" style="padding: 0;">
 						<div class="raw">
+							<br><br>
 							<h3 class="abt-heading" style="font-weight: bold;"> EVENTS </h3>
 							<div class="eventLetters" onclick="showScroll()">
 								<div class="eventName"></div>
@@ -610,6 +620,7 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-12 text-center">
+									<br><br>
 									<h3 class="section-heading">Our Past Sponsers</h3>
 									<h4 class="section-subheading text-muted">A look at our previous year sponsers</h4>
 								</div>
@@ -713,6 +724,7 @@
 					<section id="team">
 						<div class="container">
 							<div class="row">
+								<br><br>
 								<h3> Team</h3>
 								<div class="out">
 									<div class="photo">
@@ -784,6 +796,7 @@
 					<section id="contact-us">
 						<div class="container">
 							<div class="row">
+								<br><br><br>
 								<h2> Contact Us </h2>
 								<form method="post">
 									<span class="subscribe-form">
@@ -940,7 +953,20 @@
 			<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
 			<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 			<script src="{{ url_for('static', filename='js/index/agency.min.js') }}"></script>
-
+			<script>
+			$(document).on('click', 'a[href^="#"]', function (e) {
+					var id = $(this).attr('href');
+					var $id = $(id);
+					if ($id.length === 0) {
+							return;
+					}
+					e.preventDefault();
+					var pos = $id.offset().top;
+					$('body, html').animate({
+							scrollTop: pos
+					});
+			});
+			</script>
 
 
 
