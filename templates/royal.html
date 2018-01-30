@@ -161,7 +161,9 @@
 		}
 	}
 
-
+	.navbar {
+		opacity: 0.8;
+	}
 
 	.carousel,  {
 		height: 90%;
@@ -242,8 +244,8 @@
 	<!-- LOADING -->
 	<div class="container-fluid">
 		<div class="row">
-			<div id="loader-wrap" class="col-xs-12 col-sm-12" style="opacity: 0; visibility: hidden;">
-				<div id="loader" class="vcenter">
+			<div id="loader-wrap" class="col-xs-12 col-sm-12">
+				<div id="loader" class="vcenter" style="margin-top:100px;">
 					<img src="{{ url_for('static', filename='royal/logo-line.png') }}" alt="">
 					<h4>LOADING</h4>
 					<div class="load-progress"></div>
@@ -583,31 +585,31 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item">
-								<img src="https://unsplash.it/2000/1250?image=397" data-color="lightblue" alt="First Image">
+								<img src="#" data-color="lightblue" alt="First Image">
 								<div class="carousel-caption">
 									<h3>First Image</h3>
 								</div>
 							</div>
 							<div class="item">
-								<img src="https://unsplash.it/2000/1250?image=689" data-color="firebrick" alt="Second Image">
+								<img src="#" data-color="firebrick" alt="Second Image">
 								<div class="carousel-caption">
 									<h3>Second Image</h3>
 								</div>
 							</div>
 							<div class="item">
-								<img src="https://unsplash.it/2000/1250?image=675" data-color="violet" alt="Third Image">
+								<img src="#" data-color="violet" alt="Third Image">
 								<div class="carousel-caption">
 									<h3>Third Image</h3>
 								</div>
 							</div>
 							<div class="item">
-								<img src="https://unsplash.it/2000/1250?image=658" data-color="lightgreen" alt="Fourth Image">
+								<img src="#" data-color="lightgreen" alt="Fourth Image">
 								<div class="carousel-caption">
 									<h3>Fourth Image</h3>
 								</div>
 							</div>
 							<div class="item">
-								<img src="https://unsplash.it/2000/1250?image=638" data-color="tomato" alt="Fifth Image">
+								<img src="#" data-color="tomato" alt="Fifth Image">
 								<div class="carousel-caption">
 									<h3>Fifth Image</h3>
 								</div>
@@ -876,7 +878,7 @@
 					<div class="footer">
 						<p> Made by Web-dev team with
 							<p class="heart">
-								<i class="fa fa-heart fa-4x fa-beat"></i>
+								<i class="fa fa-heart fa-beat"></i>
 							</p>
 						</p>
 					</div>
