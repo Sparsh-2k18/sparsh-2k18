@@ -88,6 +88,7 @@
 		/* width: 250px; */
 		text-align: center;
 		margin: auto;
+		margin-top: 2%;
 	}
 
 	.st0 {
@@ -357,7 +358,7 @@
 							<div class="main-animation">
 								<div class="svg-animated3">
 									<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-									width="300px" height="300px" viewBox="0 0 570 570"
+									width="50vw" height="50vh" viewBox="0 0 570 570"
 									preserveAspectRatio="xMidYMid meet" id="crown-animation">
 
 									<g transform="translate(0.000000,461.000000) scale(0.100000,-0.100000)"
@@ -936,26 +937,6 @@
 					mainImg.style.height = '300px';
 				}
 			}
-
-			$(document).ready(function () {
-
-				// hide .navbar first
-				$(".navbar").hide();
-
-				// fade in .navbar
-				$(function () {
-					$(window).scroll(function () {
-
-						// set distance user needs to scroll before we start fadeIn
-						if ($(this).scrollTop() > 100) {
-							$('.navbar').fadeIn();
-						} else {
-							$('.navbar').fadeOut();
-						}
-					});
-				});
-
-			});
 			</script>
 			<script>
 			var $item = $('.carousel .item');
