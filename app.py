@@ -1,9 +1,11 @@
 # app.py
 """Python script for server implementation."""
-
+import os
 from flask import Flask, render_template, request, redirect, jsonify
 from flask import url_for, flash
 from flask_compress import Compress
+
+from flask_mail import Mail, Message
 
 from sqlalchemy import create_engine, asc, func
 from sqlalchemy.orm import sessionmaker
@@ -18,6 +20,17 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 app = Flask(__name__)
+mail = Mail(app)
+
+
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'kvncare007@gmail.com'
+app.config['MAIL_PASSWORD'] = os.environ.get('google_mail_pass')
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+
+mail = Mail(app)
 Compress(app)
 
 
@@ -53,8 +66,12 @@ def contact_page():
                              email=request.form['email'],
                              mobile=request.form['mobile'],
                              query=request.form['query'])
-        session.add(newContact)
-        session.commit()
+        # session.add(newContact)
+        # session.commit()
+        info = '{0} {1} {2} {3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
+        msg = Message('Query', sender='kvncare007@gmail.com',recipients=['kvnamipara@gmail.com'])
+        msg.body = info
+        mail.send(msg)
         return redirect(url_for('winter_page'))
     else:
         return render_template("royal.html")
