@@ -166,25 +166,7 @@ $(document).on('click', 'a[href^="#"]', function (e) {
         });
 });
 
-$(document).ready(function () {
 
-    // hide .navbar first
-    $(".navbar").hide();
-
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
-
-            // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 100) {
-                $('.navbar').fadeIn();
-            } else {
-                $('.navbar').fadeOut();
-            }
-        });
-    });
-
-});
 function showScroll() {
     var mainImg = document.getElementsByClassName('letterMain')[0];
     if (mainImg.style.height == '300px') {
