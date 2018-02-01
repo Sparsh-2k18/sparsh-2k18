@@ -458,6 +458,11 @@
 /******************************************************************
 *******************************		4. OVERLAY & BACKGROUND LAYER
 ******************************************************************/
+#crown-animation {
+	width: 50vw;
+	height: 50vh;
+
+}
 
 	.overlay{
             position: fixed;
@@ -1118,9 +1123,9 @@
 				}
 
 
-				.crown-animation {
-					width: 200px;
-					height: 200px;
+				#crown-animation {
+					width: 50vw;
+					height: 50vh;
 
 				}
 

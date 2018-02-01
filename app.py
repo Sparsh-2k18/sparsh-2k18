@@ -1,9 +1,10 @@
 # app.py
 """Python script for server implementation."""
 
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, render_template, request, redirect, jsonify, make_response
 from flask import url_for, flash
 from flask_compress import Compress
+from flask import send_file
 
 from sqlalchemy import create_engine, asc, func
 from sqlalchemy.orm import sessionmaker
@@ -64,9 +65,8 @@ def contact_page():
 def winter_page():
     return render_template("royal.html")
 
-@app.route("/rulebook",methods = ['GET'])
-def rulebook_page():
-    return render_template("rulebook.html")
+
+
 
 
 if __name__ == "__main__":
