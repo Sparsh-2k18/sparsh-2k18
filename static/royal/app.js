@@ -12,7 +12,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
-  
+
   {
   "particles": {
     "number": {
@@ -123,6 +123,73 @@ particlesJS('particles-js',
   },
   "retina_detect": false
 }
-  
+
 
 );
+
+var $item = $('.carousel .item');
+var $wHeight = $(window).height();
+$item.eq(0).addClass('active');
+$item.height($wHeight*0.80);
+$item.addClass('full-screen');
+
+$('.carousel img').each(function() {
+    var $src = $(this).attr('src');
+    var $color = $(this).attr('data-color');
+    $(this).parent().css({
+        'background-image' : 'url(' + $src + ')',
+        'background-color' : $color
+    });
+    $(this).remove();
+});
+
+$(window).on('resize', function (){
+    $wHeight = $(window).height();
+    $item.height($wHeight*0.80);
+});
+
+$('.carousel').carousel({
+    interval: 6000,
+    pause: "true"
+});
+
+$(document).on('click', 'a[href^="#"]', function (e) {
+        var id = $(this).attr('href');
+        var $id = $(id);
+        if ($id.length === 0) {
+                return;
+        }
+        e.preventDefault();
+        var pos = $id.offset().top;
+        $('body, html').animate({
+                scrollTop: pos
+        });
+});
+
+$(document).ready(function () {
+
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+            // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+});
+function showScroll() {
+    var mainImg = document.getElementsByClassName('letterMain')[0];
+    if (mainImg.style.height == '300px') {
+        mainImg.style.height = '0px'
+    } else {
+        mainImg.style.height = '300px';
+    }
+}
