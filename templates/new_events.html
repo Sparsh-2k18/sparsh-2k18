@@ -62,11 +62,21 @@
             .image-event {
                 width: 80%; !important;
             }
+
+            .footer-image {
+                height: 100px !important;
+            }
         }
 
         section {
             padding-top: 30px;
         }
+
+        .footer-image {
+    		width: 100%;
+    		height: 250px;
+    		opacity: 0.5;
+    	}
     </style>
 </head>
 
@@ -149,7 +159,7 @@
                     <div class="row">
                         <section id="technical">
                             <h1> Technical Events </h1>
-                            <img class="image-event" src="{{ url_for('static', filename='images/events/img-2.gif') }}" style="margin:20px;"></image>                            
+                            <img class="image-event" src="{{ url_for('static', filename='images/events/img-2.gif') }}" style="margin:20px;"></image>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('Robowar')">
                                         <h2> Robowar </h2>
@@ -205,7 +215,7 @@
                                         <h2> Shut the Bug Up</h2>
                                     </div>
                             </div>
-                            <div class="row">                                
+                            <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('Cable')">
                                         <h2> Cable Stayed</h2>
                                     </div>
@@ -214,6 +224,17 @@
                                     </div>
                                     <div class="col-md-4 event-card" onclick="openModal('Cranza')">
                                         <h2> Crananza </h2>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 event-card" onclick="openModal('Assembler')">
+                                        <h2> Assembler</h2>
+                                    </div>
+                                    <div class="col-md-4 event-card" onclick="openModal('Rebootroute')">
+                                        <h2> Reboot the Route</h2>
+                                    </div>
+                                    <div class="col-md-4 event-card" onclick="openModal('BlindCoding')">
+                                        <h2> Blind Coding </h2>
                                     </div>
                             </div>
                             <img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" style="margin-top:50px;" ></img>
@@ -388,14 +409,21 @@
 
             </div>
             <div class="row">
-        		<div class="footer">
-        			<p> Made by Web-dev team with
-        				<p class="heart">
-        					<i class="fa fa-heart fa-beat"></i>
-        				</p>
-        			</p>
-        		</div>
-        	</div>
+                <div>
+                    <img class="footer-image" src="{{ url_for('static', filename='india.png') }}"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer">
+                    <p> Made by Web-dev team with
+                        <i class="fa fa-heart fa-beat"></i>
+                    </p>
+                    <br>
+                    <a href="https://www.facebook.com/Sparsh.NITsurat" target="_blank"><img src="{{ url_for('static', filename='fb-logo.png') }}" style="width:20px;height:20px;margin:0 10px 0 10px;"></img></a>
+                    <a href="https://www.instagram.com/sparsh_nitsurat/" target="_blank"><img src="{{ url_for('static', filename='insta-logo.png') }}" style="width:20px;height:20px;margin:0 10px 0 10px;"></img></a>
+                    <a href="https://twitter.com/Sparsh_NITSurat" target="_blank"><img src="{{ url_for('static', filename='twitter-logo.png') }}" style="width:20px;height:20px;margin:0 10px 0 10px;"></img></a>
+                </div>
+            </div>
             <!-- /MAIN SECTION -->
 
 
@@ -413,7 +441,7 @@
                 </div>
                 <div class="mo-body">
                   <p>
-                  Design and construct a remote controlled robot  capable of fighting a one on one 
+                  Design and construct a remote controlled robot  capable of fighting a one on one
                     tournament.
                   </p>
                     Prize worth : 1 lakh &#8377<br>
@@ -432,7 +460,7 @@
                 </div>
                 <div class="mo-body">
                   <p>
-                    Make a wireless remote controlled machine, only using an ic engine which can compete against other machines on a dirt track 
+                    Make a wireless remote controlled machine, only using an ic engine which can compete against other machines on a dirt track
                     with obstacles in between.
                   </p>
                     Prize worth : 40,000 &#8377<br>
@@ -472,14 +500,14 @@
                 </div>
                 <div class="mo-body">
                   <p>
-                  Participants must make 
+                  Participants must make
                     a wireless bot
-                    which is manually 
-                    controlled by hand gesture or 
-                    cell phone 
+                    which is manually
+                    controlled by hand gesture or
+                    cell phone
                     (accelerometer sensor)
-                    and 
-                    to slide the box in 
+                    and
+                    to slide the box in
                     placing zone.
 
                   </p>
@@ -498,8 +526,8 @@
                     <h2>Submerge</h2>
                 </div>
                 <div class="mo-body">
-                    <p>Make a wired controlled or wirelessly controlled bot, powered only by batteries, which has to navigate 
-                    through obstacle and perform task course under water in the shortest time possible. 
+                    <p>Make a wired controlled or wirelessly controlled bot, powered only by batteries, which has to navigate
+                    through obstacle and perform task course under water in the shortest time possible.
                   </p>
                     Prize worth : 10,000 &#8377<br>
                     Registration Fees : 200 &#8377<br><br>
@@ -560,8 +588,8 @@
                 </div>
                 <div class="mo-body">
                   <p>
-                    To build a working mechanism from given scrap and other sets of specific instruments and given 
-                    standard parts which can perform the given task 
+                    To build a working mechanism from given scrap and other sets of specific instruments and given
+                    standard parts which can perform the given task
                     within the stipulated time.
                   </p>
                     Prize worth : 6000 &#8377<br>
@@ -584,7 +612,7 @@
                   <p>
                     Design and contrive a semi
                     -
-                    batch Heat Exchanger that can offer maximum efficiency in a given 
+                    batch Heat Exchanger that can offer maximum efficiency in a given
                     time.
                   </p>
                     Prize worth : 20,000 &#8377<br>
@@ -604,7 +632,7 @@
                     <h2>Line follower</h2>
                 </div>
                 <div class="mo-body">
-                  <p>participants have to build an autonomous robot which can detect the black line on the white surface and complete the track in minimum time.  
+                  <p>participants have to build an autonomous robot which can detect the black line on the white surface and complete the track in minimum time.
                   </p>
                     Prize worth : 15,000 &#8377<br>
                     Registration Fees : 200 &#8377<br><br>
@@ -616,9 +644,9 @@
             </div>
         </div>
 
-        <div class="mo" id="Code Wars">
+        <div class="mo" id="CodeWars">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('Code Wars')">&times;</div>
+                <div class="close" onclick="closeModal('CodeWars')">&times;</div>
                 <div class="mo-header">
                     <h2>Code Wars</h2>
                 </div>
@@ -740,11 +768,11 @@
                 </div>
                 <div class="mo-body">
                   <p>
-                    To build 
+                    To build
                 a cantilever bridge
-                within our specifications. 
+                within our specifications.
                 It
-                must be constructed of 
+                must be constructed of
                 approved materials.
                   </p>
                     Prize worth : 6,000 &#8377<br>
@@ -764,20 +792,9 @@
                     <h2>Cranaza</h2>
                 </div>
                 <div class="mo-body">
-                  <p>To build a 
-                    High Tower Crane
-                    using Popsicle sticks & Fevicol 
-                    that can sustain the
-                    maximum
-                    possible Load at the free end of
-                    the crane
-                    with
-                    minimum
-                    deflection, satisfying
-                    all
-                    the
-                    understated
-                    constraints.
+                  <p>To build a
+                    High Tower Crane using Popsicle sticks & Fevicol that can sustain the maximum possible Load at the free end of
+                    the crane with minimum deflection, satisfying all the understated constraints.
                   </p>
                     Prize worth : 10,000 &#8377<br>
                     Registration Fees : 200 &#8377<br><br>
@@ -809,6 +826,66 @@
             </div>
         </div>
 
+        <div class="mo" id="Assembler">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('Assembler')">&times;</div>
+                <div class="mo-header">
+                    <h2>Assembler</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      To assemble a bicycle(tyres and steering) and drive it for 100 meter.
+                  </p>
+                    Prize worth : 6,000 &#8377<br>
+                    Registration Fees : 100 &#8377<br><br>
+
+                    <a href="{{ url_for('static', filename='resource/assembler.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="Rebootroute">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('Rebootroute')">&times;</div>
+                <div class="mo-header">
+                    <h2>Rebbot the Route</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      To plan most convenient bus route and schedule and location of bus stop for a given map of city.
+                  </p>
+                    Prize worth : 6,000 &#8377<br>
+                    Registration Fees : 100 &#8377<br><br>
+
+                    <a href="{{ url_for('static', filename='resource/reboottheroute.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="BlindCoding">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('BlindCoding')">&times;</div>
+                <div class="mo-header">
+                    <h2>Blind Coding</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                    Build a glass marble roller coaster using paper.
+                  </p>
+                    Prize worth : 6,000 &#8377<br>
+                    Registration Fees : 30 &#8377<br><br>
+
+                    <a href="{{ url_for('static', filename='resource/blindcoding.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+
+                </div>
+            </div>
+        </div>
+
         <div class="mo" id="Bidwiser">
             <div class="mo-content">
                 <div class="close" onclick="closeModal('Bidwiser')">&times;</div>
@@ -817,8 +894,8 @@
                 </div>
                 <div class="mo-body">
                   <p>
-                    This is a bidding based event where contestants are expected to put their virtual money to best use. 
-                    This event puts to test your bidding skill, be it bidding for yourself or increasing it for others. 
+                    This is a bidding based event where contestants are expected to put their virtual money to best use.
+                    This event puts to test your bidding skill, be it bidding for yourself or increasing it for others.
                   </p>
                     Prize worth : 5,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
