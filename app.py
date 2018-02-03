@@ -85,6 +85,9 @@ def winter_page():
 def rulebook_page():
     return render_template("rulebook.html")
 
+@app.route("/web-team",methods = ['GET'])
+def webteam_page():
+    return render_template("webteam.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

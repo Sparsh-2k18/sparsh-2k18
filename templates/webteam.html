@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- META -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- meta tags for facebook share -->
+
+	<meta property="og:title" content="Sparsh 2K18" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.example.com/" />
+	<meta property="og:image" content="http://example.com/image.jpg" />
+	<meta property="og:description" content="Description Here" />
+	<meta property="og:site_name" content="Site Name" />
+	<meta property="fb:admins" content="Facebook numeric ID" />
+
+	<!-- meta tags for twitter share -->
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@publisher_handle">
+	<meta name="twitter:title" content="Page Title">
+	<meta name="twitter:description" content="Page description less than 200 characters">
+	<meta name="twitter:creator" content="@author_handle">
+	<meta name="twitter:image:src" content="http://www.example.com/image.jpg">
+
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='sparsh.png') }}">
+
+	<!-- PAGE TITLE -->
+	<title>Sparsh Techno-Cultural Fest</title>
+
+	<!-- GOOGLE FONTS -->
+	<link href="{{ url_for('static', filename='royal/css') }}" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/sponser/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+	<link href="{{ url_for('static', filename='royal/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ url_for('static', filename='royal/vegas.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ url_for('static', filename='royal/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ url_for('static', filename='royal/themify-icons.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ url_for('static', filename='royal/style.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ url_for('static', filename='royal/animation.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ url_for('static', filename='royal/style1.css') }}" rel="stylesheet" type="text/css">
+	<style>
+
+	/* SVG settings */
+
+	@media only screen and (max-width : 767px) {
+		.timer canvas{
+			width: 80% !important;
+			height: 80px !important;
+
+		}
+		.letterHeader{
+			width: 100% !important;
+
+		}
+		div.letterMain{
+			width: 59% !important;
+		}
+		.letterFooter{
+			width:100% !important;
+			margin-top: -26px;
+		}
+
+		.footer-image {
+			height: 100px !important;
+		}
+
+		.about-sparsh {
+			width:90% !important;
+		}
+
+		.abt-para {
+			margin: 10px auto 30px auto !important;
+		}
+
+		#loader {
+			margin-top: 280px;
+		}
+
+
+	}
+
+	.svg-animated3{
+		/* width: 250px; */
+		text-align: center;
+		margin: auto;
+		margin-top: 2%;
+	}
+
+	.st0 {
+		fill: none;
+		stroke: #E5CC7F;
+		stroke-miterlimit: 10;
+	}
+
+	.st0 {
+		stroke-dasharray: 1900;
+		stroke-dashoffset: 2050;
+		-webkit-animation: dash 40s linear forwards infinite;
+		-moz-animation: dash 40s linear forwards infinite;
+		-o-animation: dash 40s linear forwards infinite;
+		animation: dash 40s linear forwards infinite;
+	}
+
+	@-webkit-keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		50% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+	}
+
+	@-moz-keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		50% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+	}
+
+	@-o-keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		50% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+	}
+
+	@keyframes dash {
+		0% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+		50% {
+			stroke-dashoffset: 0;
+			fill: none;
+		}
+		100% {
+			stroke-dashoffset: 2050;
+			fill: none;
+		}
+	}
+
+	/* PAGE Setings */
+
+	footer{
+		position :absolute;
+		text-align: center;
+		padding: 30px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		a{
+			color: #e5cc7f;
+			font-weight: light;
+
+			&:hover{
+				color: green;
+			}
+		}
+	}
+
+	.navbar {
+		opacity: 0.8;
+	}
+
+	.nav a{
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.navbar-brand{
+		font-weight: bold;
+	}
+
+	.carousel,  {
+		height: 90%;
+		width: 90%;
+		background-position: center center;
+		margin: 0 auto;
+	}
+
+	#mycarousel {
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.sparsh-heading{
+		width: 100%;
+		height: 16vh;
+		font-size: 52px;
+		font-family: 'Dancing Script', cursive;
+		font-weight: bold;
+		color: #e5cc7f;
+	}
+
+	.sparsh-heading-date {
+		font-family: 'Dancing Script', cursive;
+		font-size: 40px;
+	}
+
+	.abt-heading{
+		margin-top: 20px;
+		text-align: center;
+		font-family: 'Dancing Script', cursive;
+		font-size: 42px;
+
+	}
+	.abt-para{
+		text-align: center;
+		width: 80%;
+		font-size: 21px;
+		font-family: 'Dancing Script', cursive;
+		margin: 0 auto;
+	}
+	.event-name{
+		font-size: 2.0em;
+		color: #783000;
+		font-family: 'Dancing Script', cursive;
+
+	}
+
+
+	.full-screen {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.about-sparsh {
+		color: : #783000;
+		margin: 0 auto;
+		width: 60%;
+		background-image: url("{{ url_for('static', filename='about-background.png') }}");
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.9;
+	}
+
+	.abt-para {
+		color: #783000;
+		margin: 50px 100px 100px 100px;
+		line-height: 1.5;
+	}
+
+	.footer-image {
+		width: 100%;
+		height: 250px;
+		opacity: 0.5;
+	}
+
+
+	</style>
+</head>
+
+<body>
+
+
+	<!-- OVERLAY -->
+	<div class="overlay"></div>
+
+	<!-- BACKGROUND PLUGIN -->
+	<div id="background-effect" style="height: 100vh;" class="vegas-container">
+		<div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 2000ms;">
+			<div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;{{ url_for('static', filename='royal/15.jpg') }}&quot;); opacity:0.5; background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;"></div>
+		</div>
+		<div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: all 2000ms;">
+			<div class="vegas-slide-inner vegas-animation-kenburns" style="background-image: url(&quot;{{ url_for('static', filename='royal/15.jpg') }}&quot;); opacity:0.5; background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover; animation-duration: 5000ms;"></div>
+		</div>
+		<div class="vegas-wrapper" style="overflow: visible; padding: 0px;"></div>
+	</div>
+	<!-- PARTICLES -->
+	<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="100%" height="100%"></canvas></div>
+
+
+	<!-- BOOTSTRAP MOBILE NAVIGATION -->
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="navshow" style="overflow-x:hidden">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9"
+					    aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="{{ url_for('winter_page') }}" class="navbar-brand">SPARSH</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<a href="{{ url_for('winter_page') }}">Home</a>
+						</li>
+						<li>
+							<a href="{{ url_for('winter_page') }}#about">About</a>
+						</li>
+						<li>
+							<a href="{{ url_for('winter_page') }}#events">Events</a>
+						</li>
+						<li>
+							<a href="{{ url_for('winter_page') }}#sponsor">Sponsors</a>
+						</li>
+						<li>
+							<a href="{{ url_for('winter_page') }}#team">Team</a>
+						</li>
+						<li>
+							<a href="{{ url_for('winter_page') }}#contact-us">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+		<!-- CONTAINER -->
+		<div class="container-fluid">
+
+				<div class="row">
+
+					<section id="team">
+						<div class="container">
+							<div class="row">
+								<br><br>
+								<h3 class="abt-heading" style="font-weight: bold;"> Web Developers Team </h3>
+								<div class="out">
+									<div class="photo">
+										<img src="{{ url_for('static', filename='royal/team/umang.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+										<div class="des">
+											Umang Chavada<br>
+											Cultural Secratery
+										</div>
+									</div>
+									<div class="photo">
+										<img src="{{ url_for('static', filename='royal/team/lokesh.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+										<div class="des">
+											Lokesh Nagar<br>
+											Co-Curricular Secratery
+										</div>
+									</div>
+								</div>
+								<div class="sout">
+									<div class="photo">
+										<img src="{{ url_for('static', filename='royal/team/ankit.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+										<div class="des">
+											Ankit Malani<br>
+											Convener
+										</div>
+									</div>
+									<div class="photo">
+										<img src="{{ url_for('static', filename='royal/team/kd.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+										<div class="des">
+											Kuldeep Chaudhary<br>
+											Convener
+										</div>
+									</div>
+									<div class="photo">
+										<img src="{{ url_for('static', filename='royal/team/aum.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+										<div class="des">
+											Aum Talaviya<br>
+											Convener
+										</div>
+									</div>
+									<div class="photo">
+										<img src="{{ url_for('static', filename='royal/team/vineet.jpeg') }}" class="image">
+										<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+										<div class="des">
+											Vineet Sahu<br>
+											Convener
+										</div>
+									</div>
+									<div class="photo">
+										<img src="{{ url_for('static', filename='royal/team/akhilesh.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='royal/a3_golden_new.png') }}" class="border">
+										<div class="des">
+											V.Akhilesh<br>
+											Convener
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" ></img>
+				</div>
+
+
+
+				<!-- /MAIN SECTION -->
+				<div class="row">
+					<div>
+						<img class="footer-image" src="{{ url_for('static', filename='india.png') }}"></img>
+					</div>
+				</div>
+				<div class="row">
+	                <div class="footer">
+	                    <p> Made by <a href="{{ url_for('webteam_page') }}" style="color:#e5cc7f;">Web-dev team</a> with
+	                        <i class="fa fa-heart fa-beat"></i>
+	                    </p>
+	                    <br>
+	                    <a href="https://www.facebook.com/Sparsh.NITsurat" target="_blank"><img src="{{ url_for('static', filename='fb-logo.png') }}" style="width:20px;height:20px;margin:0 10px 0 10px;"></img></a>
+	                    <a href="https://www.instagram.com/sparsh_nitsurat/" target="_blank"><img src="{{ url_for('static', filename='insta-logo.png') }}" style="width:20px;height:20px;margin:0 10px 0 10px;"></img></a>
+	                    <a href="https://twitter.com/Sparsh_NITSurat" target="_blank"><img src="{{ url_for('static', filename='twitter-logo.png') }}" style="width:20px;height:20px;margin:0 10px 0 10px;"></img></a>
+	                </div>
+	            </div>
+
+
+			</div>
+
+			<!-- ./ROW -->
+
+
+			<!-- ./CONTAINER -->
+
+			<!-- JAVASCRIPTS -->
+
+
+			<script src="{{ url_for('static', filename='royal/jquery-1.11.3.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='royal/vegas.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='royal/bootstrap.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='royal/smoothscroll.js') }}"></script>
+			<script src="{{ url_for('static', filename='royal/config.js') }}"></script>
+			<script src="{{ url_for('static', filename='royal/main.js') }}"></script>
+			<script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
+			<script src="{{ url_for('static', filename='royal/app.js') }}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='js/index/timer.js') }}"></script>
+			<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/index/agency.min.js') }}"></script>
+
+
+
+
+
+
+		</body></html>
