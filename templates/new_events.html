@@ -269,7 +269,7 @@
                                         <h2> Bidwiser </h2>
                                     </div>
                                     <div class="col-md-4 event-card" onclick="openModal('Mafia')">
-                                        <h2> Mafia </h2>
+                                        <h2> Mafia Rule </h2>
                                     </div>
                                     <div class="col-md-4 event-card" onclick="openModal('Bazigar')">
                                         <h2> Business Bazigar </h2>
@@ -287,8 +287,14 @@
                                     </div>
                             </div>
                             <div class="row">
-                                    <div class="col-md-4 col-md-offset-4 event-card" onclick="openModal('Tribal')">
-                                        <h2> Tribal Hunt </h2>
+                                    <div class="col-md-4 event-card" onclick="openModal('WinkMurder')">
+                                        <h2> Wink Murder </h2>
+                                    </div>
+                                    <div class="col-md-4 event-card" onclick="openModal('AcquaRepublica')">
+                                        <h2> Acqua Republica </h2>
+                                    </div>
+                                    <div class="col-md-4 event-card" onclick="openModal('Madmen')">
+                                        <h2> Mad Men </h2>
                                     </div>
                             </div>
                             <img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" style="margin-top:50px;" ></img>
@@ -914,15 +920,34 @@
             <div class="mo-content">
                 <div class="close" onclick="closeModal('Mafia')">&times;</div>
                 <div class="mo-header">
-                    <h2>Mafia</h2>
+                    <h2>Mafia Rule</h2>
                 </div>
                 <div class="mo-body">
                   <p>
+                      Welcome to the world of Mafia.
                   </p>
-                    Prize : $$$$<br>
-                    Registration Fees : $$$$<br>
+                  Prize worth : 5,000 &#8377<br>
+                  Registration Fees : 30 &#8377<br><br>
 
+                  <a href="{{ url_for('static', filename='resource/mafia-rule.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="mo" id="WinkMurder">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('WinkMurder')">&times;</div>
+                <div class="mo-header">
+                    <h2>Wink Murder</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Catch the killer or get killed.
+                  </p>
+                  Prize worth : 5,000 &#8377<br>
+                  Registration Fees : 30 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/wink-murder.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
         </div>
@@ -953,9 +978,52 @@
                 </div>
                 <div class="mo-body">
                   <p>
+                      Gain maximun profit based on virtual stock market.
                   </p>
-                    Prize : $$$$<br>
-                    Registration Fees : $$$$<br>
+                  Prize worth : 6,000 &#8377<br>
+                  Registration Fees : 50 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/bullsandbears.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="AcquaRepublica">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('AcquaRepublica')">&times;</div>
+                <div class="mo-header">
+                    <h2>Acqua Republica</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Gain maximun profit based on virtual stock market.
+                  </p>
+                  Prize worth : 6,000 &#8377<br>
+                  Registration Fees : 50 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/bullsandbears.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="Madmen">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('Madmen')">&times;</div>
+                <div class="mo-header">
+                    <h2>Mad Men</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Sell your Madness.
+                  </p>
+                  Prize worth : 5,000 &#8377<br>
+                  Registration Fees : 30 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/madmen.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
 
                 </div>
@@ -970,11 +1038,12 @@
                 </div>
                 <div class="mo-body">
                   <p>
+                      Make an advertisement on the given product.
                   </p>
-                    Prize : $$$$<br>
-                    Registration Fees : $$$$<br>
+                  Prize worth : 6,000 &#8377<br>
+                  Registration Fees : 50 &#8377<br><br>
 
-
+                  <a href="{{ url_for('static', filename='resource/school-events/adventure.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
         </div>
@@ -988,10 +1057,10 @@
                 <div class="mo-body">
                   <p>
                   </p>
-                    Prize : $$$$<br>
-                    Registration Fees : $$$$<br>
+                  Prize worth : 6,000 &#8377<br>
+                  Registration Fees : 100 &#8377<br><br>
 
-
+                  <a href="{{ url_for('static', filename='resource/school-events/treasurehunt.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
         </div>
