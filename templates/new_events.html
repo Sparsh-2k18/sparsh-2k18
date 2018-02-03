@@ -312,13 +312,13 @@
                                     </div>
                             </div>
                             <div class="row">
-                                    <div class="col-md-4 event-card" onclick="openModal('sc-project')">
-                                        <h2> Project Exhibition </h2>
+                                    <div class="col-md-4 event-card" onclick="openModal('sc-science-model')">
+                                        <h2> Science Model </h2>
                                     </div>
                                     <div class="col-md-4 event-card" onclick="openModal('sc-mocktest')">
                                         <h2> IIT-NTSE Mock Test </h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('sc-jrmath')">
+                                    <div class="col-md-4 event-card" onclick="openModal('sc-junior-mathematician')">
                                         <h2> Junior Mathematician </h2>
                                     </div>
                             </div>
@@ -337,7 +337,7 @@
                                     <div class="col-md-4 event-card" onclick="openModal('sc-madadds')">
                                         <h2> MAD ADDS </h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('sc-thinkinside')">
+                                    <div class="col-md-4 event-card" onclick="openModal('kinside')">
                                         <h2> Think inside the box </h2>
                                     </div>
                             </div>
@@ -353,7 +353,7 @@
                             <h3> Cultural </h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="row">
-                                    <div class="col-md-4 col-md-offset-2 event-card" onclick="openModal('sc-street-skit')">
+                                    <div class="col-md-4 col-md-offset-2 event-card" onclick="openModal('sc-street-play')">
                                         <h2> Street Skit </h2>
                                     </div>
                                     <div class="col-md-4  event-card" onclick="openModal('sc-hand-painting')">
@@ -1078,22 +1078,43 @@
                 </div>
             </div>
         </div>
-        <div class="mo" id="sc-project">
+
+        <div class="mo" id="sc-science-model">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('sc-project')">&times;</div>
+                <div class="close" onclick="closeModal('sc-science-model')">&times;</div>
                 <div class="mo-header">
-                    <h2>Project Exhibition</h2>
+                    <h2>Science Model</h2>
                 </div>
                 <div class="mo-body">
                   <p>
+                      A theory has only the alternative of being right or wrong. A model has a third possibility. it may be right , but irrelevant
                   </p>
-                    Prize : $$$$<br>
-                    Registration Fees : $$$$<br>
+                  Prize worth : 800 &#8377<br>
+                  Registration Fees : 30 &#8377<br><br>
 
-
+                  <a href="{{ url_for('static', filename='resource/school-events/science-model.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
         </div>
+
+        <div class="mo" id="sc-story-writing">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-story-writing')">&times;</div>
+                <div class="mo-header">
+                    <h2>Story Writing</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Remember the cosy nights, all kids tugged up in bed and fascinated by their grandmother's stories. Feeling nostalgic? Show your creative side and weave a story with the given characters which captivates the reader.
+                  </p>
+                  Prize worth : 1,000 &#8377<br>
+                  Registration Fees : 20 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/story-writing.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
         <div class="mo" id="sc-mocktest">
             <div class="mo-content">
                 <div class="close" onclick="closeModal('sc-mocktest')">&times;</div>
@@ -1110,9 +1131,10 @@
                 </div>
             </div>
         </div>
-        <div class="mo" id="sc-jrmath">
+
+        <div class="mo" id="sc-junior-mathematician">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('sc-jrmath')">&times;</div>
+                <div class="close" onclick="closeModal('sc-junior-mathematician')">&times;</div>
                 <div class="mo-header">
                     <h2>Junior Mathematician</h2>
                 </div>
@@ -1120,15 +1142,88 @@
                   <p>
                       Mathematician at heart?Gear up! The event is based on various portions of mathematics comprising of both practical and theoretical mathematics.
                   </p>
-                  Prize worth : 800 &#8377<br>
-                  Registration Fees : 50 &#8377<br><br>
+                  Prize worth : 1,000 &#8377<br>
+                  Registration Fees : 20 &#8377<br><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/junior-mathematician.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
                 </div>
             </div>
         </div>
+
+        <div class="mo" id="sc-pen-fight">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-pen-fight')">&times;</div>
+                <div class="mo-header">
+                    <h2>Pen Fight</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      The event is based on the knocking off the other pen from the table .
+                  </p>
+                  Prize worth : 800 &#8377<br>
+                  Registration Fees : 10 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/pen-fight.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-poster-making">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-poster-making')">&times;</div>
+                <div class="mo-header">
+                    <h2>Poster Making</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Are you artistic enough to design a poster, a troll? Get Ready with your colours and all your stationary, because here’s a chance to create the best among the rest!
+                  </p>
+                  Prize worth : 1,600 &#8377<br>
+                  Registration Fees : 50 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/poster-making.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-quiz-master">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-quiz-master')">&times;</div>
+                <div class="mo-header">
+                    <h2>Quiz Master</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Test your Brain and General knowledge it is . Exams test your memory. Life tests your learning. Others will test your patience.
+                  </p>
+                  Prize worth : 1,000 &#8377<br>
+                  Registration Fees : 20 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/quiz-master.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-rubiks-cube">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-rubiks-cube')">&times;</div>
+                <div class="mo-header">
+                    <h2>Rubik's Cube Competition</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Individuals competing against each other for the fastest time.
+                  </p>
+                  Prize worth : 1,800 &#8377<br>
+                  Registration Fees : 100 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/rubik-cube.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="mo" id="sc-career">
             <div class="mo-content">
                 <div class="close" onclick="closeModal('sc-career')">&times;</div>
@@ -1174,13 +1269,12 @@
                     Prize : $$$$<br>
                     Registration Fees : $$$$<br>
 
-
                 </div>
             </div>
         </div>
-        <div class="mo" id="sc-thinkinside">
+        <div class="mo" id="sc-think-inside-the-box">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('sc-thinkinside')">&times;</div>
+                <div class="close" onclick="closeModal('sc-think-inside-the-box')">&times;</div>
                 <div class="mo-header">
                     <h2>Think Inside The Box</h2>
                 </div>
@@ -1192,8 +1286,6 @@
                   Registration Fees : 50 &#8377<br><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/think-inside-the-box.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
                 </div>
             </div>
         </div>
@@ -1213,9 +1305,9 @@
                 </div>
             </div>
         </div>
-        <div class="mo" id="sc-best-of-the-waste">
+        <div class="mo" id="sc-best-out-of-the-waste">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('sc-best-of-the-waste')">&times;</div>
+                <div class="close" onclick="closeModal('sc-best-out-of-the-waste')">&times;</div>
                 <div class="mo-header">
                     <h2>Best out of Waste</h2>
                 </div>
@@ -1231,23 +1323,101 @@
                 </div>
             </div>
         </div>
-        <div class="mo" id="sc-street-skit">
+
+        <div class="mo" id="sc-bid-and-win">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('sc-street-skit')">&times;</div>
+                <div class="close" onclick="closeModal('sc-best-out-of-the-waste')">&times;</div>
+                <div class="mo-header">
+                    <h2>Bid and Win</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Blink. And its gone! Experience the thrill of a live auction! Bid using any strategy, game-theory concepts or just go by your gut. Do whatever it takes to win this race with the limited amount of cash.
+                  </p>
+                  Prize worth : 1,000 &#8377<br>
+                  Registration Fees : 40 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/bid-and-win.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-crazy-commercials">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-crazy-commercials')">&times;</div>
+                <div class="mo-header">
+                    <h2>Crazy Commercials</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Are you street smart enough to sell something from a watch to a torch, from a pin to a pen to a complete stranger? In this event, you will be given an item and you need to sell it to a person in your way in a time limit of 5 minutes.                  </p>
+                  Prize worth : 1,000 &#8377<br>
+                  Registration Fees : 30 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/crazy-commercials.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-street-play">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-street-play')">&times;</div>
                 <div class="mo-header">
                     <h2>Street Play</h2>
                 </div>
                 <div class="mo-body">
                   <p>
+                      Tell a story by a play.
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 100 &#8377<br><br>
 
-                  <a href="{{ url_for('static', filename='resource/school-events/streetplay.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                  <a href="{{ url_for('static', filename='resource/school-events/street-play.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
                 </div>
             </div>
         </div>
+
+        <div class="mo" id="sc-sudoku-mania">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-sudoku-mania')">&times;</div>
+                <div class="mo-header">
+                    <h2>Sudoku Mania</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      The Classic Sudoku is a number placing puzzle based on a 9x9 grid with several given numbers. The object is to place the numbers 1 to 9 in the empty squares so that each row, each column and each 3x3 box contains the same number only once.
+                  </p>
+                  Prize worth : 1,000 &#8377<br>
+                  Registration Fees : 20 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/sudoku-mania.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-talent-hunt">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-talent-hunt')">&times;</div>
+                <div class="mo-header">
+                    <h2>Talent Hunt</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      As the name it self suggests it is the hunt for the hidden talents. It may be Dancing, Singing,Comedy show etc,.
+                  </p>
+                  Prize worth : 1,200 &#8377<br>
+                  Registration Fees : 30 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/talent-hunt.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+
+                </div>
+            </div>
+        </div>
+
         <div class="mo" id="sc-hand-painting">
             <div class="mo-content">
                 <div class="close" onclick="closeModal('sc-hand-painting')">&times;</div>
@@ -1280,6 +1450,7 @@
                 </div>
             </div>
         </div>
+
         <div class="mo" id="sc-debating">
             <div class="mo-content">
                 <div class="close" onclick="closeModal('sc-debating')">&times;</div>
@@ -1291,15 +1462,67 @@
                       Enthusiastic to speak up your point and stand for it through all odds??? Well then you have the quality and chance to stand by your point and prove it to all!!
                   </p>
                   Prize worth : 800 &#8377<br>
-                  Registration Fees : 50 &#8377<br><br>
+                  Registration Fees : 20 &#8377<br><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/debate.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
-
                 </div>
             </div>
         </div>
+
+        <div class="mo" id="sc-detective-mystery">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-detective-mystery')">&times;</div>
+                <div class="mo-header">
+                    <h2>Detective Mystery</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Welcome to the fictional realm and unveil the mystery behind a murder or a kidnap! The player acts as a detective to solve cases, having being provided with the killer profiles, and critical hints that will be used to capture the culprit.
+                  </p>
+                  Prize worth : 1,600 &#8377<br>
+                  Registration Fees : 30 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/detective-mystery.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-extempore">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-extempore')">&times;</div>
+                <div class="mo-header">
+                    <h2>Extempore</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Test your speaking skills without preparation.
+                  </p>
+                  Prize worth : 800 &#8377<br>
+                  Registration Fees : 10 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/extempore.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo" id="sc-futsal">
+            <div class="mo-content">
+                <div class="close" onclick="closeModal('sc-futsal')">&times;</div>
+                <div class="mo-header">
+                    <h2>Futsal</h2>
+                </div>
+                <div class="mo-body">
+                  <p>
+                      Futsal, is a variant of association football played on a hard court, smaller than a football pitch. It can be considered a version of five-a- side football. Futsal is played between two teams of 7 players each, one of whom is the goalkeeper and two side players (if needed).
+                  </p>
+                  Prize worth : 3,000 &#8377<br>
+                  Registration Fees : 200 &#8377<br><br>
+
+                  <a href="{{ url_for('static', filename='resource/school-events/futsal.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
+                </div>
+            </div>
+        </div>
+
         <div class="mo" id="sc-birbal">
             <div class="mo-content">
                 <div class="close" onclick="closeModal('sc-birbal')">&times;</div>
