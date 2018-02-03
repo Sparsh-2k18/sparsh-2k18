@@ -187,7 +187,7 @@
                                     <div class="col-md-4 event-card" onclick="openModal('FullThrottle')">
                                         <h2> Full Throttle </h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('MineTrack')">
+                                    <div class="col-md-4 event-card" onclick="openModal('FarmTrack')">
                                         <h2> Farm Track </h2>
                                     </div>
                             </div>
@@ -195,10 +195,10 @@
                                     <div class="col-md-4 event-card" onclick="openModal('Electrox')">
                                         <h2> Electrox </h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('Cananza')">
+                                    <div class="col-md-4 event-card" onclick="openModal('Submerge')">
                                         <h2> Submerge </h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('FarmTrack')">
+                                    <div class="col-md-4 event-card" onclick="openModal('PaperJacket')">
                                         <h2> Paper Jacket </h2>
                                     </div>
                             </div>
@@ -206,15 +206,15 @@
                                     <div class="col-md-4 event-card" onclick="openModal('AquaBall')">
                                         <h2> Aqua Ball </h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('Metaxentric')">
+                                    <div class="col-md-4 event-card" onclick="openModal('JunkyardWars')">
                                         <h2> Junkyard Wars </h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('FlyHigh')">
+                                    <div class="col-md-4 event-card" onclick="openModal('BeatTheHeat')">
                                         <h2>Beat the heat</h2>
                                     </div>
                             </div>
                             <div class="row">
-                                    <div class="col-md-4 event-card" onclick="openModal('InnovationManza')">
+                                    <div class="col-md-4 event-card" onclick="openModal('LineFollower')">
                                         <h2> Line follower </h2>
                                     </div>
                                     <div class="col-md-4 event-card" onclick="openModal('CodeWars')">
@@ -242,7 +242,7 @@
                                     <div class="col-md-4 event-card" onclick="openModal('Marble')">
                                         <h2> Marble Expedition</h2>
                                     </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('Cranza')">
+                                    <div class="col-md-4 event-card" onclick="openModal('Crananza')">
                                         <h2> Crananza </h2>
                                     </div>
                             </div>
@@ -465,7 +465,7 @@
                   Design and construct a remote controlled robot  capable of fighting a one on one
                     tournament.
                   </p>
-                    Prize worth : 1 lakh &#8377<br>
+                    Prize worth : 1,00,000 &#8377<br>
                     Registration Fees : 500 &#8377<br><br>
                     <a href="{{ url_for('static', filename='resource/robowar.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -486,15 +486,15 @@
                   </p>
                     Prize worth : 40,000 &#8377<br>
                     Registration Fees : 500 &#8377<br><br>
-                    <a href="{{ url_for('static', filename='resource/fullthrottle.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
+                    <a href="{{ url_for('static', filename='resource/fullthrottle.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
         </div>
 
-        <div class="mo" id="MineTrack">
+        <div class="mo" id="FarmTrack">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('MineTrack')">&times;</div>
+                <div class="close" onclick="closeModal('FarmTrack')">&times;</div>
                 <div class="mo-header">
                     <h2>Farm Track</h2>
                 </div>
@@ -540,9 +540,9 @@
             </div>
         </div>
 
-        <div class="mo" id="Cananza">
+        <div class="mo" id="Submerge">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('Cananza')">&times;</div>
+                <div class="close" onclick="closeModal('Submerge')">&times;</div>
                 <div class="mo-header">
                     <h2>Submerge</h2>
                 </div>
@@ -559,9 +559,9 @@
             </div>
         </div>
 
-        <div class="mo" id="FarmTrack">
+        <div class="mo" id="PaperJacket">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('FarmTrack')">&times;</div>
+                <div class="close" onclick="closeModal('PaperJacket')">&times;</div>
                 <div class="mo-header">
                     <h2>Paper Jacket</h2>
                 </div>
@@ -572,8 +572,6 @@
                     Registration Fees : 50 &#8377<br><br>
 
                     <a href="{{ url_for('static', filename='resource/paperjacket.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
                 </div>
             </div>
         </div>
@@ -601,9 +599,9 @@
             </div>
         </div>
 
-        <div class="mo" id="Metaxentric">
+        <div class="mo" id="JunkyardWars">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('Metaxentric')">&times;</div>
+                <div class="close" onclick="closeModal('JunkyardWars')">&times;</div>
                 <div class="mo-header">
                     <h2>Junkyard Wars</h2>
                 </div>
@@ -623,32 +621,27 @@
             </div>
         </div>
 
-        <div class="mo" id="FlyHigh">
+        <div class="mo" id="BeatTheHeat">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('FlyHigh')">&times;</div>
+                <div class="close" onclick="closeModal('BeatTheHeat')">&times;</div>
                 <div class="mo-header">
                     <h2>Beat the heat</h2>
                 </div>
                 <div class="mo-body">
                   <p>
-                    Design and contrive a semi
-                    -
-                    batch Heat Exchanger that can offer maximum efficiency in a given
-                    time.
+                    Design and contrive a semi-batch Heat Exchanger that can offer maximum efficiency in a given time.
                   </p>
                     Prize worth : 20,000 &#8377<br>
                     Registration Fees : 400 &#8377<br><br>
 
-                    <a href="{{ url_for('static', filename='resource/junkyardwars.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
+                    <a href="{{ url_for('static', filename='resource/beattheheat.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
         </div>
 
-        <div class="mo" id="InnovationManza">
+        <div class="mo" id="LineFollower">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('InnovationManza')">&times;</div>
+                <div class="close" onclick="closeModal('LineFollower')">&times;</div>
                 <div class="mo-header">
                     <h2>Line follower</h2>
                 </div>
@@ -751,8 +744,6 @@
                     Registration Fees : 30 &#8377<br><br>
 
                     <a href="{{ url_for('static', filename='resource/ctf.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
                 </div>
             </div>
         </div>
@@ -785,32 +776,25 @@
             <div class="mo-content">
                 <div class="close" onclick="closeModal('Cable')">&times;</div>
                 <div class="mo-header">
-                    <h2>Cable stayed</h2>
+                    <h2>Cable Stayed</h2>
                 </div>
                 <div class="mo-body">
                   <p>
-                    To build
-                a cantilever bridge
-                within our specifications.
-                It
-                must be constructed of
-                approved materials.
+                    To build a cantilever bridge within our specifications. It must be constructed of approved materials.
                   </p>
                     Prize worth : 6,000 &#8377<br>
                     Registration Fees : 100 &#8377<br><br>
 
                     <a href="{{ url_for('static', filename='resource/calbestayed.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
                 </div>
             </div>
         </div>
 
-        <div class="mo" id="Cranza">
+        <div class="mo" id="Crananza">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('Cranza')">&times;</div>
+                <div class="close" onclick="closeModal('Crananza')">&times;</div>
                 <div class="mo-header">
-                    <h2>Cranaza</h2>
+                    <h2>Crananza</h2>
                 </div>
                 <div class="mo-body">
                   <p>To build a
@@ -922,8 +906,6 @@
                     Registration Fees : 30 &#8377<br><br>
 
                     <a href="{{ url_for('static', filename='resource/bidwiser.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
-
-
                 </div>
             </div>
         </div>
@@ -953,11 +935,12 @@
                 </div>
                 <div class="mo-body">
                   <p>
+                      Build your product that will make you Business Bazigar. From idae to execution, from launchin to selling, design the product and pitch your product.
                   </p>
-                    Prize : $$$$<br>
-                    Registration Fees : $$$$<br>
+                  Prize worth : 5,000 &#8377<br>
+                  Registration Fees : 50 &#8377<br><br>
 
-
+                  <a href="{{ url_for('static', filename='resource/businessbazigar.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
         </div>
