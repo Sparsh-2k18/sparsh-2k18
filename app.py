@@ -1,7 +1,7 @@
 # app.py
 """Python script for server implementation."""
 import os
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, render_template, request, redirect, jsonify, flash
 from flask import url_for, flash
 from flask_compress import Compress
 
@@ -52,19 +52,12 @@ def about_page():
 @app.route("/winter", methods=['POST'])
 def contact_page():
     if request.method == 'POST':
-        newContact = Contact(name=request.form['name'],
-                             email=request.form['email'],
-                             mobile=request.form['mobile'],
-                             query=request.form['query'])
-        # session.add(newContact)
-        # session.commit()
         info = '{0} {1} {2} {3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
         msg = Message('Query', sender='kvncare007@gmail.com',recipients=['kvnamipara@gmail.com'])
         msg.body = info
         mail.send(msg)
         return redirect(url_for('winter_page'))
-    else:
-        return render_template("royal.html")
+
 
 
 @app.route("/winter",methods = ['GET'])
