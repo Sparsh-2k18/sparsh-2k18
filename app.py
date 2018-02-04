@@ -24,49 +24,23 @@ mail = Mail(app)
 Compress(app)
 
 
-@app.route("/")
+@app.route("/",methods=['GET'])
 def index():
-    return render_template("main.html")
-
-
-@app.route("/index")
-def single_page():
     return render_template("index.html")
-
 
 @app.route("/events")
 def event_page():
-    return render_template("new_events.html")
+    return render_template("events.html")
 
-
-@app.route("/sponsor")
-def sponsor_page():
-    return render_template("sponsor.html")
-
-
-@app.route("/about")
-def about_page():
-    return render_template("about.html")
-
-
-@app.route("/winter", methods=['POST'])
+@app.route("/", methods=['POST'])
 def contact_page():
     if request.method == 'POST':
         info = '{0} {1} {2} {3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
         msg = Message('Query', sender='kvncare007@gmail.com',recipients=['kvnamipara@gmail.com'])
         msg.body = info
         mail.send(msg)
-        return redirect(url_for('winter_page'))
+        return redirect(url_for('index'))
 
-
-
-@app.route("/winter",methods = ['GET'])
-def winter_page():
-    return render_template("index.html")
-
-@app.route("/rulebook",methods = ['GET'])
-def rulebook_page():
-    return render_template("rulebook.html")
 
 @app.route("/web-team",methods = ['GET'])
 def webteam_page():
