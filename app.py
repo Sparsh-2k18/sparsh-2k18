@@ -7,19 +7,7 @@ from flask_compress import Compress
 
 from flask_mail import Mail, Message
 
-from sqlalchemy import create_engine, asc, func
-from sqlalchemy.orm import sessionmaker
-from database.database_setup import Base, Contact
-from database.config import get_database_uri
-
 MAIL_PASS = os.environ['MAIL_PASSWORD']
-
-# Connect to Database and create database session
-engine = create_engine(get_database_uri())
-Base.metadata.bind = engine
-
-DBSession = sessionmaker(bind=engine)
-session = DBSession()
 
 app = Flask(__name__)
 mail = Mail(app)
