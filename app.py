@@ -34,7 +34,7 @@ def event_page():
 def contact_page():
     if request.method == 'POST':
         info = 'Name: {0}\nEmail: {1}\nMobile Number:{2}\nQuery:{3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
-        msg = Message('Query', sender='kvncare007@gmail.com',recipients=['kvnamipara@gmail.com'])
+        msg = Message('Query', sender='kvncare007@gmail.com',recipients=['sparsh2k18.nitsurat@gmail.com'])
         msg.body = info
         mail.send(msg)
         return redirect(url_for('index'))
