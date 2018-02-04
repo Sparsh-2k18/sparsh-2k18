@@ -62,7 +62,7 @@ def contact_page():
 
 @app.route("/winter",methods = ['GET'])
 def winter_page():
-    return render_template("royal.html")
+    return render_template("index.html")
 
 @app.route("/rulebook",methods = ['GET'])
 def rulebook_page():
