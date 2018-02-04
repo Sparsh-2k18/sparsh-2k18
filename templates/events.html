@@ -42,9 +42,6 @@
             width:  100%;
         }
 
-        .event-card :hover {
-            border-bottom: 1px solid #e5cc7f;
-        }
 
         #technical,#managerial,#informal,#school-events {
             margin-top: 50px;
@@ -175,6 +172,7 @@
                         <section id="technical">
                             <h1> Technical Events </h1>
                             <img class="image-event" src="{{ url_for('static', filename='tech.png') }}" style="margin:20px;"></image>
+                            <p>Make your robots fight for their life out till mental burns to the ground. This Grand War lauded with deafending roars will make your heart skip a beat! Well, if you are not the aggressive one, you cna always smart droid.</p>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('Robowar')">
                                         <h2> Robowar </h2>
@@ -258,6 +256,7 @@
 
                             <h1> Managerial Events </h1>
                             <img class="image-event" src="{{ url_for('static', filename='managerial.png') }}" ></image>
+                            <p> Have you aim for being the biggest philanthropist business tycoon, show your skill of managing and trading stocks. Compete with all the braniacs, and be the Warren Buffer of Bid Wiser, Bulls n Bears and Ad-ventures. And if you are "Vito Corlean" of your gang, dig the graves and bury all your in "Mafia". </p>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('Bidwiser')">
                                         <h2> Bidwiser </h2>
@@ -298,6 +297,7 @@
                         <section id="school-events">
                             <h1> School Events </h1>
                             <img class="image-event" src="{{ url_for('static', filename='school.png') }}" ></image>
+                            <p> All about the college events right! But , we here at SVNIT work in upbringing the young talent. A whole load of school students be a part of this glorious event which makes you feel nostalgic of your childhood and make you a kid again. </p>
                             <h2> Workshops </h2>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('sc-robotics')">
@@ -377,6 +377,7 @@
 
                         <section id="informal">
                             <h1> Informal Events </h1>
+                            <p>These mini events trigger the hyperactive element in people and keep the streets rustling with activity. One minute games which gives memory that last lifetime. Events which are totaly apt to while away time as people wait for their friends or just want to spend some quality time doing fun stuff.</p>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('if-darts')">
                                         <h2> Darts </h2>

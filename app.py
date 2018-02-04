@@ -1,5 +1,3 @@
-# app.py
-"""Python script for server implementation."""
 import os
 from flask import Flask, render_template, request, redirect, jsonify, flash
 from flask import url_for, flash
@@ -35,7 +33,7 @@ def event_page():
 @app.route("/", methods=['POST'])
 def contact_page():
     if request.method == 'POST':
-        info = '{0} {1} {2} {3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
+        info = 'Name: {0}\nEmail: {1}\nMobile Number:{2}\nQuery:{3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
         msg = Message('Query', sender='kvncare007@gmail.com',recipients=['kvnamipara@gmail.com'])
         msg.body = info
         mail.send(msg)
