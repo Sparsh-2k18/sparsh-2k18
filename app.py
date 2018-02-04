@@ -12,6 +12,8 @@ from sqlalchemy.orm import sessionmaker
 from database.database_setup import Base, Contact
 from database.config import get_database_uri
 
+MAIL_PASS = os.environ['MAIL_PASSWORD']
+
 # Connect to Database and create database session
 engine = create_engine(get_database_uri())
 Base.metadata.bind = engine
@@ -25,8 +27,8 @@ mail = Mail(app)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'kvnamipara@gmail.com'
-app.config['MAIL_PASSWORD'] = '*****'
+app.config['MAIL_USERNAME'] = 'kvncare007@gmail.com'
+app.config['MAIL_PASSWORD'] = MAIL_PASS
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
