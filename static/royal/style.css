@@ -189,6 +189,25 @@ a.contact-details-text
 }
 
 
+.separator-line-gradient
+{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(246, 194, 117, 0.5), rgba(0, 0, 0, 0));
+}
+
+.separator-line-gradient
+{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+.separator-line-gradient
+{
+    height: 3px;
+}
+
 
 
 /**************************************
