@@ -229,6 +229,14 @@
 		width: 90%;
 		margin: 0 auto;
 	}
+
+	.carousel-caption {
+		font-weight: bold;
+		color: black;
+		background-color: white;
+		text-transform: uppercase;
+		opacity: 0.5;
+	}
 	.sparsh-heading {
 		width: 100%;
 		height: 16vh;
@@ -307,7 +315,7 @@
 	</style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<!-- LOADING -->
 	<div class="container-fluid">
@@ -588,35 +596,37 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item">
-								<img src="#" data-color="lightblue" alt="First Image">
+								<img src="{{ url_for('static', filename='royal/nights/celeb.jpg') }}" data-color="lightblue" alt="First Image" class="img-responsive">
 								<div class="carousel-caption">
-									<h3>First Image</h3>
+									<h3>This year celeb to be revealed soon.</h3>
 								</div>
 							</div>
 							<div class="item">
-								<img src="#" data-color="firebrick" alt="Second Image">
+								<img src="{{ url_for('static', filename='royal/nights/edm.jpg') }}" data-color="firebrick" alt="Second Image" class="img-responsive">
 								<div class="carousel-caption">
-									<h3>Second Image</h3>
+									<h3>EDM Night</h3>
 								</div>
 							</div>
 							<div class="item">
-								<img src="#" data-color="violet" alt="Third Image">
+								<img src="{{ url_for('static', filename='royal/nights/dance.jpg') }}" data-color="violet" alt="Third Image" class="img-responsive">
 								<div class="carousel-caption">
-									<h3>Third Image</h3>
+									<h3>Dancing Night</h3>
 								</div>
 							</div>
 							<div class="item">
-								<img src="#" data-color="lightgreen" alt="Fourth Image">
+								<img src="{{ url_for('static', filename='royal/nights/sing.jpg') }}" data-color="lightgreen" alt="Fourth Image" class="img-responsive">
 								<div class="carousel-caption">
-									<h3>Fourth Image</h3>
+									<h3>Singing Night</h3>
 								</div>
 							</div>
+							<!--
 							<div class="item">
-								<img src="#" data-color="tomato" alt="Fifth Image">
+								<img src="{{ url_for('static', filename='royal/nights/fashion.jpg') }}" data-color="tomato" alt="Fifth Image" class="img-responsive">
 								<div class="carousel-caption">
-									<h3>Fifth Image</h3>
+									<h3>Fashion Night</h3>
 								</div>
 							</div>
+							-->
 						</div>
 
 						<!-- Controls -->
@@ -906,9 +916,4 @@
 			<script src="{{ url_for('static', filename='royal/config.js') }}"></script>
 			<script src="{{ url_for('static', filename='royal/particles.js') }}"></script>
 			<script src="{{ url_for('static', filename='royal/app.js') }}"></script>
-
-
-
-
-
 		</body></html>
