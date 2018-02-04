@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="http://www.yallowina.com/themes/Royal/Kenburns/Snow/assets/img/favicon.png">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='sparsh.png') }}">
 
     <!-- PAGE TITLE -->
-    <title>SPARSH 2K18</title>
+    <title>Sparsh Techno-Cultural Fest</title>
 
     <!-- GOOGLE FONTS -->
     <link href="{{ url_for('static', filename='royal/css') }}" rel="stylesheet" type="text/css">
@@ -49,6 +49,15 @@
         #technical,#managerial,#informal,#school-events {
             margin-top: 50px;
             margin-bottom: 50px;
+        }
+
+        .nav a{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar-brand{
+            font-weight: bold;
         }
 
         p {
@@ -148,7 +157,7 @@
   				</div>
   				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
   					<ul class="nav navbar-nav navbar-right">
-  						<li>
+  						<li class="active">
   							<a href="#technical">Technical</a>
   						</li>
   						<li>
@@ -263,7 +272,6 @@
 
                             <h1> Managerial Events </h1>
                             <img class="image-event" src="{{ url_for('static', filename='managerial.png') }}" ></image>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('Bidwiser')">
                                         <h2> Bidwiser </h2>
@@ -305,7 +313,6 @@
                             <h1> School Events </h1>
                             <img class="image-event" src="{{ url_for('static', filename='school.png') }}" ></image>
                             <h2> Workshops </h2>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('sc-robotics')">
                                         <h2> Robotics Workshop </h2>
@@ -335,7 +342,6 @@
                             </div>
                             <hr class="separator-line separator-line-gradient">
                             <h3> Non-Technical </h3>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('sc-library')">
                                         <h2> Library Quiz </h2>
@@ -357,7 +363,6 @@
                             </div>
                             <hr class="separator-line separator-line-gradient">
                             <h3> Cultural </h3>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="row">
                                     <div class="col-md-4 col-md-offset-2 event-card" onclick="openModal('sc-street-play')">
                                         <h2> Street Skit </h2>
@@ -376,7 +381,6 @@
                             </div>
                             <hr class="separator-line separator-line-gradient">
                             <h3> Mega Event </h3>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="row">
                                     <div class="col-md-4 col-md-offset-2 event-card" onclick="openModal('sc-birbal')">
                                         <h2> Birbal </h2>
@@ -389,7 +393,6 @@
 
                         <section id="informal">
                             <h1> Informal Events </h1>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             <div class="row">
                                     <div class="col-md-4 event-card" onclick="openModal('if-darts')">
                                         <h2> Darts </h2>
