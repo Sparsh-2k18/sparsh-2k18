@@ -8,6 +8,7 @@ from flask_mail import Mail, Message
 MAIL_PASS = os.environ['MAIL_PASSWORD']
 
 app = Flask(__name__)
+app.secret_key = 'skjdfajsldkjfask'
 mail = Mail(app)
 
 
@@ -37,6 +38,7 @@ def contact_page():
         msg = Message('Query', sender='kvncare007@gmail.com',recipients=['sparsh2k18.nitsurat@gmail.com'])
         msg.body = info
         mail.send(msg)
+        flash('Your query is submitted successfully.')
         return redirect(url_for('index'))
 
 
