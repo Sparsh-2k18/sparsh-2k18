@@ -131,9 +131,6 @@
 		// SRC : STRING
 
 		slides: [
-			{ src: "{{ url_for('static', filename='royal/1.jpg') }}" },
-			{ src: "{{ url_for('static', filename='royal/2.jpg') }}" },
-			{ src: "{{ url_for('static', filename='royal/3.jpg') }}" },
 		],
 
 
