@@ -5,21 +5,21 @@ from flask_compress import Compress
 
 from flask_mail import Mail, Message
 
-# MAIL_PASS = os.environ['MAIL_PASSWORD']
+MAIL_PASS = os.environ['MAIL_PASSWORD']
 
 app = Flask(__name__)
-# app.secret_key = 'skjdfajsldkjfask'
-# mail = Mail(app)
+app.secret_key = 'skjdfajsldkjfask'
+mail = Mail(app)
 
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'kvncare007@gmail.com'
-# app.config['MAIL_PASSWORD'] = MAIL_PASS
+app.config['MAIL_USERNAME'] = 'premsinwar4@gmail.com'
+app.config['MAIL_PASSWORD'] = MAIL_PASS
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
-# mail = Mail(app)
+mail = Mail(app)
 Compress(app)
 
 
@@ -37,7 +37,7 @@ def contact_page():
         info = 'Name: {0}\nEmail: {1}\nMobile Number:{2}\nQuery:{3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
         msg = Message('Query', sender='kvncare007@gmail.com',recipients=['sparsh2k18.nitsurat@gmail.com'])
         msg.body = info
-        # mail.send(msg)
+        mail.send(msg)
         flash('Your query is submitted successfully.')
         return redirect(url_for('index'))
 
