@@ -169,9 +169,9 @@ $(document).on('click', 'a[href^="#"]', function (e) {
 
 function showScroll() {
     var mainImg = document.getElementsByClassName('letterMain')[0];
-    if (mainImg.style.height == '300px') {
+    if (mainImg.style.height == '350px') {
         mainImg.style.height = '0px'
     } else {
-        mainImg.style.height = '300px';
+        mainImg.style.height = '350px';
     }
 }
