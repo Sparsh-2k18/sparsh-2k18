@@ -145,6 +145,9 @@
                             <a href="#technical">Technical</a>
                         </li>
                         <li>
+                            <a href="#workshops">Workshops</a>
+                        </li>
+                        <li>
                             <a href="#managerial">Managerial</a>
                         </li>
                         <li>
@@ -153,9 +156,7 @@
                         <li>
                             <a href="#informal">Informal</a>
                         </li>
-                        <li>
-                            <a href="#workshops">Worksshops</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -253,15 +254,44 @@
                                     <div class="col-md-4 event-card" onclick="openModal('BlindCoding')">
                                         <h2> Blind Coding </h2>
                                     </div>
-                                  
+
                             </div>
                            <div class="row">
                                <div class="col-md-4 col-md-offset-4 event-card" onclick="#">
                                     <h2> Mega Quiz </h2>
                                 </div>
                             </div>
+                        </section>
+
+                        <section id="workshops">
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4">
+                                    <h1 style="border-bottom:1px solid #e5cc7f;"> Workshops </h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 event-card" onclick="openModal('w-quadcopter')">
+                                        <h2> Quadcopter </h2>
+                                    </div>
+                                    <div class="col-md-4 event-card" onclick="openModal('w-robotics-arm')">
+                                        <h2> Robotics Arm </h2>
+                                    </div>
+                                    <div class="col-md-4 event-card" onclick="openModal('w-3d-game')">
+                                        <h2>  3D Game Development </h2>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 col-md-offset-2 event-card" onclick="openModal('w-gesture-robotics')">
+                                        <h2> Gesture Controlled Robotics </h2>
+                                    </div>
+                                    <div class="col-md-4 event-card" onclick="openModal('w-bridge')">
+                                        <h2> Bridge Designing </h2>
+                                    </div>
+                            </div>
+
                             <img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" style="margin-top:50px;" ></img>
                         </section>
+
                         <section id="managerial">
 
                             <h1> Managerial Events </h1>
@@ -310,7 +340,7 @@
                             <p> All about the college events right! But , we here at SVNIT work in upbringing the young talent. A whole load of school students be a part of this glorious event which makes you feel nostalgic of your childhood and make you a kid again. </p>
                             <h2> Workshops </h2>
                             <div class="row">
-                                    <div class="col-md-4 event-card" onclick="openModal('sc-robotics')">
+                                    <div class="col-md-4 event-card" onclick="openModal('#')">
                                         <h2> Robotics Workshop </h2>
                                     </div>
                                     <div class="col-md-4 event-card" onclick="openModal('#')">
@@ -431,31 +461,7 @@
                             <img  src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" style="margin-top:50px;" ></img>
                         </section>
 
-                        <section id="workshops">
 
-                            <h1> Workshops </h1>
-                            <div class="row">
-                                    <div class="col-md-4 event-card" onclick="openModal('w-quadcopter')">
-                                        <h2> Quadcopter </h2>
-                                    </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('w-robotics-arm')">
-                                        <h2> Robotics Arm </h2>
-                                    </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('w-3d-game')">
-                                        <h2>  3D Game Development </h2>
-                                    </div>
-                            </div>
-                            <div class="row">
-                                    <div class="col-md-4 col-md-offset-2 event-card" onclick="openModal('w-gesture-robotics')">
-                                        <h2> Gesture Controlled Robotics </h2>
-                                    </div>
-                                    <div class="col-md-4 event-card" onclick="openModal('w-bridge')">
-                                        <h2> Bridge Designing </h2>
-                                    </div>
-                            </div>
-
-                            <img src="{{ url_for('static', filename='images/slid.png') }}" width="300px" height="100px" style="margin-top:50px;" ></img>
-                        </section>
                     </div>
 
                 </section>
@@ -499,6 +505,7 @@
                   </p>
                     Prize worth : 1,00,000 &#8377<br>
                     Registration Fees : 500 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
                     <a href="{{ url_for('static', filename='resource/robowar.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
 
@@ -519,7 +526,7 @@
                   </p>
                     Prize worth : 40,000 &#8377<br>
                     Registration Fees : 500 &#8377<br><br>
-
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
                     <a href="{{ url_for('static', filename='resource/fullthrottle.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
                 </div>
@@ -540,6 +547,7 @@
                   </p>
                     Prize worth : 10,000 &#8377<br>
                     Registration Fees : 300 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
                     <a href="{{ url_for('static', filename='resource/farmtrack.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
 
@@ -569,6 +577,7 @@
                   </p>
                     Prize worth : 6000 &#8377<br>
                     Registration Fees : 100 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/electrox.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -588,6 +597,7 @@
                   </p>
                     Prize worth : 10,000 &#8377<br>
                     Registration Fees : 200 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/submerge.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -607,6 +617,7 @@
                   </p>
                     Prize worth : 6000 &#8377<br>
                     Registration Fees : 50 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/paperjacket.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -629,6 +640,7 @@
                   </p>
                     Prize worth : 10,000 &#8377<br>
                     Registration Fees : 200 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/aquaball.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -652,6 +664,7 @@
                   </p>
                     Prize worth : 6000 &#8377<br>
                     Registration Fees : 100 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/junkyardwars.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -673,6 +686,7 @@
                   </p>
                     Prize worth : 20,000 &#8377<br>
                     Registration Fees : 400 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/beattheheat.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -692,6 +706,7 @@
                   </p>
                     Prize worth : 15,000 &#8377<br>
                     Registration Fees : 200 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/linefollower.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -716,6 +731,7 @@
                   </p>
                     Prize worth : 5,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/codewars.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -737,6 +753,7 @@
                   </p>
                     Prize worth : 5,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/210relay.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -760,6 +777,7 @@
                   </p>
                     Prize worth : 5,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/mindf.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -783,6 +801,7 @@
                   </p>
                     Prize worth : 5,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/ctf.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -806,6 +825,7 @@
                   </p>
                     Prize worth : 5,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/shutthebugup.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -826,6 +846,7 @@
                   </p>
                     Prize worth : 6,000 &#8377<br>
                     Registration Fees : 100 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/cablestayed.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -846,6 +867,7 @@
                   </p>
                     Prize worth : 10,000 &#8377<br>
                     Registration Fees : 200 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/cranaza.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -866,6 +888,7 @@
                   </p>
                     Prize worth : 10,000 &#8377<br>
                     Registration Fees : 100 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/marbleexpedition.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -886,6 +909,7 @@
                   </p>
                     Prize worth : 6,000 &#8377<br>
                     Registration Fees : 100 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/assembler.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -906,6 +930,7 @@
                   </p>
                     Prize worth : 6,000 &#8377<br>
                     Registration Fees : 100 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/reboottheroute.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -926,6 +951,7 @@
                   </p>
                     Prize worth : 6,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSegl1e4Vda8gMWA8S691gRJ98dLx_N7I5IX8MQjSWUXFUTzww/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/blindcoding.pdf') }}" target="_blank" style="text-decoration:none;">Event Rule book</a><br>
                     <a href="{{ url_for('static', filename='resource/prizerule.pdf') }}" target="_blank" style="text-decoration:none;">Prize Rule book</a>
@@ -947,6 +973,7 @@
                   </p>
                     Prize worth : 5,000 &#8377<br>
                     Registration Fees : 30 &#8377<br><br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                     <a href="{{ url_for('static', filename='resource/bidwiser.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -965,6 +992,7 @@
                   </p>
                   Prize worth : 5,000 &#8377<br>
                   Registration Fees : 30 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/mafia-rule.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -983,6 +1011,7 @@
                   </p>
                   Prize worth : 5,000 &#8377<br>
                   Registration Fees : 30 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/wink-murder.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1001,6 +1030,7 @@
                   </p>
                   Prize worth : 5,000 &#8377<br>
                   Registration Fees : 50 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/businessbazigar.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1019,6 +1049,7 @@
                   </p>
                   Prize worth : 6,000 &#8377<br>
                   Registration Fees : 50 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/bullsandbears.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1039,6 +1070,7 @@
                   </p>
                   Prize worth : 6,000 &#8377<br>
                   Registration Fees : 50 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/bullsandbears.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1059,6 +1091,7 @@
                   </p>
                   Prize worth : 5,000 &#8377<br>
                   Registration Fees : 30 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/madmen.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1079,6 +1112,7 @@
                   </p>
                   Prize worth : 6,000 &#8377<br>
                   Registration Fees : 50 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/adventure.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1096,6 +1130,7 @@
                   </p>
                   Prize worth : 6,000 &#8377<br>
                   Registration Fees : 100 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHXyMmOMsfIYJvJiKZAWpEKV77XPjEymH7-NUYr_x3S-pfHg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/treasurehunt.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1181,6 +1216,7 @@
                   Prize worth : 800 &#8377<br>
                   Registration Fees : 30 &#8377<br><br>
 
+
                   <a href="{{ url_for('static', filename='resource/school-events/science-model.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
@@ -1198,6 +1234,7 @@
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 20 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/story-writing.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1233,6 +1270,7 @@
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 20 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/junior-mathematician.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1251,6 +1289,7 @@
                   </p>
                   Prize worth : 800 &#8377<br>
                   Registration Fees : 10 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/pen-fight.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1269,6 +1308,7 @@
                   </p>
                   Prize worth : 1,600 &#8377<br>
                   Registration Fees : 50 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/poster-making.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1287,6 +1327,7 @@
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 20 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/quiz-master.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1305,6 +1346,7 @@
                   </p>
                   Prize worth : 1,800 &#8377<br>
                   Registration Fees : 100 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/rubik-cube.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1373,6 +1415,7 @@
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 50 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/think-inside-the-box.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1406,6 +1449,7 @@
                   </p>
                   Prize worth : 1,600 &#8377<br>
                   Registration Fees : 50 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/best-out-of-waste.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1415,7 +1459,7 @@
 
         <div class="mo" id="sc-bid-and-win">
             <div class="mo-content">
-                <div class="close" onclick="closeModal('sc-best-out-of-the-waste')">&times;</div>
+                <div class="close" onclick="closeModal('sc-bid-and-win')">&times;</div>
                 <div class="mo-header">
                     <h2>Bid and Win</h2>
                 </div>
@@ -1425,6 +1469,7 @@
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 40 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/bid-and-win.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1443,6 +1488,7 @@
                       Are you street smart enough to sell something from a watch to a torch, from a pin to a pen to a complete stranger? In this event, you will be given an item and you need to sell it to a person in your way in a time limit of 5 minutes.                  </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 30 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/crazy-commercials.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1462,6 +1508,7 @@
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 100 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/street-play.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1481,6 +1528,7 @@
                   </p>
                   Prize worth : 1,000 &#8377<br>
                   Registration Fees : 20 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/sudoku-mania.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1500,6 +1548,7 @@
                   </p>
                   Prize worth : 1,200 &#8377<br>
                   Registration Fees : 30 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/talent-hunt.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1552,6 +1601,7 @@
                   </p>
                   Prize worth : 800 &#8377<br>
                   Registration Fees : 20 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/debate.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1570,6 +1620,7 @@
                   </p>
                   Prize worth : 1,600 &#8377<br>
                   Registration Fees : 30 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/detective-mystery.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1588,6 +1639,7 @@
                   </p>
                   Prize worth : 800 &#8377<br>
                   Registration Fees : 10 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/extempore.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1606,6 +1658,7 @@
                   </p>
                   Prize worth : 3,000 &#8377<br>
                   Registration Fees : 200 &#8377<br><br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScVCwLtMpK76GtIG6N0PzQYUj8TGNgFAEdZ__ilCLBFutSkVA/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/school-events/futsal.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
@@ -1818,6 +1871,8 @@
                   </p>
                     Registration Fees : 650 &#8377 per person<br>
                     Team : 5 person  <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-nkWd-CuLkiBrwxRP6oR6Vg0T55FCCZwFi2dDee6IjqIjgg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
+
                     <a href="{{ url_for('static', filename='resource/workshop.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
                 </div>
             </div>
@@ -1833,6 +1888,8 @@
                       In this workshop, you will be taught to control and make a Robotic Arm.
                   </p>
                   Registration Fees : 650 &#8377 per person<br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-nkWd-CuLkiBrwxRP6oR6Vg0T55FCCZwFi2dDee6IjqIjgg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
+
                   <a href="{{ url_for('static', filename='resource/workshop.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
                   Team : 5 person  <br>
@@ -1851,6 +1908,8 @@
                   </p>
                   Registration Fees : 650 &#8377 per person<br>
                   Team : 5 person  <br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-nkWd-CuLkiBrwxRP6oR6Vg0T55FCCZwFi2dDee6IjqIjgg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
+
                   <a href="{{ url_for('static', filename='resource/workshop.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
                 </div>
@@ -1867,6 +1926,7 @@
                       In this workshop you will learn to develop 3-D games.
                   </p>
                   Registration Fees : 650 &#8377 per person<br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-nkWd-CuLkiBrwxRP6oR6Vg0T55FCCZwFi2dDee6IjqIjgg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/workshop.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
@@ -1886,6 +1946,7 @@
                   </p>
                   Registration Fees : 650 &#8377 per person<br>
                   Team : 5 person  <br>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-nkWd-CuLkiBrwxRP6oR6Vg0T55FCCZwFi2dDee6IjqIjgg/viewform?usp=sf_link" target="_blank" style="text-decoration:none;">Register Here</a><br>
 
                   <a href="{{ url_for('static', filename='resource/workshop.pdf') }}" target="_blank" style="text-decoration:none;">Rule book</a>
 
