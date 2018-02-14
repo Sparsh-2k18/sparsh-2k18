@@ -5,7 +5,7 @@ from flask_compress import Compress
 
 from flask_mail import Mail, Message
 
-MAIL_PASS = os.environ['MAIL_PASSWORD']
+MAIL_PASS = "os.environ['MAIL_PASSWORD']"
 
 app = Flask(__name__)
 app.secret_key = 'skjdfajsldkjfask'
@@ -35,7 +35,7 @@ def event_page():
 def contact_page():
     if request.method == 'POST':
         info = 'Name: {0}\nEmail: {1}\nMobile Number:{2}\nQuery:{3}'.format(request.form['name'],request.form['email'],request.form['mobile'],request.form['query'])
-        msg = Message('Query', sender='kvncare007@gmail.com',recipients=['sparsh2k18.nitsurat@gmail.com'])
+        msg = Message('Query', sender='premsinwar4@gmail.com',recipients=['sparsh2k18.nitsurat@gmail.com'])
         msg.body = info
         mail.send(msg)
         flash('Your query is submitted successfully.')
